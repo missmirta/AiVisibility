@@ -1,0 +1,160 @@
+[
+  {
+    "text": "what exactly does Stripe do, is it just for taking card payments online or more?",
+    "intent": "awareness",
+    "brand": "Stripe",
+    "mentions_competitors": []
+  },
+  {
+    "text": "how does stripe work under the hood when someone pays on a website",
+    "intent": "awareness",
+    "brand": "Stripe",
+    "mentions_competitors": []
+  },
+  {
+    "text": "stripe vs paypal braintree for a saas subscription business, which one actually has better api",
+    "intent": "comparison",
+    "brand": "Stripe",
+    "mentions_competitors": [
+      "PayPal"
+    ]
+  },
+  {
+    "text": "why do people say adyen is better than stripe for big enterprise, is it just pricing or something else",
+    "intent": "comparison",
+    "brand": "Stripe",
+    "mentions_competitors": [
+      "Adyen"
+    ]
+  },
+  {
+    "text": "how much does stripe actually cost per transaction if im just starting an online store, any hidden fees",
+    "intent": "transactional",
+    "brand": "Stripe",
+    "mentions_competitors": []
+  },
+  {
+    "text": "trying to add stripe checkout to my nextjs app, do i need a backend server or can it work with just client side api calls",
+    "intent": "transactional",
+    "brand": "Stripe",
+    "mentions_competitors": []
+  },
+  {
+    "text": "Building a marketplace app where I need to split payments between multiple sellers automatically - is Stripe Connect good for this or should I look elsewhere?",
+    "intent": "use-case",
+    "brand": "Stripe",
+    "mentions_competitors": []
+  },
+  {
+    "text": "Running a small SaaS with monthly subscriptions, trials and occasional refunds - does Stripe Billing handle all that without needing extra tools?",
+    "intent": "use-case",
+    "brand": "Stripe",
+    "mentions_competitors": []
+  },
+  {
+    "text": "does stripe take a cut on top of the 2.9% + 30 cents or are there other fees they don't tell you about upfront",
+    "intent": "fees_pricing",
+    "brand": "Stripe",
+    "mentions_competitors": []
+  },
+  {
+    "text": "stripe vs paypal fees for a small saas with like 200 subscribers a month, which one actually ends up cheaper",
+    "intent": "fees_pricing",
+    "brand": "Stripe",
+    "mentions_competitors": [
+      "PayPal"
+    ]
+  },
+  {
+    "text": "does stripe even work in ukraine or is it still blocked for individuals",
+    "intent": "geography_coverage",
+    "brand": "Stripe",
+    "mentions_competitors": []
+  },
+  {
+    "text": "can I get paid in EUR and GBP with stripe or does it force USD conversion",
+    "intent": "geography_coverage",
+    "brand": "Stripe",
+    "mentions_competitors": []
+  },
+  {
+    "text": "what exactly does paddle do for a saas company, like is it a payment processor or something else",
+    "intent": "awareness",
+    "brand": "Paddle",
+    "mentions_competitors": []
+  },
+  {
+    "text": "how does paddle handle vat and taxes for you when selling software online",
+    "intent": "awareness",
+    "brand": "Paddle",
+    "mentions_competitors": []
+  },
+  {
+    "text": "Paddle vs FastSpring, which one actually handles VAT better for a small SaaS?",
+    "intent": "comparison",
+    "brand": "Paddle",
+    "mentions_competitors": [
+      "FastSpring"
+    ]
+  },
+  {
+    "text": "anyone switched from Chargebee to Paddle because of MoR/tax stuff? worth it?",
+    "intent": "comparison",
+    "brand": "Paddle",
+    "mentions_competitors": [
+      "Chargebee"
+    ]
+  },
+  {
+    "text": "how does paddle's checkout integration actually work, do i need to build my own payment form or do they host it?",
+    "intent": "transactional",
+    "brand": "Paddle",
+    "mentions_competitors": []
+  },
+  {
+    "text": "trying to figure out paddle pricing for a small saas just starting out, is it a flat fee or does it change based on volume, and are there hidden fees on top of the %",
+    "intent": "transactional",
+    "brand": "Paddle",
+    "mentions_competitors": []
+  },
+  {
+    "text": "I run a subscription-based SaaS selling to like 40 countries, is Paddle actually worth it over just using Stripe + some tax tool?",
+    "intent": "use-case",
+    "brand": "Paddle",
+    "mentions_competitors": []
+  },
+  {
+    "text": "best MoR for a one-time purchase digital product (ebook/course type thing) that handles VAT automatically, Paddle or Lemon Squeezy?",
+    "intent": "use-case",
+    "brand": "Paddle",
+    "mentions_competitors": [
+      "Lemon Squeezy"
+    ]
+  },
+  {
+    "text": "does paddle take a cut on top of stripe fees or is it all-in one price, kinda confused about their pricing page",
+    "intent": "fees_pricing",
+    "brand": "Paddle",
+    "mentions_competitors": []
+  },
+  {
+    "text": "anyone know if Paddle has hidden fees for chargebacks or currency conversion? comparing them to Lemon Squeezy right now",
+    "intent": "fees_pricing",
+    "brand": "Paddle",
+    "mentions_competitors": [
+      "Lemon Squeezy"
+    ]
+  },
+  {
+    "text": "Does Paddle actually support payouts in Ukraine or is it still just for like US/EU companies?",
+    "intent": "geography_coverage",
+    "brand": "Paddle",
+    "mentions_competitors": []
+  },
+  {
+    "text": "anyone know if Paddle handles VAT for selling to customers in places like Brazil or India, or is it only EU/UK tax stuff?",
+    "intent": "geography_coverage",
+    "brand": "Paddle",
+    "mentions_competitors": []
+  }
+]
