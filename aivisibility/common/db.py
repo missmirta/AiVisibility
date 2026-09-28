@@ -96,6 +96,11 @@ def get_all_queries() -> list[sqlite3.Row]:
         return conn.execute("SELECT * FROM queries ORDER BY id").fetchall()
 
 
+def get_run_ids() -> list[int]:
+    with connect() as conn:
+        return [row["id"] for row in conn.execute("SELECT id FROM runs ORDER BY id").fetchall()]
+
+
 def create_run(notes: str | None = None) -> int:
     with connect() as conn:
         cur = conn.execute(
@@ -140,3 +145,54 @@ def insert_response(
             ),
         )
         return cur.lastrowid
+
+
+def get_responses_with_brand(run_id: int | None = None) -> list[sqlite3.Row]:
+    """responses joined with their query's brand — what week 3 analysis
+    reads to know which brand's candidate dictionary applies to each
+    response. Pass run_id to scope to one run (for the report), or omit for
+    all responses (for detection)."""
+    sql = """
+        SELECT r.id AS response_id, r.run_id, r.engine, r.raw_text, r.error,
+               q.brand AS subject_brand, q.id AS query_id
+        FROM responses r
+        JOIN queries q ON q.id = r.query_id
+    """
+    params: tuple = ()
+    if run_id is not None:
+        sql += " WHERE r.run_id = ?"
+        params = (run_id,)
+    sql += " ORDER BY r.id"
+    with connect() as conn:
+        return conn.execute(sql, params).fetchall()
+
+
+def replace_mentions_for_response(
+    response_id: int, brands_mentioned: list[str], method: str
+) -> None:
+    """Idempotent: drops any existing `mentions` rows for this response_id
+    before inserting the fresh detection result, so rerunning after a
+    detection-logic change never accumulates duplicates."""
+    with connect() as conn:
+        conn.execute("DELETE FROM mentions WHERE response_id = ?", (response_id,))
+        if brands_mentioned:
+            conn.executemany(
+                "INSERT INTO mentions (response_id, brand_mentioned, method) VALUES (?, ?, ?)",
+                [(response_id, brand, method) for brand in brands_mentioned],
+            )
+
+
+def get_mentions_for_responses(response_ids: list[int]) -> dict[int, set[str]]:
+    """response_id -> set of brand_mentioned, for the given response_ids."""
+    result: dict[int, set[str]] = {rid: set() for rid in response_ids}
+    if not response_ids:
+        return result
+    placeholders = ",".join("?" * len(response_ids))
+    with connect() as conn:
+        rows = conn.execute(
+            f"SELECT response_id, brand_mentioned FROM mentions WHERE response_id IN ({placeholders})",
+            response_ids,
+        ).fetchall()
+    for row in rows:
+        result[row["response_id"]].add(row["brand_mentioned"])
+    return result
