@@ -14,6 +14,7 @@ BRANDS_DIR = DATA_DIR / "brands"
 QUERIES_DIR = DATA_DIR / "queries"
 QUERIES_FILE = QUERIES_DIR / "queries.json"
 DB_PATH = DATA_DIR / "db" / "aivisibility.sqlite3"
+REPORTS_DIR = DATA_DIR / "reports"
 
 # Pilot set for week 1 (docs/weeks/week1.md) — deliberately contrasting pair,
 # enterprise vs SaaS/no-code. Expanding to the master plan's full list

@@ -4,6 +4,7 @@ version = "0.1.0"
 requires-python = ">=3.12"
 dependencies = [
     "claude-agent-sdk>=0.2.160",
+    "matplotlib>=3.11.2",
     "numpy>=2.5.3",
     "openai>=3.19.2",
     "pydantic>=2.13.5",
