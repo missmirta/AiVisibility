@@ -7,13 +7,25 @@ Claude Agent SDK overhead caveat this prober carries.
 
 import time
 
-from claude_agent_sdk import ClaudeAgentOptions, ResultMessage, query
+from claude_agent_sdk import (
+    ClaudeAgentOptions,
+    CLIConnectionError,
+    ProcessError,
+    ResultMessage,
+    query,
+)
 
 from ..common.config import CLAUDE_MODEL, MAX_BUDGET_USD_PER_CALL
 from .base import ProbeResult
 from .retry import with_retry
 
 ENGINE = "claude"
+
+# RuntimeError: our own signal for ResultMessage.is_error (often a transient
+# API-side failure). CLIConnectionError/ProcessError: network or CLI-process
+# failures. Anything else (e.g. CLIJSONDecodeError, MessageParseError — a
+# protocol mismatch, not a transient failure) is not retried.
+_RETRYABLE = (RuntimeError, CLIConnectionError, ProcessError)
 
 
 async def _call(query_text: str) -> tuple[str, float | None, dict | None]:
@@ -50,7 +62,10 @@ async def probe(query_text: str) -> ProbeResult:
 
     try:
         result_text, cost_usd, usage = await with_retry(
-            lambda: _call(query_text), max_attempts=3, base_delay=1.0
+            lambda: _call(query_text),
+            max_attempts=3,
+            base_delay=1.0,
+            retry_on=_RETRYABLE,
         )
     except Exception as exc:  # noqa: BLE001 - reported as a stored error, not raised
         error = str(exc)

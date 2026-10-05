@@ -7,10 +7,12 @@ as the Bradley-Terry model planned for week 7.
 
 import numpy as np
 
+from .precision import BOOTSTRAP_RESAMPLES
+
 
 def bootstrap_ci(
     mentioned: list[bool],
-    n_resamples: int = 2000,
+    n_resamples: int = BOOTSTRAP_RESAMPLES,
     ci: float = 0.95,
     seed: int | None = None,
 ) -> tuple[float, float, float]:

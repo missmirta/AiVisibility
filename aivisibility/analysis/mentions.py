@@ -17,14 +17,6 @@ from ..common.schemas import BrandProfile
 
 METHOD = "substring_cs_v1"
 
-_PAREN_SUFFIX_RE = re.compile(r"\s*\([^)]*\)\s*$")
-
-
-def _strip_parenthetical(name: str) -> str:
-    """"PayPal (Braintree)" -> "PayPal", so it collapses onto the plain
-    "PayPal" candidate instead of being tracked as a separate entity."""
-    return _PAREN_SUFFIX_RE.sub("", name).strip()
-
 
 def load_brand_profiles() -> dict[str, BrandProfile]:
     """brand name (as used in `queries.brand`) -> BrandProfile, read from
@@ -38,15 +30,12 @@ def load_brand_profiles() -> dict[str, BrandProfile]:
 
 
 def build_candidate_dictionary(profile: BrandProfile) -> list[str]:
-    """{brand} ∪ {competitors}, deduplicated on a lowercased,
-    parenthetical-stripped key so "PayPal (Braintree)" and "PayPal" collapse
-    into one candidate — the first-seen original-case spelling is kept as
-    the string actually matched against response text."""
+    """{brand} ∪ {competitors}, deduplicated on a lowercased key — the
+    first-seen original-case spelling is kept as the string actually matched
+    against response text."""
     seen: dict[str, str] = {}
-    for raw_name in [profile.brand, *profile.competitors]:
-        canonical = _strip_parenthetical(raw_name)
-        key = canonical.lower()
-        seen.setdefault(key, canonical)
+    for name in [profile.brand, *profile.competitors]:
+        seen.setdefault(name.strip().lower(), name.strip())
     return list(seen.values())
 
 

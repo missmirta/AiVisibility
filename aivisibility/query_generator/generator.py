@@ -4,7 +4,6 @@ import json
 import re
 
 from claude_agent_sdk import ClaudeAgentOptions, ResultMessage, query
-from pydantic import ValidationError
 
 from ..common.config import MAX_BUDGET_USD_PER_CALL, QUERIES_PER_CATEGORY
 from ..common.schemas import BrandProfile, IntentCategory, Query
@@ -12,26 +11,18 @@ from ..common.schemas import BrandProfile, IntentCategory, Query
 MAX_ATTEMPTS = 3
 
 CATEGORY_GUIDANCE: dict[str, str] = {
-    "awareness": "General questions about what the brand is, what it does, "
-    "or how it works. Do not name any competitor.",
-    "comparison": "Questions that explicitly compare the brand to one of its "
-    "competitors. Each query must name at least one competitor by name.",
+    "awareness": "General questions about what the brand is, what it does, or how it works. Do not name any competitor.",
+    "comparison": "Questions that explicitly compare the brand to one of its competitors. Each query must name at least one competitor by name.",
     "transactional": "Questions from someone close to signing up or "
-    "integrating: pricing page, sign-up flow, account setup, API/SDK "
-    "integration steps.",
-    "use-case": "Questions framed around a specific business scenario (e.g. "
-    "marketplace, subscription SaaS, one-time digital goods) asking which "
-    "provider fits that scenario.",
-    "fees_pricing": "Questions specifically about transaction fees, pricing "
-    "plans, hidden costs, or fee comparisons.",
-    "geography_coverage": "Questions about which countries, regions, or "
-    "currencies the brand supports, or whether it's available in a "
-    "specific market.",
+    "integrating: pricing page, sign-up flow, account setup, API/SDK integration steps.",
+    "use-case": "Questions framed around a specific scenario or use case asking whether/how the brand fits that scenario.",
+    "fees_pricing": "Questions specifically about pricing plans, fees, hidden costs, or fee comparisons.",
+    "geography_coverage": "Questions about which countries, regions, or currencies the brand supports, or whether it's available in a specific market.",
 }
 
 _PROMPT_TEMPLATE = """\
 You are simulating real questions that potential customers type into a \
-search engine or ask an AI assistant about the payment provider "{brand}".
+search engine or ask an AI assistant about the brand "{brand}".
 
 Brand context:
 - niche: {niche}

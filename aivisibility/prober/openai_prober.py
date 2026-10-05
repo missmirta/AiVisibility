@@ -6,7 +6,12 @@ only user message, nothing else, for a fair cross-engine comparison.
 
 import time
 
-from openai import AsyncOpenAI
+from openai import (
+    APIConnectionError,
+    AsyncOpenAI,
+    InternalServerError,
+    RateLimitError,
+)
 
 from ..common.config import OPENAI_MODEL, OPENAI_PRICING_PER_MTOK
 from .base import ProbeResult
@@ -15,6 +20,11 @@ from .retry import with_retry
 ENGINE = "openai"
 
 _client = AsyncOpenAI()
+
+# Rate limits (429), server errors (5xx), and network/timeout failures are
+# transient. Everything else (400 bad request, 401/403 auth, 404 model not
+# found, ...) will fail the same way on every retry, so it's not included.
+_RETRYABLE = (RateLimitError, InternalServerError, APIConnectionError)
 
 
 def _estimate_cost(prompt_tokens: int, completion_tokens: int) -> float:
@@ -41,7 +51,10 @@ async def probe(query_text: str) -> ProbeResult:
 
     try:
         response = await with_retry(
-            lambda: _call(query_text), max_attempts=3, base_delay=1.0
+            lambda: _call(query_text),
+            max_attempts=3,
+            base_delay=1.0,
+            retry_on=_RETRYABLE,
         )
         result_text = response.choices[0].message.content or ""
         prompt_tokens = response.usage.prompt_tokens

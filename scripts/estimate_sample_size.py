@@ -23,25 +23,25 @@ def main() -> None:
     vectors = pooled_mention_vectors()
     curves = aggregate_curves_by_engine(vectors, seed=42)
 
-    print(f"Емпіричний орієнтир мінімального n на движок (ціль: ±{TARGET_PP:.0f} в.п.)\n")
+    print(f"Empirical minimum-n guideline per engine (target: ±{TARGET_PP:.0f} pp)\n")
 
     for engine, curve in sorted(curves.items()):
         result = estimate_min_n(engine, curve, target_pp=TARGET_PP)
         print(f"{engine}:")
-        print(f"  спостережено до n={result.max_observed_n}, "
-              f"ширина CI на n={result.max_observed_n} ≈ {result.width_at_max_n:.1f} в.п.")
+        print(f"  observed up to n={result.max_observed_n}, "
+              f"CI width at n={result.max_observed_n} ≈ {result.width_at_max_n:.1f} pp")
         if result.observed_n is not None:
-            print(f"  ціль ±{TARGET_PP:.0f} в.п. ДОСЯГНУТА в межах наявних даних: n={result.observed_n}")
+            print(f"  target ±{TARGET_PP:.0f} pp REACHED within the available data: n={result.observed_n}")
         else:
-            print(f"  ціль ±{TARGET_PP:.0f} в.п. НЕ досягнута в межах наявних даних")
-            print(f"  екстраполяція (1/sqrt(n) fit): n ≈ {result.extrapolated_n} запитів на движок")
+            print(f"  target ±{TARGET_PP:.0f} pp NOT reached within the available data")
+            print(f"  extrapolation (1/sqrt(n) fit): n ≈ {result.extrapolated_n} queries per engine")
         print(f"  {result.fit_note}\n")
 
     print(
-        "Застереження: це емпіричний орієнтир для нашого сетапу (2 бренди fintech, "
-        "ці конкретні движки й запити), не універсальна формула мінімального "
-        "розміру вибірки — та строга параметрична формула лишається майбутньою "
-        "роботою (докладніше — docs/weeks/week4.md, докладний мастер-план)."
+        "Caveat: this is an empirical guideline for our setup (2 fintech brands, "
+        "these specific engines and queries), not a universal minimum sample size "
+        "formula — a rigorous parametric formula remains future work "
+        "(see docs/weeks/week4.md and the master plan)."
     )
 
 

@@ -13,6 +13,7 @@ import numpy as np
 from ..common import db
 from .bootstrap import bootstrap_ci
 from .mentions import build_candidate_dictionary, load_brand_profiles
+from .precision import BOOTSTRAP_RESAMPLES, MAX_SUBSAMPLES, MC_TOLERANCE_PP, MIN_SUBSAMPLES
 
 
 @dataclass
@@ -36,7 +37,7 @@ class CrossingResult:
 def pooled_mention_vectors() -> dict[tuple[str, str, str], list[bool]]:
     """(subject_brand, engine, mentioned_entity) -> boolean "mentioned in
     this response" vector, pooled across EVERY run in the database (not
-    scoped to one run_id like Тиждень 3's report.py) — convergence curves
+    scoped to one run_id like week 3's report.py) — convergence curves
     need more data points than any single run provides. Competitors only:
     own-brand mention rate is trivially high (see week3.md) and not
     interesting for a convergence curve either."""
@@ -66,18 +67,31 @@ def pooled_mention_vectors() -> dict[tuple[str, str, str], list[bool]]:
     return vectors
 
 
+def _std_error(values: list[float]) -> float:
+    return float(np.std(values, ddof=1) / np.sqrt(len(values)))
+
+
 def subsample_curve(
     mentioned: list[bool],
     sizes: list[int] | None = None,
-    n_subsamples: int = 200,
-    n_resamples: int = 500,
+    n_resamples: int = BOOTSTRAP_RESAMPLES,
+    tol_pp: float = MC_TOLERANCE_PP,
+    min_subsamples: int = MIN_SUBSAMPLES,
+    max_subsamples: int = MAX_SUBSAMPLES,
     seed: int | None = None,
 ) -> list[ConvergencePoint]:
-    """For each n in `sizes`, draw `n_subsamples` random subsamples of size
-    n without replacement from `mentioned`, run `bootstrap_ci()` on each,
-    and average the resulting CI half-width — an empirical "would a smaller
-    n have given us this much precision" curve. n = len(mentioned) has only
-    one possible subsample (the whole pool), so it is not resampled."""
+    """For each n in `sizes`, draw random subsamples of size n without
+    replacement from `mentioned`, run `bootstrap_ci()` on each, and average
+    the resulting CI half-width — an empirical "would a smaller n have given
+    us this much precision" curve. n = len(mentioned) has only one possible
+    subsample (the whole pool), so it is not resampled.
+
+    The number of subsamples per n is not fixed: drawing stops once the
+    standard error of the average half-width drops to `tol_pp` (but never
+    before `min_subsamples` or after `max_subsamples`), so the curve's own
+    simulation noise is bounded regardless of pool size. See precision.py
+    for why each default is what it is. `seed` makes the whole curve
+    deterministic, including the inner bootstrap."""
     n_total = len(mentioned)
     if n_total == 0:
         return []
@@ -91,20 +105,23 @@ def subsample_curve(
     for n in sizes:
         if n > n_total:
             continue
-        draws = n_subsamples if n < n_total else 1
-        widths = np.empty(draws)
-        estimates = np.empty(draws)
-        for i in range(draws):
+        max_draws = max_subsamples if n < n_total else 1
+        widths: list[float] = []
+        estimates: list[float] = []
+        while len(widths) < max_draws:
             idx = rng.choice(n_total, size=n, replace=False)
-            sample = values[idx].tolist()
-            point, lower, upper = bootstrap_ci(sample, n_resamples=n_resamples)
-            widths[i] = (upper - lower) / 2 * 100
-            estimates[i] = point
+            point, lower, upper = bootstrap_ci(
+                values[idx].tolist(), n_resamples=n_resamples, seed=int(rng.integers(2**32))
+            )
+            widths.append((upper - lower) / 2 * 100)
+            estimates.append(point)
+            if len(widths) >= min_subsamples and _std_error(widths) <= tol_pp:
+                break
         points.append(
             ConvergencePoint(
                 n=n,
-                avg_half_width_pp=float(widths.mean()),
-                point_estimate=float(estimates.mean()),
+                avg_half_width_pp=float(np.mean(widths)),
+                point_estimate=float(np.mean(estimates)),
             )
         )
     return points
@@ -112,15 +129,15 @@ def subsample_curve(
 
 def aggregate_curves_by_engine(
     vectors: dict[tuple[str, str, str], list[bool]],
-    n_subsamples: int = 200,
-    n_resamples: int = 500,
+    n_resamples: int = BOOTSTRAP_RESAMPLES,
+    tol_pp: float = MC_TOLERANCE_PP,
     seed: int | None = None,
 ) -> dict[str, list[ConvergencePoint]]:
     """One averaged curve per engine, across every (subject_brand,
     mentioned_entity) group for that engine — the master plan wants a
-    per-engine orientation figure, not 18 separate per-pair curves."""
+    per-engine orientation figure, not 20 separate per-pair curves."""
     curves_by_group: dict[tuple[str, str, str], list[ConvergencePoint]] = {
-        key: subsample_curve(mentioned, n_subsamples=n_subsamples, n_resamples=n_resamples, seed=seed)
+        key: subsample_curve(mentioned, n_resamples=n_resamples, tol_pp=tol_pp, seed=seed)
         for key, mentioned in vectors.items()
     }
 
@@ -177,7 +194,7 @@ def estimate_min_n(engine: str, curve: list[ConvergencePoint], target_pp: float 
 
     extrapolated_n = None
     if observed_n is not None:
-        fit_note = "спостережено безпосередньо в межах наявних даних"
+        fit_note = "observed directly within the available data"
     else:
         fit_points = [p for p in curve if p.n >= max(2, max_n // 2)]
         ns = np.array([p.n for p in fit_points], dtype=float)
@@ -186,8 +203,8 @@ def estimate_min_n(engine: str, curve: list[ConvergencePoint], target_pp: float 
         c = float(np.sum(widths * inv_sqrt_n) / np.sum(inv_sqrt_n**2))
         extrapolated_n = max(int(np.ceil((c / target_pp) ** 2)), max_n + 1)
         fit_note = (
-            f"екстраполяція за формою кривої 1/sqrt(n) (c≈{c:.2f}), підігнано "
-            f"на n∈[{fit_points[0].n}, {max_n}], не пряме спостереження"
+            f"extrapolated from the 1/sqrt(n) curve shape (c≈{c:.2f}), fitted "
+            f"on n∈[{fit_points[0].n}, {max_n}], not a direct observation"
         )
 
     return CrossingResult(

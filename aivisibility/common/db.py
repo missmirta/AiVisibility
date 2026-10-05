@@ -9,7 +9,7 @@ import json
 import sqlite3
 from collections.abc import Iterator
 from contextlib import contextmanager
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 
 from .config import DB_PATH, QUERIES_FILE
 
@@ -48,7 +48,8 @@ CREATE TABLE IF NOT EXISTS mentions (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     response_id INTEGER NOT NULL REFERENCES responses(id),
     brand_mentioned TEXT NOT NULL,
-    method TEXT NOT NULL
+    method TEXT NOT NULL,
+    created_at TEXT
 );
 """
 
@@ -65,9 +66,19 @@ def connect() -> Iterator[sqlite3.Connection]:
         conn.close()
 
 
+def _migrate(conn: sqlite3.Connection) -> None:
+    """Bring a pre-existing DB up to the current schema. `CREATE TABLE IF NOT
+    EXISTS` never alters an existing table, so new columns are added here.
+    Rows written before the column existed keep created_at = NULL."""
+    mention_cols = {row["name"] for row in conn.execute("PRAGMA table_info(mentions)")}
+    if "created_at" not in mention_cols:
+        conn.execute("ALTER TABLE mentions ADD COLUMN created_at TEXT")
+
+
 def init_db() -> None:
     with connect() as conn:
         conn.executescript(_SCHEMA)
+        _migrate(conn)
 
 
 def load_queries_from_json() -> int:
@@ -105,7 +116,7 @@ def create_run(notes: str | None = None) -> int:
     with connect() as conn:
         cur = conn.execute(
             "INSERT INTO runs (started_at, notes) VALUES (?, ?)",
-            (datetime.now(timezone.utc).isoformat(), notes),
+            (datetime.now(UTC).isoformat(), notes),
         )
         return cur.lastrowid
 
@@ -141,27 +152,41 @@ def insert_response(
                 cost_usd,
                 latency_ms,
                 error,
-                datetime.now(timezone.utc).isoformat(),
+                datetime.now(UTC).isoformat(),
             ),
         )
         return cur.lastrowid
 
 
-def get_responses_with_brand(run_id: int | None = None) -> list[sqlite3.Row]:
+def get_responses_with_brand(
+    run_id: int | None = None, since: str | None = None, until: str | None = None
+) -> list[sqlite3.Row]:
     """responses joined with their query's brand — what week 3 analysis
     reads to know which brand's candidate dictionary applies to each
     response. Pass run_id to scope to one run (for the report), or omit for
-    all responses (for detection)."""
+    all responses (for detection). Pass `since` (an ISO-8601 UTC string, the
+    format `created_at` is stored in) to keep only responses collected at or
+    after that moment, and `until` to keep only those collected before it —
+    a time window across runs."""
     sql = """
         SELECT r.id AS response_id, r.run_id, r.engine, r.raw_text, r.error,
                q.brand AS subject_brand, q.id AS query_id
         FROM responses r
         JOIN queries q ON q.id = r.query_id
     """
-    params: tuple = ()
+    where: list[str] = []
+    params: list = []
     if run_id is not None:
-        sql += " WHERE r.run_id = ?"
-        params = (run_id,)
+        where.append("r.run_id = ?")
+        params.append(run_id)
+    if since is not None:
+        where.append("r.created_at >= ?")
+        params.append(since)
+    if until is not None:
+        where.append("r.created_at < ?")
+        params.append(until)
+    if where:
+        sql += " WHERE " + " AND ".join(where)
     sql += " ORDER BY r.id"
     with connect() as conn:
         return conn.execute(sql, params).fetchall()
@@ -176,9 +201,11 @@ def replace_mentions_for_response(
     with connect() as conn:
         conn.execute("DELETE FROM mentions WHERE response_id = ?", (response_id,))
         if brands_mentioned:
+            now = datetime.now(UTC).isoformat()
             conn.executemany(
-                "INSERT INTO mentions (response_id, brand_mentioned, method) VALUES (?, ?, ?)",
-                [(response_id, brand, method) for brand in brands_mentioned],
+                "INSERT INTO mentions (response_id, brand_mentioned, method, created_at) "
+                "VALUES (?, ?, ?, ?)",
+                [(response_id, brand, method, now) for brand in brands_mentioned],
             )
 
 

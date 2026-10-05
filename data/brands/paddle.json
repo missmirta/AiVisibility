@@ -1,18 +1,18 @@
 {
   "brand": "Paddle",
-  "niche": "Paddle є Merchant of Record (MoR) для SaaS та digital products компаній, беручи на себе повний цикл платежів, глобальне податкове регулювання, білінг, підписки та комплаєнс замість продавця.",
+  "niche": "Merchant of record (MoR) billing and payments platform for SaaS and digital product companies, handling global payments, subscription billing, tax/VAT compliance, and checkout on their behalf",
   "competitors": [
+    "Stripe",
     "FastSpring",
     "Lemon Squeezy",
     "Chargebee",
-    "PayPro Global",
-    "2Checkout (Verifone)"
+    "Zuora"
   ],
-  "target_audience": "Основна цільова аудиторія — SaaS-компанії та розробники цифрових продуктів/підписок, які продають глобально і хочуть делегувати податки, комплаєнс та платіжну інфраструктуру, а не займатися цим самостійно.",
+  "target_audience": "SaaS and software companies (from startups to mid-market and enterprise) selling digital products/subscriptions internationally that want to outsource payments, billing, and global tax compliance instead of building it in-house.",
   "key_use_cases": [
-    "Продаж SaaS-підписок з автоматичним білінгом та управлінням життєвим циклом клієнта",
-    "Глобальні продажі цифрових товарів з автоматичним розрахунком та сплатою податків (VAT/GST/sales tax) у різних юрисдикціях",
-    "Обробка платежів та запобігання шахрайству/чарджбекам без потреби у власній ліцензії платіжного оператора",
-    "Локалізація цін, методів оплати та чекауту для міжнародних ринків"
+    "Selling SaaS subscriptions and software licenses globally without setting up local tax entities",
+    "Automating recurring billing, invoicing, and dunning for subscription businesses",
+    "Handling checkout, payment methods, and currency localization for international customers",
+    "Managing sales tax/VAT compliance and remittance across multiple jurisdictions"
   ]
 }

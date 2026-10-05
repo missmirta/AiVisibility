@@ -25,16 +25,16 @@ def main() -> None:
     for (_brand, engine, _entity), mentioned in vectors.items():
         pool_sizes[engine] = max(pool_sizes[engine], len(mentioned))
 
-    print("Пул даних (об'єднано через усі прогони, тижні 2-3):")
+    print("Data pool (merged across all runs, weeks 2-3):")
     for engine, n in sorted(pool_sizes.items()):
-        print(f"  {engine}: N={n} на (subject_brand, mentioned_entity)-групу")
-    print(f"  Груп (subject_brand x engine x конкурент): {len(vectors)}\n")
+        print(f"  {engine}: N={n} per (subject_brand, mentioned_entity) group")
+    print(f"  Groups (subject_brand x engine x competitor): {len(vectors)}\n")
 
     curves = aggregate_curves_by_engine(vectors, seed=42)
 
     for engine, curve in sorted(curves.items()):
-        print(f"{engine} (усереднено по групах-конкурентах, n=1..{curve[-1].n}):")
-        print("  n | середня ширина CI (в.п.) | точкова оцінка")
+        print(f"{engine} (averaged over competitor groups, n=1..{curve[-1].n}):")
+        print("  n | mean CI width (pp) | point estimate")
         for p in curve:
             print(f"  {p.n:>3} | {p.avg_half_width_pp:>6.1f} | {p.point_estimate * 100:>5.1f}%")
         print()
@@ -45,16 +45,16 @@ def main() -> None:
         ns = [p.n for p in curve]
         widths = [p.avg_half_width_pp for p in curve]
         ax.plot(ns, widths, marker="o", markersize=3, label=engine)
-    ax.axhline(5.0, color="gray", linestyle="--", linewidth=1, label="ціль ±5 в.п.")
-    ax.set_xlabel("n (кількість відповідей на групу)")
-    ax.set_ylabel("середня ширина bootstrap CI (в.п.)")
-    ax.set_title("Тиждень 4: криві збіжності mention rate конкурента (Stripe/Paddle)")
+    ax.axhline(5.0, color="gray", linestyle="--", linewidth=1, label="target ±5 pp")
+    ax.set_xlabel("n (responses per group)")
+    ax.set_ylabel("mean bootstrap CI width (pp)")
+    ax.set_title("Week 4: competitor mention rate convergence curves (Stripe/Paddle)")
     ax.legend()
     fig.tight_layout()
 
     out_path = REPORTS_DIR / "week4_convergence.png"
     fig.savefig(out_path, dpi=150)
-    print(f"Графік збережено: {out_path}")
+    print(f"Chart saved: {out_path}")
 
 
 if __name__ == "__main__":

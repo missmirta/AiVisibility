@@ -56,13 +56,13 @@ def main() -> None:
 
     print(f"mentions: {total_mentions} rows inserted across {len(responses)} responses.\n")
 
-    print("Унікальні згадані сутності на бренд (з можливих кандидатів):")
+    print("Unique mentioned entities per brand (out of possible candidates):")
     for brand in sorted(candidates_by_brand):
         unique_count = len(unique_entities_by_brand.get(brand, set()))
         total_candidates = len(candidates_by_brand[brand])
         print(f"  {brand}: {unique_count}/{total_candidates}")
 
-    print("\nMention rate власного бренду (sanity check, очікуємо >80%):")
+    print("\nOwn-brand mention rate (sanity check, expecting >80%):")
     for brand in sorted(own_brand_total):
         hits = own_brand_hits[brand]
         n = own_brand_total[brand]

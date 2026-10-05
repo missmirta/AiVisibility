@@ -12,12 +12,13 @@ from ..common.schemas import BrandProfile
 MAX_ATTEMPTS = 3
 
 _PROMPT_TEMPLATE = """\
-Research the company "{brand}"{url_hint} as a payment provider using web
-search. Find:
-- niche: which exact niche/segment of the payments market it operates in
+Research the company "{brand}"{url_hint} using web search. Find:
+- niche: which exact niche/segment of its market it operates in
   (1-2 sentences)
-- competitors: a list of at least 2 and at most 5 closest competitors
-  (company names only)
+- competitors: a list of at least 2 and at most 5 closest competitors.
+  Each entry must be the plain brand name exactly as people write it in
+  text (e.g. "PayPal"), with no parentheses, parent company, product
+  names or other annotations (not "PayPal (Braintree)")
 - target_audience: who the main target customer is (1-2 sentences)
 - key_use_cases: 2-4 typical usage scenarios
 
