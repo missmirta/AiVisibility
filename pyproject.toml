@@ -4,11 +4,16 @@ version = "0.1.0"
 requires-python = ">=3.12"
 dependencies = [
     "claude-agent-sdk>=0.2.160",
+    "fastapi>=0.142.2",
+    "httpx>=0.28.1",
     "matplotlib>=3.11.2",
+    "mlflow>=3.16.1",
     "numpy>=2.5.3",
     "openai>=3.19.2",
     "pydantic>=2.13.5",
     "python-dotenv>=1.2.3",
+    "scikit-learn>=1.9.1",
+    "uvicorn[standard]>=0.54.0",
 ]
 
 [dependency-groups]

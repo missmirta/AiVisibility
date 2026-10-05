@@ -1,0 +1,24 @@
+# MLflow tracking server + model API.
+# Train against the server from the host:
+#   MLFLOW_TRACKING_URI=http://localhost:5000 uv run python scripts/train_classifier.py --promote
+# then `docker compose restart api` to load the new production model.
+services:
+  mlflow:
+    build: .
+    command: >
+      mlflow server --host 0.0.0.0 --port 5000
+      --backend-store-uri sqlite:////mlflow/mlflow.db
+      --artifacts-destination /mlflow/artifacts --serve-artifacts
+    ports: ["5000:5000"]
+    volumes: ["mlflow-data:/mlflow"]
+
+  api:
+    build: .
+    environment:
+      MLFLOW_TRACKING_URI: http://mlflow:5000
+      STANCE_MODEL_URI: models:/stance-classifier@production
+    ports: ["8000:8000"]
+    depends_on: [mlflow]
+
+volumes:
+  mlflow-data:

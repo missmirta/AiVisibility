@@ -1,6 +1,7 @@
 """Paths, constants, and config for the Discovery, Query Generator, and
 Prober pipeline."""
 
+import os
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -52,3 +53,14 @@ OPENAI_MODEL = "gpt-4o-mini"
 OPENAI_PRICING_PER_MTOK = {
     "gpt-4o-mini": {"input": 0.15, "output": 0.60},
 }
+
+# --- Stance classifier (ML skeleton: train -> MLflow registry -> FastAPI) ---
+# Both URIs can be overridden from the environment (see .env.example), which
+# is how the Docker setup points the API at the MLflow server.
+STANCE_LABELS = ["recommended", "neutral", "negative"]
+STANCE_MODEL_NAME = "stance-classifier"
+STANCE_EXPERIMENT = "stance-classifier"
+STANCE_LABELS_FILE = DATA_DIR / "labels" / "stance.csv"
+MLFLOW_TRACKING_URI = os.getenv("MLFLOW_TRACKING_URI") or f"sqlite:///{DATA_DIR / 'mlflow' / 'mlflow.db'}"
+# "@production" is an alias in the MLflow Model Registry; use "/3" to pin a version.
+STANCE_MODEL_URI = os.getenv("STANCE_MODEL_URI") or f"models:/{STANCE_MODEL_NAME}@production"
