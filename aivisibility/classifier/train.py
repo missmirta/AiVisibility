@@ -15,18 +15,33 @@ from sklearn.preprocessing import FunctionTransformer
 
 from aivisibility.common import config
 
+from .embeddings import Embedder
 from .masking import mask_all
 
 
 def build_pipeline(
-    seed: int, C: float = 1.0, class_weight: str | None = None, mask: bool = True
+    seed: int, C: float = 1.0, class_weight: str | None = None, mask: bool = True, features: str = "tfidf"
 ) -> Pipeline:
-    """TF-IDF + logistic regression; `mask` hides brand names before vectorizing."""
+    """Features + logistic regression; `mask` hides brand names before vectorizing.
+
+    `features` is "tfidf" (word counts), "embed" (sentence embeddings) or "finetune"
+    (fine-tuned transformer, saved to MLflow with cloudpickle).
+    """
     steps = [("mask", FunctionTransformer(mask_all))] if mask else []
+    if features == "embed":
+        vectorizer = ("embed", Embedder())
+    elif features == "finetune":
+        from .finetune import TransformerClassifier  # lazy: importing torch is slow
+
+        return Pipeline(steps + [("clf", TransformerClassifier(balanced=class_weight == "balanced", seed=seed))])
+    elif features == "tfidf":
+        vectorizer = ("tfidf", TfidfVectorizer(ngram_range=(1, 2), min_df=1, sublinear_tf=True))
+    else:
+        raise ValueError(f"unknown features: {features!r}")
     return Pipeline(
         steps
         + [
-            ("tfidf", TfidfVectorizer(ngram_range=(1, 2), min_df=1, sublinear_tf=True)),
+            vectorizer,
             ("clf", LogisticRegression(C=C, class_weight=class_weight, max_iter=1000, random_state=seed)),
         ]
     )
@@ -53,6 +68,7 @@ def train(
     register: bool = True,
     groups: list[str] | None = None,
     mask: bool = True,
+    features: str = "tfidf",
 ) -> dict[str, float]:
     """Fit, evaluate on a held-out split, log everything to MLflow.
 
@@ -63,10 +79,10 @@ def train(
     mlflow.set_experiment(config.STANCE_EXPERIMENT)
 
     x_train, x_test, y_train, y_test = split(texts, labels, groups, test_size, seed)
-    pipe = build_pipeline(seed, C, class_weight, mask)
+    pipe = build_pipeline(seed, C, class_weight, mask, features)
 
     with mlflow.start_run():
-        mlflow.log_params({"seed": seed, "C": C, "class_weight": str(class_weight), "test_size": test_size, "mask": mask, "grouped": groups is not None, "n_train": len(x_train)})
+        mlflow.log_params({"seed": seed, "C": C, "class_weight": str(class_weight), "test_size": test_size, "mask": mask, "features": features, "grouped": groups is not None, "n_train": len(x_train)})
         pipe.fit(x_train, y_train)
         pred = pipe.predict(x_test)
         metrics = {
@@ -74,10 +90,21 @@ def train(
             "f1_macro": float(f1_score(y_test, pred, average="macro")),
         }
         mlflow.log_metrics(metrics)
+        # skops cannot store torch weights, so the fine-tuned model uses cloudpickle
+        format_args = (
+            {"serialization_format": "cloudpickle"}
+            if features == "finetune"
+            else {
+                "skops_trusted_types": [
+                    "aivisibility.classifier.masking.mask_all",
+                    "aivisibility.classifier.embeddings.Embedder",
+                ]
+            }
+        )
         mlflow.sklearn.log_model(
             pipe,
             name="model",
-            skops_trusted_types=["aivisibility.classifier.masking.mask_all"],
+            **format_args,
             registered_model_name=config.STANCE_MODEL_NAME if register else None,
         )
     return metrics

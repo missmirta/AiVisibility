@@ -35,6 +35,7 @@ def main() -> None:
     parser.add_argument("--C", type=float, default=1.0)
     parser.add_argument("--class-weight", choices=["balanced", "none"], default="balanced")
     parser.add_argument("--no-mask", action="store_true", help="skip brand masking (ablation)")
+    parser.add_argument("--features", choices=["tfidf", "embed", "finetune"], default="tfidf")
     parser.add_argument("--promote", action="store_true", help="point the production alias at the new version")
     args = parser.parse_args()
     args.class_weight = None if args.class_weight == "none" else args.class_weight
@@ -45,7 +46,7 @@ def main() -> None:
     texts, labels, groups = load_labeled(args.labels)
     metrics = train(
         texts, labels, seed=args.seed, C=args.C, class_weight=args.class_weight,
-        groups=groups, mask=not args.no_mask,
+        groups=groups, mask=not args.no_mask, features=args.features,
     )
     print(f"Trained on {len(texts)} rows: {metrics}")
 

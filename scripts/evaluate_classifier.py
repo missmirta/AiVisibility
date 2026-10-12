@@ -62,7 +62,7 @@ def gold_evaluation(rows, args) -> dict[str, float] | None:
 
     gold_responses = {r["response_id"] for r in gold}
     train_rows = [r for r in rows if r["response_id"] not in gold_responses]
-    pipe = build_pipeline(args.seed, args.C, args.class_weight, not args.no_mask)
+    pipe = build_pipeline(args.seed, args.C, args.class_weight, not args.no_mask, args.features)
     pipe.fit([r["text"] for r in train_rows], [r["label"] for r in train_rows])
     pred = pipe.predict([r["text"] for r in gold]).tolist()
     f1 = float(f1_score(human, pred, average="macro", zero_division=0))
@@ -79,6 +79,7 @@ def main() -> None:
     parser.add_argument("--C", type=float, default=1.0)
     parser.add_argument("--class-weight", choices=["balanced", "none"], default="balanced")
     parser.add_argument("--no-mask", action="store_true", help="skip brand masking (ablation)")
+    parser.add_argument("--features", choices=["tfidf", "embed", "finetune"], default="tfidf")
     parser.add_argument("--folds", type=int, default=5)
     args = parser.parse_args()
     args.class_weight = None if args.class_weight == "none" else args.class_weight
@@ -92,11 +93,11 @@ def main() -> None:
     mlflow.set_experiment(f"{config.STANCE_EXPERIMENT}-evaluation")
     with mlflow.start_run():
         mlflow.log_params(
-            {"seed": args.seed, "C": args.C, "class_weight": str(args.class_weight), "folds": args.folds, "mask": not args.no_mask, "n": len(rows)}
+            {"seed": args.seed, "C": args.C, "class_weight": str(args.class_weight), "folds": args.folds, "mask": not args.no_mask, "features": args.features, "n": len(rows)}
         )
         y_pred = group_cv_predictions(
             texts, y_true, groups, seed=args.seed, C=args.C, class_weight=args.class_weight, n_splits=args.folds,
-            mask=not args.no_mask,
+            mask=not args.no_mask, features=args.features,
         )
         f1, lo, hi = macro_f1_ci(y_true, y_pred, groups, seed=args.seed)
         base = majority_baseline(y_true)

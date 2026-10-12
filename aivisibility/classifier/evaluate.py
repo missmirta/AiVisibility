@@ -25,13 +25,14 @@ def group_cv_predictions(
     class_weight: str | None = None,
     n_splits: int = 5,
     mask: bool = True,
+    features: str = "tfidf",
 ) -> list[str]:
     """Out-of-fold prediction for every row; no group is in both train and test."""
     x, y, g = np.asarray(texts, dtype=object), np.asarray(labels), np.asarray(groups)
     pred = np.empty(len(y), dtype=object)
     folds = StratifiedGroupKFold(n_splits=n_splits, shuffle=True, random_state=seed)
     for train_idx, test_idx in folds.split(x, y, g):
-        pipe = build_pipeline(seed, C, class_weight, mask)
+        pipe = build_pipeline(seed, C, class_weight, mask, features)
         pipe.fit(x[train_idx].tolist(), y[train_idx].tolist())
         pred[test_idx] = pipe.predict(x[test_idx].tolist())
     return pred.tolist()
