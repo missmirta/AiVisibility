@@ -156,5 +156,345 @@
     "intent": "geography_coverage",
     "brand": "Paddle",
     "mentions_competitors": []
+  },
+  {
+    "text": "is it true that stripe is worse than adyen for large volumes, what do people complain about?",
+    "intent": "comparison",
+    "brand": "Stripe",
+    "mentions_competitors": [
+      "Adyen"
+    ]
+  },
+  {
+    "text": "what are the biggest complaints about stripe freezing accounts or holding payouts, should I be worried for a small business?",
+    "intent": "use-case",
+    "brand": "Stripe",
+    "mentions_competitors": []
+  },
+  {
+    "text": "is stripe too expensive once you get past a few thousand subscribers, are there cheaper alternatives?",
+    "intent": "fees_pricing",
+    "brand": "Stripe",
+    "mentions_competitors": []
+  },
+  {
+    "text": "is stripe a bad choice for a high-risk or crypto-adjacent business, what are the downsides?",
+    "intent": "use-case",
+    "brand": "Stripe",
+    "mentions_competitors": []
+  },
+  {
+    "text": "braintree vs stripe, why would anyone pick braintree and what is stripe's weak spot?",
+    "intent": "comparison",
+    "brand": "Stripe",
+    "mentions_competitors": [
+      "Braintree"
+    ]
+  },
+  {
+    "text": "stripe support is terrible, what do you do when a dispute or a payout problem comes up?",
+    "intent": "transactional",
+    "brand": "Stripe",
+    "mentions_competitors": []
+  },
+  {
+    "text": "why do people leave paddle for stripe plus a tax tool, what went wrong for them?",
+    "intent": "comparison",
+    "brand": "Paddle",
+    "mentions_competitors": []
+  },
+  {
+    "text": "paddle takes 5% + 50 cents, is that a rip off compared to lemon squeezy or stripe?",
+    "intent": "fees_pricing",
+    "brand": "Paddle",
+    "mentions_competitors": [
+      "Lemon Squeezy"
+    ]
+  },
+  {
+    "text": "what are the downsides of using paddle as merchant of record for a growing saas?",
+    "intent": "use-case",
+    "brand": "Paddle",
+    "mentions_competitors": []
+  },
+  {
+    "text": "paddle rejected my account application, is it hard to get approved and why do they reject so many saas?",
+    "intent": "transactional",
+    "brand": "Paddle",
+    "mentions_competitors": []
+  },
+  {
+    "text": "fastspring or paddle, which one has worse support and more payout delays?",
+    "intent": "comparison",
+    "brand": "Paddle",
+    "mentions_competitors": [
+      "FastSpring"
+    ]
+  },
+  {
+    "text": "i keep hearing paddle is bad for b2b invoicing and custom contracts, is that true and what should i use instead?",
+    "intent": "use-case",
+    "brand": "Paddle",
+    "mentions_competitors": []
+  },
+  {
+    "text": "adyen vs stripe for a european marketplace, where does stripe fall short?",
+    "intent": "comparison",
+    "brand": "Stripe",
+    "mentions_competitors": [
+      "Adyen"
+    ]
+  },
+  {
+    "text": "braintree or stripe for a subscription app, honestly which one has more downsides?",
+    "intent": "comparison",
+    "brand": "Stripe",
+    "mentions_competitors": [
+      "Braintree"
+    ]
+  },
+  {
+    "text": "stripe fees feel high for micropayments under $5, what do people use instead and why?",
+    "intent": "fees_pricing",
+    "brand": "Stripe",
+    "mentions_competitors": []
+  },
+  {
+    "text": "my stripe account got flagged and funds are on hold for 90 days, is this normal and how do others avoid it?",
+    "intent": "use-case",
+    "brand": "Stripe",
+    "mentions_competitors": []
+  },
+  {
+    "text": "stripe radar blocks legit customers, is the fraud tool worth the extra cost or should I use something else?",
+    "intent": "transactional",
+    "brand": "Stripe",
+    "mentions_competitors": []
+  },
+  {
+    "text": "stripe is not available in my country, what are the best alternatives and are they any good?",
+    "intent": "geography_coverage",
+    "brand": "Stripe",
+    "mentions_competitors": []
+  },
+  {
+    "text": "paypal vs stripe for freelancers, which one is worse for disputes and chargebacks?",
+    "intent": "comparison",
+    "brand": "Stripe",
+    "mentions_competitors": [
+      "PayPal"
+    ]
+  },
+  {
+    "text": "what are the common criticisms of stripe from developers and small businesses?",
+    "intent": "awareness",
+    "brand": "Stripe",
+    "mentions_competitors": []
+  },
+  {
+    "text": "is stripe a good fit for selling digital goods in the EU or does vat make it painful?",
+    "intent": "use-case",
+    "brand": "Stripe",
+    "mentions_competitors": []
+  },
+  {
+    "text": "is stripe really the cheapest option for a small saas, or does something like paddle or lemon squeezy beat it?",
+    "intent": "fees_pricing",
+    "brand": "Stripe",
+    "mentions_competitors": [
+      "Lemon Squeezy"
+    ]
+  },
+  {
+    "text": "what is the best payment processor to start a saas with, would you pick stripe?",
+    "intent": "use-case",
+    "brand": "Stripe",
+    "mentions_competitors": []
+  },
+  {
+    "text": "how do i set up stripe subscriptions with a free trial and proration in my backend?",
+    "intent": "transactional",
+    "brand": "Stripe",
+    "mentions_competitors": []
+  },
+  {
+    "text": "explain the difference between stripe connect, stripe billing and stripe checkout",
+    "intent": "awareness",
+    "brand": "Stripe",
+    "mentions_competitors": []
+  },
+  {
+    "text": "stripe vs square for an online store with a small physical shop too, which do you recommend?",
+    "intent": "comparison",
+    "brand": "Stripe",
+    "mentions_competitors": [
+      "Square"
+    ]
+  },
+  {
+    "text": "which countries does stripe support for payouts and which currencies can i charge in?",
+    "intent": "geography_coverage",
+    "brand": "Stripe",
+    "mentions_competitors": []
+  },
+  {
+    "text": "best payment stack for a developer-focused api product, is stripe the obvious choice?",
+    "intent": "use-case",
+    "brand": "Stripe",
+    "mentions_competitors": []
+  },
+  {
+    "text": "is stripe safe and trustworthy for a new online business?",
+    "intent": "awareness",
+    "brand": "Stripe",
+    "mentions_competitors": []
+  },
+  {
+    "text": "stripe checkout vs payment elements, which is easier to integrate and customize?",
+    "intent": "transactional",
+    "brand": "Stripe",
+    "mentions_competitors": []
+  },
+  {
+    "text": "how does stripe pricing work for international cards and currency conversion?",
+    "intent": "fees_pricing",
+    "brand": "Stripe",
+    "mentions_competitors": []
+  },
+  {
+    "text": "mollie or stripe for a dutch webshop, which one would you go with?",
+    "intent": "comparison",
+    "brand": "Stripe",
+    "mentions_competitors": [
+      "Mollie"
+    ]
+  },
+  {
+    "text": "lemon squeezy vs paddle, which one has worse payouts and support for small founders?",
+    "intent": "comparison",
+    "brand": "Paddle",
+    "mentions_competitors": [
+      "Lemon Squeezy"
+    ]
+  },
+  {
+    "text": "paddle fee is 5% + 50 cents, at what revenue does it stop making sense versus stripe plus a tax service?",
+    "intent": "fees_pricing",
+    "brand": "Paddle",
+    "mentions_competitors": []
+  },
+  {
+    "text": "paddle froze my payout after a chargeback spike, what can i do and is this a common complaint?",
+    "intent": "use-case",
+    "brand": "Paddle",
+    "mentions_competitors": []
+  },
+  {
+    "text": "how strict is paddle's account review for saas products, why do so many apps get rejected?",
+    "intent": "transactional",
+    "brand": "Paddle",
+    "mentions_competitors": []
+  },
+  {
+    "text": "chargebee vs paddle for enterprise billing, where does paddle lack features?",
+    "intent": "comparison",
+    "brand": "Paddle",
+    "mentions_competitors": [
+      "Chargebee"
+    ]
+  },
+  {
+    "text": "what do customers complain about with paddle as the seller of record on their invoices?",
+    "intent": "awareness",
+    "brand": "Paddle",
+    "mentions_competitors": []
+  },
+  {
+    "text": "is paddle a bad idea if i sell b2b with purchase orders and custom contracts?",
+    "intent": "use-case",
+    "brand": "Paddle",
+    "mentions_competitors": []
+  },
+  {
+    "text": "paddle does not support some countries for payouts, what are the best alternatives for those sellers?",
+    "intent": "geography_coverage",
+    "brand": "Paddle",
+    "mentions_competitors": []
+  },
+  {
+    "text": "fastspring or paddle for a software company, what are the biggest drawbacks of each?",
+    "intent": "comparison",
+    "brand": "Paddle",
+    "mentions_competitors": [
+      "FastSpring"
+    ]
+  },
+  {
+    "text": "are there hidden costs with paddle like fx fees, refunds or chargebacks that make it expensive?",
+    "intent": "fees_pricing",
+    "brand": "Paddle",
+    "mentions_competitors": []
+  },
+  {
+    "text": "best merchant of record for a bootstrapped saas selling worldwide, would you pick paddle?",
+    "intent": "use-case",
+    "brand": "Paddle",
+    "mentions_competitors": []
+  },
+  {
+    "text": "what is a merchant of record and how is paddle different from stripe?",
+    "intent": "awareness",
+    "brand": "Paddle",
+    "mentions_competitors": []
+  },
+  {
+    "text": "how long does it take to integrate paddle billing in a nextjs app?",
+    "intent": "transactional",
+    "brand": "Paddle",
+    "mentions_competitors": []
+  },
+  {
+    "text": "paddle vs polar vs lemon squeezy for an indie developer, which one do you recommend?",
+    "intent": "comparison",
+    "brand": "Paddle",
+    "mentions_competitors": [
+      "Lemon Squeezy"
+    ]
+  },
+  {
+    "text": "which countries and currencies does paddle support and how are taxes handled in each?",
+    "intent": "geography_coverage",
+    "brand": "Paddle",
+    "mentions_competitors": []
+  },
+  {
+    "text": "is paddle good for selling desktop software licenses and handling vat automatically?",
+    "intent": "use-case",
+    "brand": "Paddle",
+    "mentions_competitors": []
+  },
+  {
+    "text": "is paddle legit and reliable for a saas that wants to avoid tax headaches?",
+    "intent": "awareness",
+    "brand": "Paddle",
+    "mentions_competitors": []
+  },
+  {
+    "text": "how does paddle pricing compare to doing vat registration myself with stripe tax?",
+    "intent": "fees_pricing",
+    "brand": "Paddle",
+    "mentions_competitors": []
+  },
+  {
+    "text": "how does paddle handle refunds, chargebacks and failed subscription payments?",
+    "intent": "transactional",
+    "brand": "Paddle",
+    "mentions_competitors": []
+  },
+  {
+    "text": "stripe or paddle for a saas launching in europe and the us next quarter?",
+    "intent": "comparison",
+    "brand": "Paddle",
+    "mentions_competitors": []
   }
 ]

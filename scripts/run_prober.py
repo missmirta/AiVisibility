@@ -1,10 +1,11 @@
 """Run every stored query through each configured engine and store the
 results. Safe to re-run repeatedly (e.g. daily via cron/Task Scheduler) —
 each run gets its own run_id, no dedup needed.
-Run: python scripts/run_prober.py [--dry-run] [--max-budget-usd 5.0]
+Run: python scripts/run_prober.py [--dry-run] [--max-budget-usd 5.0] [--from-query-id 25]
 
 --dry-run          print what would be probed and make zero API calls.
 --max-budget-usd   stop the run once the accumulated cost reaches this cap.
+--from-query-id   probe only queries with this id or higher (e.g. just the newly added ones).
 """
 
 import argparse
@@ -21,12 +22,12 @@ from aivisibility.prober import claude_prober, openai_prober
 PROBERS = [claude_prober, openai_prober]
 
 
-async def main(dry_run: bool, max_budget_usd: float | None) -> None:
+async def main(dry_run: bool, max_budget_usd: float | None, from_query_id: int | None = None) -> None:
     db.init_db()
     inserted = db.load_queries_from_json()
     print(f"Loaded queries table ({inserted} new rows).")
 
-    queries = db.get_all_queries()
+    queries = db.get_all_queries() if from_query_id is None else db.get_queries_from(from_query_id)
     if dry_run:
         print(
             f"[dry-run] would send {len(queries) * len(PROBERS)} requests "
@@ -82,5 +83,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--max-budget-usd", type=float, default=None)
+    parser.add_argument("--from-query-id", type=int, default=None, help="probe only queries with this id or higher")
     args = parser.parse_args()
-    asyncio.run(main(args.dry_run, args.max_budget_usd))
+    asyncio.run(main(args.dry_run, args.max_budget_usd, args.from_query_id))

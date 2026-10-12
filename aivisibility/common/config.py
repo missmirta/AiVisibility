@@ -58,6 +58,12 @@ OPENAI_PRICING_PER_MTOK = {
 # Both URIs can be overridden from the environment (see .env.example), which
 # is how the Docker setup points the API at the MLflow server.
 STANCE_LABELS = ["recommended", "neutral", "negative"]
+# Brands masked as OTHERBRAND when they appear next to the target brand.
+STANCE_KNOWN_BRANDS = [
+    "Stripe", "Paddle", "Lemon Squeezy", "PayPal", "Adyen", "Braintree", "FastSpring",
+    "Chargebee", "Square", "Checkout.com", "Mollie", "Razorpay", "Authorize.net",
+    "2Checkout", "Klarna", "Worldpay", "Shopify Payments",
+]
 STANCE_MODEL_NAME = "stance-classifier"
 STANCE_EXPERIMENT = "stance-classifier"
 STANCE_LABELS_FILE = DATA_DIR / "labels" / "stance.csv"

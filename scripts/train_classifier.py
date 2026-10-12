@@ -18,13 +18,14 @@ from aivisibility.classifier.train import latest_version, promote, train
 from aivisibility.common import config
 
 
-def load_labeled(path: Path) -> tuple[list[str], list[str]]:
+def load_labeled(path: Path) -> tuple[list[str], list[str], list[str] | None]:
     with open(path, encoding="utf-8", newline="") as f:
         rows = list(csv.DictReader(f))
     bad = {r["label"] for r in rows} - set(config.STANCE_LABELS)
     if bad:
         raise SystemExit(f"Unknown labels in {path}: {sorted(bad)}")
-    return [r["text"] for r in rows], [r["label"] for r in rows]
+    groups = [r["response_id"] for r in rows] if rows and "response_id" in rows[0] else None
+    return [r["text"] for r in rows], [r["label"] for r in rows], groups
 
 
 def main() -> None:
@@ -32,14 +33,20 @@ def main() -> None:
     parser.add_argument("--labels", type=Path, default=config.STANCE_LABELS_FILE)
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--C", type=float, default=1.0)
+    parser.add_argument("--class-weight", choices=["balanced", "none"], default="balanced")
+    parser.add_argument("--no-mask", action="store_true", help="skip brand masking (ablation)")
     parser.add_argument("--promote", action="store_true", help="point the production alias at the new version")
     args = parser.parse_args()
+    args.class_weight = None if args.class_weight == "none" else args.class_weight
 
     if not args.labels.exists():
         raise SystemExit(f"No labels file at {args.labels}")
 
-    texts, labels = load_labeled(args.labels)
-    metrics = train(texts, labels, seed=args.seed, C=args.C)
+    texts, labels, groups = load_labeled(args.labels)
+    metrics = train(
+        texts, labels, seed=args.seed, C=args.C, class_weight=args.class_weight,
+        groups=groups, mask=not args.no_mask,
+    )
     print(f"Trained on {len(texts)} rows: {metrics}")
 
     if args.promote:

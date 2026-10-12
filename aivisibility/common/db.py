@@ -107,6 +107,12 @@ def get_all_queries() -> list[sqlite3.Row]:
         return conn.execute("SELECT * FROM queries ORDER BY id").fetchall()
 
 
+def get_queries_from(min_id: int) -> list[sqlite3.Row]:
+    """Queries with id >= min_id, so a run can cover only the newer ones."""
+    with connect() as conn:
+        return conn.execute("SELECT * FROM queries WHERE id >= ? ORDER BY id", (min_id,)).fetchall()
+
+
 def get_run_ids() -> list[int]:
     with connect() as conn:
         return [row["id"] for row in conn.execute("SELECT id FROM runs ORDER BY id").fetchall()]
