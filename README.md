@@ -44,6 +44,12 @@ uv run ruff check .          # лінтер
 викликів адитивна й не залежить від порядку. Деталі й повний метод —
 `docs/weeks/week5.md`.
 
+## Класифікатор тональності
+
+Модель визначає, як ШІ подає бренд (`recommended` / `neutral` / `negative`):
+розмітка через Claude, навчання, оцінка на ручному gold-наборі. Команди,
+результати й відкриті питання — `docs/stance_classifier.md`.
+
 ## Посилання
 
 - [New Research: AIs Are Highly Inconsistent When Recommending Brands or Products](https://sparktoro.com/blog/new-research-ais-are-highly-inconsistent-when-recommending-brands-or-products-marketers-should-take-care-when-tracking-ai-visibility/)
