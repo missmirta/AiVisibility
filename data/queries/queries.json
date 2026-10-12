@@ -496,5 +496,256 @@
     "intent": "comparison",
     "brand": "Paddle",
     "mentions_competitors": []
+  },
+  {
+    "text": "what are the biggest downsides of stripe compared to adyen or braintree for a growing company",
+    "intent": "comparison",
+    "brand": "Stripe",
+    "mentions_competitors": [
+      "Adyen",
+      "Braintree"
+    ]
+  },
+  {
+    "text": "stripe vs square for a shop with both online and in-person sales, where does stripe fall short",
+    "intent": "comparison",
+    "brand": "Stripe",
+    "mentions_competitors": [
+      "Square"
+    ]
+  },
+  {
+    "text": "is stripe terminal really behind adyen's pos, what is missing",
+    "intent": "comparison",
+    "brand": "Stripe",
+    "mentions_competitors": [
+      "Adyen"
+    ]
+  },
+  {
+    "text": "stripe billing vs chargebee, which one is more limited for complex subscription plans",
+    "intent": "comparison",
+    "brand": "Stripe",
+    "mentions_competitors": [
+      "Chargebee"
+    ]
+  },
+  {
+    "text": "why do some companies move from stripe to braintree or adyen, what does stripe lack",
+    "intent": "comparison",
+    "brand": "Stripe",
+    "mentions_competitors": [
+      "Braintree",
+      "Adyen"
+    ]
+  },
+  {
+    "text": "stripe or paypal for a small saas, which has worse fees and worse support",
+    "intent": "comparison",
+    "brand": "Stripe",
+    "mentions_competitors": [
+      "PayPal"
+    ]
+  },
+  {
+    "text": "honest comparison of stripe, paypal and square for marketplaces, who is weakest",
+    "intent": "comparison",
+    "brand": "Stripe",
+    "mentions_competitors": [
+      "PayPal",
+      "Square"
+    ]
+  },
+  {
+    "text": "stripe connect vs paypal for marketplaces vs adyen for platforms, pros and cons of each",
+    "intent": "comparison",
+    "brand": "Stripe",
+    "mentions_competitors": [
+      "PayPal",
+      "Adyen"
+    ]
+  },
+  {
+    "text": "is braintree's api outdated compared to stripe, would you still pick it",
+    "intent": "comparison",
+    "brand": "Stripe",
+    "mentions_competitors": [
+      "Braintree"
+    ]
+  },
+  {
+    "text": "stripe vs lemon squeezy vs paddle for a solo founder, which is the worst fit and why",
+    "intent": "comparison",
+    "brand": "Stripe",
+    "mentions_competitors": [
+      "Lemon Squeezy",
+      "Paddle"
+    ]
+  },
+  {
+    "text": "what do people dislike about stripe fees versus paypal and adyen",
+    "intent": "comparison",
+    "brand": "Stripe",
+    "mentions_competitors": [
+      "PayPal",
+      "Adyen"
+    ]
+  },
+  {
+    "text": "stripe vs chargebee vs zuora for subscription billing, which ones are too heavy or too basic",
+    "intent": "comparison",
+    "brand": "Stripe",
+    "mentions_competitors": [
+      "Chargebee",
+      "Zuora"
+    ]
+  },
+  {
+    "text": "where does stripe's international acquiring lag behind adyen, is it a real problem for a big retailer",
+    "intent": "comparison",
+    "brand": "Stripe",
+    "mentions_competitors": [
+      "Adyen"
+    ]
+  },
+  {
+    "text": "stripe vs paypal vs braintree for recurring payments, which has the most limitations",
+    "intent": "comparison",
+    "brand": "Stripe",
+    "mentions_competitors": [
+      "PayPal",
+      "Braintree"
+    ]
+  },
+  {
+    "text": "I need a payment provider for ukraine based freelancers, why is stripe not an option and what is worse about paypal",
+    "intent": "comparison",
+    "brand": "Stripe",
+    "mentions_competitors": [
+      "PayPal"
+    ]
+  },
+  {
+    "text": "what are the disadvantages of paddle compared to stripe for a saas startup",
+    "intent": "comparison",
+    "brand": "Paddle",
+    "mentions_competitors": [
+      "Stripe"
+    ]
+  },
+  {
+    "text": "paddle vs lemon squeezy, which one has weaker support and fewer features",
+    "intent": "comparison",
+    "brand": "Paddle",
+    "mentions_competitors": [
+      "Lemon Squeezy"
+    ]
+  },
+  {
+    "text": "paddle vs fastspring for software sales, where is paddle less flexible",
+    "intent": "comparison",
+    "brand": "Paddle",
+    "mentions_competitors": [
+      "FastSpring"
+    ]
+  },
+  {
+    "text": "why do some founders leave paddle for stripe plus a tax tool, what goes wrong with paddle",
+    "intent": "comparison",
+    "brand": "Paddle",
+    "mentions_competitors": [
+      "Stripe"
+    ]
+  },
+  {
+    "text": "paddle vs chargebee for subscription billing, which one is more limited",
+    "intent": "comparison",
+    "brand": "Paddle",
+    "mentions_competitors": [
+      "Chargebee"
+    ]
+  },
+  {
+    "text": "merchant of record comparison paddle vs lemon squeezy vs fastspring, who is worst on payouts and fees",
+    "intent": "comparison",
+    "brand": "Paddle",
+    "mentions_competitors": [
+      "Lemon Squeezy",
+      "FastSpring"
+    ]
+  },
+  {
+    "text": "is paddle more expensive than stripe once tax is included, is the premium worth it",
+    "intent": "comparison",
+    "brand": "Paddle",
+    "mentions_competitors": [
+      "Stripe"
+    ]
+  },
+  {
+    "text": "paddle's checkout vs stripe checkout, which is less customizable and by how much",
+    "intent": "comparison",
+    "brand": "Paddle",
+    "mentions_competitors": [
+      "Stripe"
+    ]
+  },
+  {
+    "text": "paddle or paypal for selling digital downloads in the EU, which is the weaker choice",
+    "intent": "comparison",
+    "brand": "Paddle",
+    "mentions_competitors": [
+      "PayPal"
+    ]
+  },
+  {
+    "text": "complaints about paddle account reviews and payouts, is stripe or lemon squeezy better here",
+    "intent": "comparison",
+    "brand": "Paddle",
+    "mentions_competitors": [
+      "Stripe",
+      "Lemon Squeezy"
+    ]
+  },
+  {
+    "text": "paddle vs braintree for a global saas, which one handles vat worse",
+    "intent": "comparison",
+    "brand": "Paddle",
+    "mentions_competitors": [
+      "Braintree"
+    ]
+  },
+  {
+    "text": "I'm choosing between paddle, stripe and adyen for a b2b saas, which two should I cross off",
+    "intent": "comparison",
+    "brand": "Paddle",
+    "mentions_competitors": [
+      "Stripe",
+      "Adyen"
+    ]
+  },
+  {
+    "text": "does paddle lack features that stripe billing has, like usage-based billing",
+    "intent": "comparison",
+    "brand": "Paddle",
+    "mentions_competitors": [
+      "Stripe"
+    ]
+  },
+  {
+    "text": "paddle vs square for selling software online, which is a worse fit",
+    "intent": "comparison",
+    "brand": "Paddle",
+    "mentions_competitors": [
+      "Square"
+    ]
+  },
+  {
+    "text": "is paddle's reporting and api weaker than stripe's, what do developers say",
+    "intent": "comparison",
+    "brand": "Paddle",
+    "mentions_competitors": [
+      "Stripe"
+    ]
   }
 ]
