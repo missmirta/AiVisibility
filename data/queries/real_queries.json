@@ -1,0 +1,2846 @@
+[
+  {
+    "text": "What Working at Stripe Has Been Like",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=19422833",
+    "created_at": "2019-03-18T17:02:18Z"
+  },
+  {
+    "text": "How the Collison brothers turned ‘seven lines of code’ into Stripe",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=14902696",
+    "created_at": "2017-08-01T16:46:27Z"
+  },
+  {
+    "text": "How Stripe teaches employees to code",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=14269590",
+    "created_at": "2017-05-04T22:54:16Z"
+  },
+  {
+    "text": "How Stripe Designs Websites",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=15838270",
+    "created_at": "2017-12-03T16:37:39Z"
+  },
+  {
+    "text": "How Stripe Designs Websites (2017)",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=23079289",
+    "created_at": "2020-05-05T12:31:45Z"
+  },
+  {
+    "text": "How does onlyfans.com work around the “no porn” Stripe rule?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=24291790",
+    "created_at": "2020-08-27T09:43:57Z"
+  },
+  {
+    "text": "Why we ditched PayPal for Stripe",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=3331556",
+    "created_at": "2011-12-08T22:52:38Z"
+  },
+  {
+    "text": "Why doesn't Stripe use Stripe Billing?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=33191307",
+    "created_at": "2022-10-13T14:19:05Z"
+  },
+  {
+    "text": "Should I switch from Chargebee to Paddle for my SaaS?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=25715496",
+    "created_at": "2021-01-10T15:24:01Z"
+  },
+  {
+    "text": "What Paddle doesn't tell you about implementing metered billing",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=47675928",
+    "created_at": "2026-04-07T14:26:39Z"
+  },
+  {
+    "text": "Anyone using Paddle as a payment provider?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=19471531",
+    "created_at": "2019-03-23T18:03:48Z"
+  },
+  {
+    "text": "Compare Fees of SaaS Payment Providers (Stripe/Paddle/Lemon Squeezy)",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=39450534",
+    "created_at": "2024-02-21T05:42:21Z"
+  },
+  {
+    "text": "SaaS Fees Calculator – Stripe vs. Paddle vs. Lemon Squeezy vs. Cream",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=42246650",
+    "created_at": "2024-11-26T15:36:14Z"
+  },
+  {
+    "text": "Merchant of Record. Vat. Payment Fees. Stripe or Paddle?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=40032722",
+    "created_at": "2024-04-14T17:29:33Z"
+  },
+  {
+    "text": "Is there a paddle/fastspring like service for marketplaces?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=17353003",
+    "created_at": "2018-06-20T06:17:56Z"
+  },
+  {
+    "text": "Paddle Alternative for Payments (From India)",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=44365327",
+    "created_at": "2025-06-24T12:15:39Z"
+  },
+  {
+    "text": "Stripe or Paddle?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=30476127",
+    "created_at": "2022-02-26T08:41:27Z"
+  },
+  {
+    "text": "How do you handle VAT / Sales Tax accounting as B2C SaaS?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=43298663",
+    "created_at": "2025-03-08T08:57:10Z"
+  },
+  {
+    "text": "How do you handle Global Tax (VAT, GST, etc.) when using Stripe?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=38250015",
+    "created_at": "2023-11-13T13:44:18Z"
+  },
+  {
+    "text": "Which payment processor/merchant-of-record do you use in 2026?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=48738624",
+    "created_at": "2026-06-30T20:18:56Z"
+  },
+  {
+    "text": "What is the simplest Stripe payments link demo?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=36398609",
+    "created_at": "2023-06-20T01:22:46Z"
+  },
+  {
+    "text": "Paypal alternatives",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=1969389",
+    "created_at": "2010-12-04T15:41:47Z"
+  },
+  {
+    "text": "Why I am always on the lookout for a PayPal alternative",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=5667094",
+    "created_at": "2013-05-07T08:46:23Z"
+  },
+  {
+    "text": "PayPal Alternatives for Startups",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=19771573",
+    "created_at": "2019-04-28T15:22:18Z"
+  },
+  {
+    "text": "Paypal alternatives for vendors outside the US?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=9123336",
+    "created_at": "2015-02-28T10:18:00Z"
+  },
+  {
+    "text": "Visa Launches PayPal Alternative",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=1459775",
+    "created_at": "2010-06-25T01:56:31Z"
+  },
+  {
+    "text": "How recent PayPal alternatives are better",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=18075027",
+    "created_at": "2018-09-26T12:06:37Z"
+  },
+  {
+    "text": "PayPal Customer Service Is Painful; WePay Is the PayPal Alternative",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=6642596",
+    "created_at": "2013-10-30T19:19:48Z"
+  },
+  {
+    "text": "PayPal Alternatives for Subscriptions*",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=1681060",
+    "created_at": "2010-09-11T05:39:39Z"
+  },
+  {
+    "text": "ASK: Paypal alternatives?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=1332158",
+    "created_at": "2010-05-09T15:37:02Z"
+  },
+  {
+    "text": "PayPal Alternative to Square is a Triangle",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=3709763",
+    "created_at": "2012-03-15T18:13:53Z"
+  },
+  {
+    "text": "Looking for paypal alternative I could use for subscriptions.",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=3345910",
+    "created_at": "2011-12-13T01:30:49Z"
+  },
+  {
+    "text": "35 Of The best PayPal alternatives, all in one place",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=19260672",
+    "created_at": "2019-02-27T03:42:22Z"
+  },
+  {
+    "text": "American Express Launches Its Own PayPal Alternative",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=9858157",
+    "created_at": "2015-07-09T14:52:01Z"
+  },
+  {
+    "text": "Dash Is Determined to Supersede Bitcoin as a Real PayPal Alternative",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=10980066",
+    "created_at": "2016-01-27T14:19:37Z"
+  },
+  {
+    "text": "Paypal alternative in India",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=9762479",
+    "created_at": "2015-06-23T03:38:42Z"
+  },
+  {
+    "text": "Paypal alternative for adult sites",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=9123663",
+    "created_at": "2015-02-28T13:54:45Z"
+  },
+  {
+    "text": "American Express Launching Paypal Alternative",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=2378601",
+    "created_at": "2011-03-28T15:09:31Z"
+  },
+  {
+    "text": "Its high time that the world needs some good PayPal alternatives",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=21546435",
+    "created_at": "2019-11-15T16:57:03Z"
+  },
+  {
+    "text": "Paypal/Stripe Alternatives for Vendors in Africa?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=19994922",
+    "created_at": "2019-05-23T19:10:29Z"
+  },
+  {
+    "text": "Interview AlertPay : how they built it (paypal alternative)",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=1907551",
+    "created_at": "2010-11-15T19:40:09Z"
+  },
+  {
+    "text": "Any real Paypal alternatives? With Mass-pay?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=1344491",
+    "created_at": "2010-05-13T15:21:20Z"
+  },
+  {
+    "text": "What is a good alternative to PayPal?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=3493807",
+    "created_at": "2012-01-21T16:12:31Z"
+  },
+  {
+    "text": "Are there decent alternatives to PayPal?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=1750179",
+    "created_at": "2010-10-02T10:19:13Z"
+  },
+  {
+    "text": "Alternative to Paypal \"Buy buttons\" for European-based companies?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=2811748",
+    "created_at": "2011-07-27T12:01:44Z"
+  },
+  {
+    "text": "For Indian SaaS startups, alternative to Paypal for recurring payments?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=2287271",
+    "created_at": "2011-03-04T06:58:15Z"
+  },
+  {
+    "text": "alternative for paypal",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=615131",
+    "created_at": "2009-05-18T15:38:29Z"
+  },
+  {
+    "text": "Alternatives to PayPal for receiving money?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=8806029",
+    "created_at": "2014-12-28T11:28:51Z"
+  },
+  {
+    "text": "Alternatives to PayPal for Australian company",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=3246184",
+    "created_at": "2011-11-17T02:45:05Z"
+  },
+  {
+    "text": "Alternative to PayPal Moneypools?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=29408779",
+    "created_at": "2021-12-01T20:31:36Z"
+  },
+  {
+    "text": "Canada launched its local alternative to PayPal",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=45975849",
+    "created_at": "2025-11-19T04:29:07Z"
+  },
+  {
+    "text": "Monerium’s Blockchain Backed Alternative to PayPal and Google Pay",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=20232243",
+    "created_at": "2019-06-20T12:39:19Z"
+  },
+  {
+    "text": "Is Wirecard a Real Alternative to PayPal? (2008)",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=32824537",
+    "created_at": "2022-09-13T14:13:45Z"
+  },
+  {
+    "text": "An open source alternative to Paypal's Autosweep",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=1978545",
+    "created_at": "2010-12-07T09:42:34Z"
+  },
+  {
+    "text": "Payment alternatives to Paypal?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=6488434",
+    "created_at": "2013-10-03T12:36:49Z"
+  },
+  {
+    "text": "Alternatives to Paypal and Stripe",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=23330719",
+    "created_at": "2020-05-27T22:10:11Z"
+  },
+  {
+    "text": "what are other payment alternatives than Paypal for international users?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=7588596",
+    "created_at": "2014-04-14T20:16:58Z"
+  },
+  {
+    "text": "Google-eBay merger suggested as alternative to PayPal spinoff",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=7422170",
+    "created_at": "2014-03-18T14:40:55Z"
+  },
+  {
+    "text": "Our Alternative To PayPal - Paperless Payments",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=6720315",
+    "created_at": "2013-11-12T19:35:58Z"
+  },
+  {
+    "text": "Is there an alternative to PayPal for 'Donate' buttons?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=3822897",
+    "created_at": "2012-04-10T16:16:13Z"
+  },
+  {
+    "text": "What payment processing system do you use/recommend?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=8559219",
+    "created_at": "2014-11-04T21:43:30Z"
+  },
+  {
+    "text": "Use WePay instead of Paypal?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=1679458",
+    "created_at": "2010-09-10T17:14:35Z"
+  },
+  {
+    "text": "Alternatives to Google, PayPal, Amazon, etc.",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=23489175",
+    "created_at": "2020-06-11T14:21:29Z"
+  },
+  {
+    "text": "PayPal: Need a simple, stable alternative",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=1800757",
+    "created_at": "2010-10-17T16:49:08Z"
+  },
+  {
+    "text": "Why doesn't Paypal create their own virtual currency (alternative to bitcoin)?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=5604898",
+    "created_at": "2013-04-25T00:13:05Z"
+  },
+  {
+    "text": "Any payment processing advice?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=288388",
+    "created_at": "2008-08-27T19:33:38Z"
+  },
+  {
+    "text": "What are some good Stripe alternatives?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=5458618",
+    "created_at": "2013-03-29T00:49:43Z"
+  },
+  {
+    "text": "Alternatives to Stripe?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=36791297",
+    "created_at": "2023-07-19T18:45:40Z"
+  },
+  {
+    "text": "Experiences with PayPal? Would you recommend or kill it with fire?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=1663922",
+    "created_at": "2010-09-05T03:12:05Z"
+  },
+  {
+    "text": "Braintree (payments gateway) alternative for startups outside the US?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=2726437",
+    "created_at": "2011-07-04T13:09:59Z"
+  },
+  {
+    "text": "Stripe alternative for India for payment processing",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=44331244",
+    "created_at": "2025-06-20T19:39:52Z"
+  },
+  {
+    "text": "Stripe Alternatives",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=22404632",
+    "created_at": "2020-02-24T15:12:49Z"
+  },
+  {
+    "text": "Is PayPal a good option for my startup?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=11176293",
+    "created_at": "2016-02-25T18:04:24Z"
+  },
+  {
+    "text": "Stripe alternatives with worldwide merchants for non-business",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=8479471",
+    "created_at": "2014-10-19T20:17:57Z"
+  },
+  {
+    "text": "Alternative to Stripe?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=21712466",
+    "created_at": "2019-12-05T14:26:46Z"
+  },
+  {
+    "text": "Alternatives to Stripe Allowing MSB (Money Service Business)",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=11315929",
+    "created_at": "2016-03-18T22:55:46Z"
+  },
+  {
+    "text": "Payment processor for a global marketplace (Stripe Connect alternative)?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=23460684",
+    "created_at": "2020-06-08T20:54:35Z"
+  },
+  {
+    "text": "Alternative ebook distribution & sales with Gmail, GoogleDocs & Paypal",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=2102524",
+    "created_at": "2011-01-14T04:18:17Z"
+  },
+  {
+    "text": "purchases not eligible for paypal seller protection?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=5190514",
+    "created_at": "2013-02-08T22:31:20Z"
+  },
+  {
+    "text": "Are there any good Stripe alternatives?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=15715191",
+    "created_at": "2017-11-16T18:30:40Z"
+  },
+  {
+    "text": "Payment Processor Alternatives?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=32724482",
+    "created_at": "2022-09-05T14:10:44Z"
+  },
+  {
+    "text": "What Is a good alternative to stripe",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=20476370",
+    "created_at": "2019-07-19T05:23:20Z"
+  },
+  {
+    "text": "Ash HN: Best Micropayment Processor?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=37812436",
+    "created_at": "2023-10-08T17:18:02Z"
+  },
+  {
+    "text": "Stripe 2.9% vs. Adyen 0.6% vs. Braintree 2.59%: 2026 Fees",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=49319061",
+    "created_at": "2026-08-16T11:34:12Z"
+  },
+  {
+    "text": "Stripe vs Adyen",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=24145090",
+    "created_at": "2020-08-13T16:25:00Z"
+  },
+  {
+    "text": "How Adyen predicts and monitors payment volumes with Spark and ElasticSearch",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=21285687",
+    "created_at": "2019-10-17T19:46:33Z"
+  },
+  {
+    "text": "Deep Dive: Stripe vs. Adyen: Comparing 2024 Performance",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=44095307",
+    "created_at": "2025-05-26T08:38:07Z"
+  },
+  {
+    "text": "Stripe vs. Adyen (2018)",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=23590644",
+    "created_at": "2020-06-21T08:18:40Z"
+  },
+  {
+    "text": "Adyen MarketPay: an alternative to Stripe Connect and Braintree Marketplace",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=17312287",
+    "created_at": "2018-06-14T15:12:36Z"
+  },
+  {
+    "text": "Payment gateway for multi-vendor marketplace as an early stage startup?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=36405491",
+    "created_at": "2023-06-20T15:32:04Z"
+  },
+  {
+    "text": "How to migrate between payment processors?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=32822328",
+    "created_at": "2022-09-13T09:58:41Z"
+  },
+  {
+    "text": "Unified API for PSPs?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=40149188",
+    "created_at": "2024-04-24T20:29:45Z"
+  },
+  {
+    "text": "Stripe Connect Alternatives for Platforms?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=27921886",
+    "created_at": "2021-07-22T17:39:02Z"
+  },
+  {
+    "text": "How to increase your checkout conversions",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=15457459",
+    "created_at": "2017-10-12T12:29:06Z"
+  },
+  {
+    "text": "How PSD2 impacts the payment landscape: Essentials",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=16168366",
+    "created_at": "2018-01-17T14:59:19Z"
+  },
+  {
+    "text": "How Braintree destroyed a successful taxi startup from Serbia",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=13910074",
+    "created_at": "2017-03-19T22:30:19Z"
+  },
+  {
+    "text": "Why did we switch from Braintree to Stripe?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=14990365",
+    "created_at": "2017-08-11T15:05:30Z"
+  },
+  {
+    "text": "Braintree Founder On Decision To Raise Capital vs. Continuing to Bootstrap",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=2710585",
+    "created_at": "2011-06-29T18:24:47Z"
+  },
+  {
+    "text": "Stripe or Braintree?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=12070089",
+    "created_at": "2016-07-11T10:30:46Z"
+  },
+  {
+    "text": "How Braintree Interviews Exceptional Developers",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=3447467",
+    "created_at": "2012-01-10T16:18:19Z"
+  },
+  {
+    "text": "Subscriptions: Braintree vs. Chargify/Recurly, etc.",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=1753154",
+    "created_at": "2010-10-03T17:43:18Z"
+  },
+  {
+    "text": "Is Braintree as evil as PayPal?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=11132036",
+    "created_at": "2016-02-19T06:49:40Z"
+  },
+  {
+    "text": "Is Braintree on its death bed?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=32952108",
+    "created_at": "2022-09-23T14:05:32Z"
+  },
+  {
+    "text": "How Braintree moved its data center 25 miles without downtime",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=3448386",
+    "created_at": "2012-01-10T18:56:39Z"
+  },
+  {
+    "text": "How Braintree maintains lean infrastructure scaling to $4B in payments a year",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=3567542",
+    "created_at": "2012-02-08T17:46:23Z"
+  },
+  {
+    "text": "Is Braintree’s great customer service worth $25,000?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=2928483",
+    "created_at": "2011-08-26T13:58:46Z"
+  },
+  {
+    "text": "How Bryan Johnson has Taken Braintree to Explosive Growth in Three Years",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=2024625",
+    "created_at": "2010-12-20T15:51:24Z"
+  },
+  {
+    "text": "Braintree shut me down with zero notice. Who do I migrate to?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=10126195",
+    "created_at": "2015-08-26T21:38:47Z"
+  },
+  {
+    "text": "Has anyone ran into any limitations with Stripe or Braintree?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=6973975",
+    "created_at": "2013-12-28T04:45:40Z"
+  },
+  {
+    "text": "How did Braintree build a PCI compliant gateway so quickly?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=2846399",
+    "created_at": "2011-08-04T15:39:08Z"
+  },
+  {
+    "text": "Braintree, Stripe Connect, or WePay?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=10032578",
+    "created_at": "2015-08-10T03:59:54Z"
+  },
+  {
+    "text": "Why is Stripe's API better than Braintree's API?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=7792454",
+    "created_at": "2014-05-24T02:45:18Z"
+  },
+  {
+    "text": "Ask N.YC: Are there alternatives to Braintree's remote credit card storage?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=344498",
+    "created_at": "2008-10-26T19:22:05Z"
+  },
+  {
+    "text": "Stripe vs. Braintree: Why BrainTree Lost",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=9920923",
+    "created_at": "2015-07-21T07:32:30Z"
+  },
+  {
+    "text": "Braintree eyes cease-and-desist order vs. Uber",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=9383073",
+    "created_at": "2015-04-15T18:32:30Z"
+  },
+  {
+    "text": "PaymentSpring vs. The World: How We Stack Up to PayPal, Stripe and Braintree",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=16550872",
+    "created_at": "2018-03-09T10:19:08Z"
+  },
+  {
+    "text": "Marketplace Payments for Developers: Paypal vs. Stripe vs. Braintree vs. Dwolla",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=15686825",
+    "created_at": "2017-11-13T14:48:33Z"
+  },
+  {
+    "text": "Stripe or Braintree for payment gateway?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=5678077",
+    "created_at": "2013-05-09T00:36:26Z"
+  },
+  {
+    "text": "How Stripe beat Braintree at their own game",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=10388956",
+    "created_at": "2015-10-14T19:49:25Z"
+  },
+  {
+    "text": "Why We've Agreed to Acquire Braintree",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=6453416",
+    "created_at": "2013-09-26T20:25:08Z"
+  },
+  {
+    "text": "Is it required for a startup to be registered to accept payments?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=14823514",
+    "created_at": "2017-07-21T20:17:58Z"
+  },
+  {
+    "text": "Could router logs help find missing Iowa student Mollie Tibbetts?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=17656591",
+    "created_at": "2018-07-31T20:04:41Z"
+  },
+  {
+    "text": "Are there any merchant of records that don't dox you?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=47531873",
+    "created_at": "2026-03-26T15:41:09Z"
+  },
+  {
+    "text": "Merchant of Record for Selling NFTs?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=31142370",
+    "created_at": "2022-04-24T09:07:25Z"
+  },
+  {
+    "text": "What Is the Better – Merchant of Record or a Payment Gateway?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=19143292",
+    "created_at": "2019-02-12T13:36:10Z"
+  },
+  {
+    "text": "How to implement payment and other for one person SaaS",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=33928587",
+    "created_at": "2022-12-10T00:59:18Z"
+  },
+  {
+    "text": "How do you handle international taxation for subscription apps?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=46351597",
+    "created_at": "2025-12-22T05:23:12Z"
+  },
+  {
+    "text": "(DIY?) Stripe Connect Alternative",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=20568016",
+    "created_at": "2019-07-30T18:59:20Z"
+  },
+  {
+    "text": "What payment gateways do you use for your app?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=1182653",
+    "created_at": "2010-03-11T02:20:47Z"
+  },
+  {
+    "text": "Merchant account and payment gateway for subscription-based web apps?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=598920",
+    "created_at": "2009-05-08T00:21:58Z"
+  },
+  {
+    "text": "Got an I/O ticket...only to have payment gateway fail?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=5368574",
+    "created_at": "2013-03-13T14:26:02Z"
+  },
+  {
+    "text": "What payment gateway do you use?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=79066",
+    "created_at": "2007-11-13T05:26:35Z"
+  },
+  {
+    "text": "Compare Payment Gateway Fees [PayPal, Square, Dwolla, etc]",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=3937197",
+    "created_at": "2012-05-07T01:48:54Z"
+  },
+  {
+    "text": "How to set up a payment gateway",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=225119",
+    "created_at": "2008-06-23T14:11:59Z"
+  },
+  {
+    "text": "Can individual setup payment gateway like stripe easily?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=41407641",
+    "created_at": "2024-08-31T09:47:41Z"
+  },
+  {
+    "text": "Subscription Payment Gateway?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=1052879",
+    "created_at": "2010-01-14T16:10:46Z"
+  },
+  {
+    "text": "Why arent there any mobile browsers with payment gateways built in?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=3286260",
+    "created_at": "2011-11-28T15:41:34Z"
+  },
+  {
+    "text": "Best payment gateway for storing credit cards?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=1160341",
+    "created_at": "2010-03-02T01:08:42Z"
+  },
+  {
+    "text": "Payment gateway options other than Stripe?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=14064982",
+    "created_at": "2017-04-08T02:42:04Z"
+  },
+  {
+    "text": "which payment gateway do you use and why?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=1339434",
+    "created_at": "2010-05-11T22:22:53Z"
+  },
+  {
+    "text": "What are some Japanese Payment Gateways?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=5962943",
+    "created_at": "2013-06-29T16:47:40Z"
+  },
+  {
+    "text": "Will Apple/Google/FB ever reduce the 30% fee off their payment gateways?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=3287170",
+    "created_at": "2011-11-28T19:19:07Z"
+  },
+  {
+    "text": "What payment gateways are you using for a subscription-based service",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=44925641",
+    "created_at": "2025-08-16T18:04:58Z"
+  },
+  {
+    "text": "Crypto payment gateways and the new travel rule advice?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=42968120",
+    "created_at": "2025-02-07T00:56:49Z"
+  },
+  {
+    "text": "How Do SaaS Startups Choose Payment Gateways?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=40887925",
+    "created_at": "2024-07-06T03:09:16Z"
+  },
+  {
+    "text": "Ask YC: How do payment gateway users collect VAT?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=771599",
+    "created_at": "2009-08-18T22:41:32Z"
+  },
+  {
+    "text": "Favorite recurring billing payment gateway?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=5523152",
+    "created_at": "2013-04-10T04:04:32Z"
+  },
+  {
+    "text": "Payment Gateways?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=1781857",
+    "created_at": "2010-10-12T00:46:20Z"
+  },
+  {
+    "text": "Any payment gateways for a UK gambling website?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=15680232",
+    "created_at": "2017-11-12T08:58:11Z"
+  },
+  {
+    "text": "How to choose a payment gateway?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=13712996",
+    "created_at": "2017-02-23T11:06:01Z"
+  },
+  {
+    "text": "Best payment gateway for small transactions?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=24551683",
+    "created_at": "2020-09-22T06:54:29Z"
+  },
+  {
+    "text": "What do you think of the integrating payment gateway into your business?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=27745537",
+    "created_at": "2021-07-06T08:28:19Z"
+  },
+  {
+    "text": "Best online payment gateway for freelance contractor",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=1475846",
+    "created_at": "2010-06-30T19:15:42Z"
+  },
+  {
+    "text": "Anyone self-host their payment gateway?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=1792799",
+    "created_at": "2010-10-14T21:54:06Z"
+  },
+  {
+    "text": "How to Choose Best Payment Gateway for Ecommerce",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=17194308",
+    "created_at": "2018-05-31T06:14:27Z"
+  },
+  {
+    "text": "What is your choice of payment gateway?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=1632304",
+    "created_at": "2010-08-25T08:12:07Z"
+  },
+  {
+    "text": "Is there payment ecommerce gateway without VAT?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=12479265",
+    "created_at": "2016-09-12T12:58:44Z"
+  },
+  {
+    "text": "How Payment Gateways are Doing in the Arab World's Emerging Markets",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=5263421",
+    "created_at": "2013-02-22T09:07:02Z"
+  },
+  {
+    "text": "How to pick the right payment gateway",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=261378",
+    "created_at": "2008-07-30T02:09:04Z"
+  },
+  {
+    "text": "How Payments Providers Screw You (2015)",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=23123316",
+    "created_at": "2020-05-09T09:35:47Z"
+  },
+  {
+    "text": "Best Micro Payment provider?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=432284",
+    "created_at": "2009-01-13T17:20:01Z"
+  },
+  {
+    "text": "What is the preferred payment provider for micropayments?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=2107679",
+    "created_at": "2011-01-15T20:10:16Z"
+  },
+  {
+    "text": "What payment provider today for a side project?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=12758870",
+    "created_at": "2016-10-21T07:56:17Z"
+  },
+  {
+    "text": "Payment providers for UK startups?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=3333267",
+    "created_at": "2011-12-09T10:24:49Z"
+  },
+  {
+    "text": "What is your experience with payment providers as a startup?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=1572544",
+    "created_at": "2010-08-03T19:59:40Z"
+  },
+  {
+    "text": "Looking for a UK payment provider - recommendations?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=2709052",
+    "created_at": "2011-06-29T11:12:12Z"
+  },
+  {
+    "text": "Do you use multiple payment providers?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=34931628",
+    "created_at": "2023-02-24T23:19:58Z"
+  },
+  {
+    "text": "Is there a payment provider for monthly changing subscription rates?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=14851711",
+    "created_at": "2017-07-25T20:47:12Z"
+  },
+  {
+    "text": "Which payment provider do you use?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=12331146",
+    "created_at": "2016-08-21T15:03:56Z"
+  },
+  {
+    "text": "Which payment provider do you use? Any problems with them?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=33744045",
+    "created_at": "2022-11-25T16:35:41Z"
+  },
+  {
+    "text": "Apple is looking to strike deals with ‘alternative payments’ providers",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=27298589",
+    "created_at": "2021-05-27T02:14:29Z"
+  },
+  {
+    "text": "Is there a payment provider that allows you to take deposit without fee?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=20774859",
+    "created_at": "2019-08-23T05:52:51Z"
+  },
+  {
+    "text": "Recurring payment provider fees at 10-15M/yr?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=17938874",
+    "created_at": "2018-09-08T01:29:34Z"
+  },
+  {
+    "text": "Are there any good SMS payment providers?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=2896956",
+    "created_at": "2011-08-17T21:06:49Z"
+  },
+  {
+    "text": "Should we start switching payment providers dynamically",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=46223195",
+    "created_at": "2025-12-10T20:21:17Z"
+  },
+  {
+    "text": "How to Pick a Recurring Billing and Payment Provider",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=5935078",
+    "created_at": "2013-06-24T19:22:53Z"
+  },
+  {
+    "text": "What $10k a month in sales costs you on each payment provider",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=49891768",
+    "created_at": "2026-09-29T12:05:04Z"
+  },
+  {
+    "text": "Cryptocurrency (Monero) payment provider recommendations?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=47754090",
+    "created_at": "2026-04-13T16:04:52Z"
+  },
+  {
+    "text": "How we changed our payment service provider over an A/B test via HAProxy",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=13763433",
+    "created_at": "2017-03-01T13:20:30Z"
+  },
+  {
+    "text": "What is a secure payment provider for Ecuador?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=4625956",
+    "created_at": "2012-10-08T08:06:18Z"
+  },
+  {
+    "text": "Good payment provider in Europe?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=3585414",
+    "created_at": "2012-02-13T13:15:15Z"
+  },
+  {
+    "text": "What is the best payment processing provider?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=7262869",
+    "created_at": "2014-02-19T10:13:03Z"
+  },
+  {
+    "text": "What is the best modern payment provider for your business?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=8657769",
+    "created_at": "2014-11-25T14:13:26Z"
+  },
+  {
+    "text": "payment gateways/providers that don't require a bank account?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=6640203",
+    "created_at": "2013-10-30T08:49:14Z"
+  },
+  {
+    "text": "What's the best way to link to external payment providers?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=4488351",
+    "created_at": "2012-09-07T09:58:18Z"
+  },
+  {
+    "text": "Can your payment provider take care of PCI compliance for you?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=3879255",
+    "created_at": "2012-04-23T15:30:50Z"
+  },
+  {
+    "text": "What is the best subscription payment provider for a mobile app?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=34639788",
+    "created_at": "2023-02-03T11:19:29Z"
+  },
+  {
+    "text": "Why don't you become a payment provider? A disambiguation.",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=2632288",
+    "created_at": "2011-06-08T07:11:55Z"
+  },
+  {
+    "text": "How Online Payments Providers Screw You",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=14005350",
+    "created_at": "2017-03-31T16:24:44Z"
+  },
+  {
+    "text": "How we did it: Changing payment service provider over an A/B test via HAProxy",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=13809874",
+    "created_at": "2017-03-07T12:37:25Z"
+  },
+  {
+    "text": "How do you motivate yourself to keep working on a project?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=18903886",
+    "created_at": "2019-01-14T15:55:46Z"
+  },
+  {
+    "text": "Best payment processor?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=11356560",
+    "created_at": "2016-03-24T21:23:15Z"
+  },
+  {
+    "text": "Why do all payment processors charge 2.9% + $0.30 per transaction?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=6533653",
+    "created_at": "2013-10-11T15:17:32Z"
+  },
+  {
+    "text": "Favorite payment processor?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=2003395",
+    "created_at": "2010-12-14T06:56:03Z"
+  },
+  {
+    "text": "Can payment processors like Stripe and their fees be avoided?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=29734974",
+    "created_at": "2021-12-30T08:56:09Z"
+  },
+  {
+    "text": "Ask YC: Best credit card payment processor?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=200920",
+    "created_at": "2008-05-27T12:44:07Z"
+  },
+  {
+    "text": "What payment processor can a private individual use to offer a service?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=22901410",
+    "created_at": "2020-04-17T18:10:53Z"
+  },
+  {
+    "text": "Making a live-mode test payment to yourself = a payment processor ToS violation?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=42836981",
+    "created_at": "2025-01-27T03:07:27Z"
+  },
+  {
+    "text": "What's the cheapest ACH payment processor for marketplaces?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=23278958",
+    "created_at": "2020-05-23T01:24:25Z"
+  },
+  {
+    "text": "What's the most cost effective payment processor for $1 transactions?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=2605738",
+    "created_at": "2011-06-01T02:52:14Z"
+  },
+  {
+    "text": "Why doesn't USPS act as a payment processor?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=45868943",
+    "created_at": "2025-11-09T20:38:22Z"
+  },
+  {
+    "text": "Which payments processors to use for recurring subscriptions in India?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=11224459",
+    "created_at": "2016-03-04T15:45:46Z"
+  },
+  {
+    "text": "Best payment processor for marketplace webapp",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=4223115",
+    "created_at": "2012-07-10T11:27:01Z"
+  },
+  {
+    "text": "Payment processors becoming card networks?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=36952343",
+    "created_at": "2023-08-01T04:34:36Z"
+  },
+  {
+    "text": "Micropayment payment processor outside US, GB, AU,EU?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=2572800",
+    "created_at": "2011-05-22T06:40:18Z"
+  },
+  {
+    "text": "Simplification of multiple payment processors?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=6574962",
+    "created_at": "2013-10-19T01:30:23Z"
+  },
+  {
+    "text": "Why are chargebacks such a big concern for payment processors?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=27676379",
+    "created_at": "2021-06-29T14:36:32Z"
+  },
+  {
+    "text": "Is an Open-Source Payment Processor Feasible?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=37919187",
+    "created_at": "2023-10-17T18:12:04Z"
+  },
+  {
+    "text": "Payment processor for non-profit donations?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=10752320",
+    "created_at": "2015-12-17T16:18:33Z"
+  },
+  {
+    "text": "What merchant account and payment processor do you recommend?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=1302497",
+    "created_at": "2010-04-28T19:45:32Z"
+  },
+  {
+    "text": "Bitcoin payment processor EgoPay has ceased trading, millions in funds stolen?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=8906872",
+    "created_at": "2015-01-18T06:24:49Z"
+  },
+  {
+    "text": "Merchant Accounts & Payment Processors in the US?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=902790",
+    "created_at": "2009-10-26T07:55:38Z"
+  },
+  {
+    "text": "Favorite payment processor (2014)?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=7739864",
+    "created_at": "2014-05-13T18:43:47Z"
+  },
+  {
+    "text": "Why do payment processors charge a percent fee on transactions?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=27595676",
+    "created_at": "2021-06-22T18:58:45Z"
+  },
+  {
+    "text": "How would you make a payment processor web/app technology wise?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=27686606",
+    "created_at": "2021-06-30T09:30:57Z"
+  },
+  {
+    "text": "Which payment processor do you use?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=13336471",
+    "created_at": "2017-01-06T14:40:07Z"
+  },
+  {
+    "text": "What payment processor do you use?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=16470822",
+    "created_at": "2018-02-27T03:10:08Z"
+  },
+  {
+    "text": "Fintech Engineers, why not build an open source payment processor in EU?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=36854410",
+    "created_at": "2023-07-24T21:25:08Z"
+  },
+  {
+    "text": "Chargify vs. Spreedly vs. Cheddargetter: Subscription-Billing Service Prices",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=975301",
+    "created_at": "2009-12-03T21:48:09Z"
+  },
+  {
+    "text": "A subscription/recurring billing service that just works. Any ideas?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=918700",
+    "created_at": "2009-11-03T05:41:52Z"
+  },
+  {
+    "text": "Why is subscription billing hard?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=4661050",
+    "created_at": "2012-10-16T18:04:50Z"
+  },
+  {
+    "text": "What makes a good subscription billing system?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=21878929",
+    "created_at": "2019-12-25T15:47:57Z"
+  },
+  {
+    "text": "Subscription-billing management service for startups?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=6206388",
+    "created_at": "2013-08-13T15:44:08Z"
+  },
+  {
+    "text": "Subscription management/billing software?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=266022",
+    "created_at": "2008-08-04T05:18:25Z"
+  },
+  {
+    "text": "Authorize.net Vs Zuora Vs Aria for Subscription Billing",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=509114",
+    "created_at": "2009-03-09T21:45:04Z"
+  },
+  {
+    "text": "Best SaaS for handling billing (subscription)?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=13936211",
+    "created_at": "2017-03-22T23:48:44Z"
+  },
+  {
+    "text": "How do I integrate subscription billing to my SaaS",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=8757865",
+    "created_at": "2014-12-16T16:44:33Z"
+  },
+  {
+    "text": "Which Billing & Subscriptions App to Choose for your Business?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=3024004",
+    "created_at": "2011-09-21T22:38:41Z"
+  },
+  {
+    "text": "What do you use for SaaS subscription billing?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=969800",
+    "created_at": "2009-12-01T14:48:52Z"
+  },
+  {
+    "text": "AppViz: WTF? Answers about Cloud Storage, Subscription Billing",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=6764013",
+    "created_at": "2013-11-19T20:05:30Z"
+  },
+  {
+    "text": "Which Billing & Subscriptions App to Chose for your Business?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=2284345",
+    "created_at": "2011-03-03T15:28:20Z"
+  },
+  {
+    "text": "How early in a new startup do people think about subscription billing?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=37380394",
+    "created_at": "2023-09-04T13:42:47Z"
+  },
+  {
+    "text": "Do BillingCircle, Spreedly, Chargify, Cheddargetter need Authorize.net?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=1065419",
+    "created_at": "2010-01-20T18:48:27Z"
+  },
+  {
+    "text": "Simplest way to add paid subscription plan to my webapp?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=24323879",
+    "created_at": "2020-08-30T16:31:45Z"
+  },
+  {
+    "text": "What is the best billing system?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=2394679",
+    "created_at": "2011-04-01T02:25:57Z"
+  },
+  {
+    "text": "How do you implement and manage subscription plans in your SaaS app?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=22739426",
+    "created_at": "2020-03-31T16:43:18Z"
+  },
+  {
+    "text": "What can I use for customer management with Stripe for billing?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=17668612",
+    "created_at": "2018-08-02T01:33:24Z"
+  },
+  {
+    "text": "Do you think Stripe integration with SaaS should be simpler?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=17838518",
+    "created_at": "2018-08-24T23:15:41Z"
+  },
+  {
+    "text": "Modern subscriptions for installed apps?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=16380356",
+    "created_at": "2018-02-14T23:00:55Z"
+  },
+  {
+    "text": "What are you using to accept payment for a simple SaaS?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=38669946",
+    "created_at": "2023-12-17T02:56:30Z"
+  },
+  {
+    "text": "Should B2B SaaS businesses accept payment by bank transfer?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=30007160",
+    "created_at": "2022-01-20T10:40:20Z"
+  },
+  {
+    "text": "Is it ok to start a Delaware Corp solely to accept payments?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=3054310",
+    "created_at": "2011-09-29T21:07:46Z"
+  },
+  {
+    "text": "What's the easiest way to accept multiple payment method on website?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=17167097",
+    "created_at": "2018-05-27T14:59:05Z"
+  },
+  {
+    "text": "USA-based SaaS and Candian payments?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=15536425",
+    "created_at": "2017-10-23T19:56:35Z"
+  },
+  {
+    "text": "How should I accept payments from pilot customers?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=24884048",
+    "created_at": "2020-10-25T05:21:48Z"
+  },
+  {
+    "text": "What countries is it impossible to accept payments from?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=10912292",
+    "created_at": "2016-01-15T21:36:22Z"
+  },
+  {
+    "text": "Is getting banned on Stripe many years ago a death sentence?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=20010437",
+    "created_at": "2019-05-25T18:24:26Z"
+  },
+  {
+    "text": "What to do with invoices on a side project?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=6658724",
+    "created_at": "2013-11-02T10:03:27Z"
+  },
+  {
+    "text": "Reject by Stripe Match?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=21306225",
+    "created_at": "2019-10-20T18:54:09Z"
+  },
+  {
+    "text": "Can H1-B holder open Stripe account and accepts payments?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=16111939",
+    "created_at": "2018-01-10T01:44:32Z"
+  },
+  {
+    "text": "Is accepting bitcoins as payment putting a target on your back?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=6697923",
+    "created_at": "2013-11-08T18:10:01Z"
+  },
+  {
+    "text": "SaaS Startups do you accept bank transfers for payment?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=2909069",
+    "created_at": "2011-08-21T12:30:01Z"
+  },
+  {
+    "text": "Why SaaS companies do not offer other payment methods?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=17197604",
+    "created_at": "2018-05-31T16:25:39Z"
+  },
+  {
+    "text": "Best way for online payments by installments?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=8784336",
+    "created_at": "2014-12-22T18:33:38Z"
+  },
+  {
+    "text": "Is it me, or are Stripe fees somehow getting worse?",
+    "source": "hackernews",
+    "url": "https://news.ycombinator.com/item?id=38206550",
+    "created_at": "2023-11-09T15:52:26Z"
+  },
+  {
+    "text": "How to create stripe token using @stripe/stripe-react-native library",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/74769427/how-to-create-stripe-token-using-stripe-stripe-react-native-library",
+    "created_at": "2022-12-12T10:05:00+00:00"
+  },
+  {
+    "text": "Is it possible to search for a Stripe customer by their email?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/26767150/is-it-possible-to-search-for-a-stripe-customer-by-their-email",
+    "created_at": "2014-11-05T21:08:30+00:00"
+  },
+  {
+    "text": "Stripe + TypeScript: How to extend @types/stripe definitions for stripe-node?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/52295518/stripe-typescript-how-to-extend-types-stripe-definitions-for-stripe-node",
+    "created_at": "2018-09-12T12:44:10+00:00"
+  },
+  {
+    "text": "Is it possible to set localhost as a Stripe webhook URL?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/15357356/is-it-possible-to-set-localhost-as-a-stripe-webhook-url",
+    "created_at": "2013-03-12T09:21:11+00:00"
+  },
+  {
+    "text": "How to pass email to stripe when using stripe elements?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/54571056/how-to-pass-email-to-stripe-when-using-stripe-elements",
+    "created_at": "2019-02-07T10:18:09+00:00"
+  },
+  {
+    "text": "Stripe payment form constantly reloads @stripe/react-stripe-js preventDefault not working?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/77877818/stripe-payment-form-constantly-reloads-stripe-react-stripe-js-preventdefault-no",
+    "created_at": "2024-01-25T06:06:43+00:00"
+  },
+  {
+    "text": "How can I style a Stripe Elements input with Bootstrap?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/46039315/how-can-i-style-a-stripe-elements-input-with-bootstrap",
+    "created_at": "2017-09-04T14:35:39+00:00"
+  },
+  {
+    "text": "Do not collect Zip code with Stripe",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/46863072/do-not-collect-zip-code-with-stripe",
+    "created_at": "2017-10-21T12:08:55+00:00"
+  },
+  {
+    "text": "How to point stripe-go to stripe-mock local server?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/47528679/how-to-point-stripe-go-to-stripe-mock-local-server",
+    "created_at": "2017-11-28T10:01:31+00:00"
+  },
+  {
+    "text": "Why does Stripe CLI testing fail with dj-stripe?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/69531754/why-does-stripe-cli-testing-fail-with-dj-stripe",
+    "created_at": "2021-10-11T19:51:44+00:00"
+  },
+  {
+    "text": "Integration Stripe Angular, Cannot find name 'Stripe'. Did you mean 'stripe'?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/67908667/integration-stripe-angular-cannot-find-name-stripe-did-you-mean-stripe",
+    "created_at": "2021-06-09T17:01:58+00:00"
+  },
+  {
+    "text": "How to fix Installation request for stripe/stripe-php ^6.37 -> satisfiable by stripe/stripe-php[v6.37.0]. error",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/56514649/how-to-fix-installation-request-for-stripe-stripe-php-6-37-satisfiable-by-st",
+    "created_at": "2019-06-09T12:36:53+00:00"
+  },
+  {
+    "text": "Is it possible to pass custom data to stripe checkout?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/55742393/is-it-possible-to-pass-custom-data-to-stripe-checkout",
+    "created_at": "2019-04-18T08:49:07+00:00"
+  },
+  {
+    "text": "can't generate stripe accountSessions",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/77502101/cant-generate-stripe-accountsessions",
+    "created_at": "2023-11-17T13:40:33+00:00"
+  },
+  {
+    "text": "how to register user in STRIPE through STRIPE API in PHP",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/38012587/how-to-register-user-in-stripe-through-stripe-api-in-php",
+    "created_at": "2016-06-24T11:40:05+00:00"
+  },
+  {
+    "text": "How to check if a Stripe Error exists / puts a Stripe Error if it exists",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/54675874/how-to-check-if-a-stripe-error-exists-puts-a-stripe-error-if-it-exists",
+    "created_at": "2019-02-13T17:11:44+00:00"
+  },
+  {
+    "text": "Stripe vs Balanced",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/14289347/stripe-vs-balanced",
+    "created_at": "2013-01-12T01:46:14+00:00"
+  },
+  {
+    "text": "A worthy developer-friendly alternative to PayPal",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/5787776/a-worthy-developer-friendly-alternative-to-paypal",
+    "created_at": "2011-04-26T08:28:37+00:00"
+  },
+  {
+    "text": "PayPal: Alternative to PayPal's Developer Account",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/15380994/paypal-alternative-to-paypals-developer-account",
+    "created_at": "2013-03-13T09:10:14+00:00"
+  },
+  {
+    "text": "Disable alternative methods in Paypal (Austria)",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/63883391/disable-alternative-methods-in-paypal-austria",
+    "created_at": "2020-09-14T11:29:48+00:00"
+  },
+  {
+    "text": "PayPal: alternative to ConfigManager.getInstance().load()",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/16996843/paypal-alternative-to-configmanager-getinstance-load",
+    "created_at": "2013-06-08T06:43:05+00:00"
+  },
+  {
+    "text": "PayPal Mass Payments discontinued. Any alternative?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/22065052/paypal-mass-payments-discontinued-any-alternative",
+    "created_at": "2014-02-27T10:02:08+00:00"
+  },
+  {
+    "text": "Paypal (or alternative) paying to strangers?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/19972037/paypal-or-alternative-paying-to-strangers",
+    "created_at": "2013-11-14T07:34:18+00:00"
+  },
+  {
+    "text": "Alternative to paypal MEC library",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/17296846/alternative-to-paypal-mec-library",
+    "created_at": "2013-06-25T12:04:03+00:00"
+  },
+  {
+    "text": "PayPal Chained Payment alternative",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/69245258/paypal-chained-payment-alternative",
+    "created_at": "2021-09-19T16:51:36+00:00"
+  },
+  {
+    "text": "Is there any alternative for Reference Transaction in Paypal REST API?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/27396187/is-there-any-alternative-for-reference-transaction-in-paypal-rest-api",
+    "created_at": "2014-12-10T08:18:25+00:00"
+  },
+  {
+    "text": "Alternative to solidus_paypal_braintree for PayPal Payments",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/50996371/alternative-to-solidus-paypal-braintree-for-paypal-payments",
+    "created_at": "2018-06-22T22:40:17+00:00"
+  },
+  {
+    "text": "Use Paypal as a event ticket system (or is there an alternative)",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/7926756/use-paypal-as-a-event-ticket-system-or-is-there-an-alternative",
+    "created_at": "2011-10-28T08:21:05+00:00"
+  },
+  {
+    "text": "Paypal IPN - alternatives by competitors?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/72842794/paypal-ipn-alternatives-by-competitors",
+    "created_at": "2022-07-02T22:23:20+00:00"
+  },
+  {
+    "text": "PayPal Smart Payment Buttons - Alternative Payment Methods - 400 Bad Request",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/68010015/paypal-smart-payment-buttons-alternative-payment-methods-400-bad-request",
+    "created_at": "2021-06-16T21:06:14+00:00"
+  },
+  {
+    "text": "Which PayPal iPhone SDK should I use?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/9229770/which-paypal-iphone-sdk-should-i-use",
+    "created_at": "2012-02-10T15:03:02+00:00"
+  },
+  {
+    "text": "PayPal / Google Checkout or Alternative HELP?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/8025574/paypal-google-checkout-or-alternative-help",
+    "created_at": "2011-11-06T06:29:17+00:00"
+  },
+  {
+    "text": "What are the alternatives to paypal for non-supported countries?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/2199617/what-are-the-alternatives-to-paypal-for-non-supported-countries",
+    "created_at": "2010-02-04T12:32:17+00:00"
+  },
+  {
+    "text": "Alternative to PayPal for Merchant Services, Instant Transfer and Immediate Accessibility by Debit Card",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/29517455/alternative-to-paypal-for-merchant-services-instant-transfer-and-immediate-acce",
+    "created_at": "2015-04-08T14:24:16+00:00"
+  },
+  {
+    "text": "PayPal Direct API alternative for non-US merchants",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/16340886/paypal-direct-api-alternative-for-non-us-merchants",
+    "created_at": "2013-05-02T14:37:04+00:00"
+  },
+  {
+    "text": "Which payment system has good integration with Java?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/8630159/which-payment-system-has-good-integration-with-java",
+    "created_at": "2011-12-25T15:10:52+00:00"
+  },
+  {
+    "text": "Setting PayPal return URL and making it auto return?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/7642895/setting-paypal-return-url-and-making-it-auto-return",
+    "created_at": "2011-10-04T03:11:16+00:00"
+  },
+  {
+    "text": "Any alternative to PHP fsockopen() error paypal?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/11686883/any-alternative-to-php-fsockopen-error-paypal",
+    "created_at": "2012-07-27T11:30:20+00:00"
+  },
+  {
+    "text": "PayPal REST setup is too advanced for my users, is there an alternative?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/46399053/paypal-rest-setup-is-too-advanced-for-my-users-is-there-an-alternative",
+    "created_at": "2017-09-25T06:43:14+00:00"
+  },
+  {
+    "text": "How to pay my website users with Paypal API (masspay alternative)",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/22007733/how-to-pay-my-website-users-with-paypal-api-masspay-alternative",
+    "created_at": "2014-02-25T07:47:32+00:00"
+  },
+  {
+    "text": "Using Paypal (or alternative) so my customers can sell items directly",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/63239382/using-paypal-or-alternative-so-my-customers-can-sell-items-directly",
+    "created_at": "2020-08-04T02:26:22+00:00"
+  },
+  {
+    "text": "Cheaper alternatives for PayPal Adaptive Payments and Stripe",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/15046103/cheaper-alternatives-for-paypal-adaptive-payments-and-stripe",
+    "created_at": "2013-02-23T21:45:29+00:00"
+  },
+  {
+    "text": "Good alternative to PayPal's implicit payments (Adaptive payments) with Rails support?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/12458007/good-alternative-to-paypals-implicit-payments-adaptive-payments-with-rails-su",
+    "created_at": "2012-09-17T11:11:25+00:00"
+  },
+  {
+    "text": "Paypal Adaptive payments?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/7242230/paypal-adaptive-payments",
+    "created_at": "2011-08-30T11:09:07+00:00"
+  },
+  {
+    "text": "How Paypal button work and build one from scratch",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/40873886/how-paypal-button-work-and-build-one-from-scratch",
+    "created_at": "2016-11-29T19:08:58+00:00"
+  },
+  {
+    "text": "Paypal Vs Worldpay",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/7634685/paypal-vs-worldpay",
+    "created_at": "2011-10-03T12:01:36+00:00"
+  },
+  {
+    "text": "Adaptive Payments Paypal : return url without data?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/14171251/adaptive-payments-paypal-return-url-without-data",
+    "created_at": "2013-01-05T11:19:14+00:00"
+  },
+  {
+    "text": "Can't Use PHP to process Paypal IPN because of Windows Server box. What is the standard alternative?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/14652653/cant-use-php-to-process-paypal-ipn-because-of-windows-server-box-what-is-the-s",
+    "created_at": "2013-02-01T18:23:17+00:00"
+  },
+  {
+    "text": "How to encrypt Paypal button in Java",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/6139140/how-to-encrypt-paypal-button-in-java",
+    "created_at": "2011-05-26T13:18:44+00:00"
+  },
+  {
+    "text": "Can a payout, using PayPal Payouts API, be funded directly from the associated Bank account instead of PayPal account?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/49049878/can-a-payout-using-paypal-payouts-api-be-funded-directly-from-the-associated-b",
+    "created_at": "2018-03-01T12:36:23+00:00"
+  },
+  {
+    "text": "How can use PHP header() function inside PayPal Javascript code",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/53406672/how-can-use-php-header-function-inside-paypal-javascript-code",
+    "created_at": "2018-11-21T06:52:30+00:00"
+  },
+  {
+    "text": "PayPal IPN - option_selection gone?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/16346737/paypal-ipn-option-selection-gone",
+    "created_at": "2013-05-02T20:03:33+00:00"
+  },
+  {
+    "text": "Paypal - Dynamically change HTML variable for \"Buy Now\" button?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/18683138/paypal-dynamically-change-html-variable-for-buy-now-button",
+    "created_at": "2013-09-08T11:29:24+00:00"
+  },
+  {
+    "text": "Android: using alternative payment services",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/22473703/android-using-alternative-payment-services",
+    "created_at": "2014-03-18T08:15:54+00:00"
+  },
+  {
+    "text": "Responsive PayPal Subscription Checkout?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/42672434/responsive-paypal-subscription-checkout",
+    "created_at": "2017-03-08T13:18:17+00:00"
+  },
+  {
+    "text": "Is it possible to access card details associated with an order using PayPal API?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/76314027/is-it-possible-to-access-card-details-associated-with-an-order-using-paypal-api",
+    "created_at": "2023-05-23T11:05:10+00:00"
+  },
+  {
+    "text": "Django: Any app recommendations for PayPal Adaptive Payments?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/13218587/django-any-app-recommendations-for-paypal-adaptive-payments",
+    "created_at": "2012-11-04T12:39:13+00:00"
+  },
+  {
+    "text": "How to dynamically generate a PayPal button with Rails?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/44037855/how-to-dynamically-generate-a-paypal-button-with-rails",
+    "created_at": "2017-05-18T02:56:35+00:00"
+  },
+  {
+    "text": "Paypal API, What are its capabilities?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/16782308/paypal-api-what-are-its-capabilities",
+    "created_at": "2013-05-28T00:46:45+00:00"
+  },
+  {
+    "text": "Is it possible to use Paypal Express Checkout without sending the whole order details?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/22486761/is-it-possible-to-use-paypal-express-checkout-without-sending-the-whole-order-de",
+    "created_at": "2014-03-18T17:31:22+00:00"
+  },
+  {
+    "text": "Is there a way to add options for paypal so users can select payment method before popup window?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/33065651/is-there-a-way-to-add-options-for-paypal-so-users-can-select-payment-method-befo",
+    "created_at": "2015-10-11T13:40:03+00:00"
+  },
+  {
+    "text": "Why would I be getting a \"no module type\" error with django-paypal?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/28910632/why-would-i-be-getting-a-no-module-type-error-with-django-paypal",
+    "created_at": "2015-03-07T02:12:25+00:00"
+  },
+  {
+    "text": "Best practice for integrating a single PayPal subscription?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/27924064/best-practice-for-integrating-a-single-paypal-subscription",
+    "created_at": "2015-01-13T14:09:42+00:00"
+  },
+  {
+    "text": "How to setup Adyen acquirer account",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/73050010/how-to-setup-adyen-acquirer-account",
+    "created_at": "2022-07-20T10:30:10+00:00"
+  },
+  {
+    "text": "Adyen Web SDK How to log product information?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/55410057/adyen-web-sdk-how-to-log-product-information",
+    "created_at": "2019-03-29T03:22:23+00:00"
+  },
+  {
+    "text": "How to enable authorisation in Adyen Payment-Gateway",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/54146227/how-to-enable-authorisation-in-adyen-payment-gateway",
+    "created_at": "2019-01-11T12:04:56+00:00"
+  },
+  {
+    "text": "How to render the payment fields of Adyen in React?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/56042619/how-to-render-the-payment-fields-of-adyen-in-react",
+    "created_at": "2019-05-08T14:02:06+00:00"
+  },
+  {
+    "text": "How can I customize a Card/Checkout component using Adyen Web Node package to insert an email address field?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/79065655/how-can-i-customize-a-card-checkout-component-using-adyen-web-node-package-to-in",
+    "created_at": "2024-10-08T11:02:33+00:00"
+  },
+  {
+    "text": "How to integrate adyen payment getaway in eclipse?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/41393477/how-to-integrate-adyen-payment-getaway-in-eclipse",
+    "created_at": "2016-12-30T09:05:21+00:00"
+  },
+  {
+    "text": "How to decode Adyen onPaymentCompleted sessionData?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/71575575/how-to-decode-adyen-onpaymentcompleted-sessiondata",
+    "created_at": "2022-03-22T16:26:59+00:00"
+  },
+  {
+    "text": "How to encrypt card data for adyen in C#?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/76679796/how-to-encrypt-card-data-for-adyen-in-c",
+    "created_at": "2023-07-13T13:16:17+00:00"
+  },
+  {
+    "text": "Why does Adyen Alipay (test env) url show ILLEGAL_SIGN error?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/71702444/why-does-adyen-alipay-test-env-url-show-illegal-sign-error",
+    "created_at": "2022-04-01T06:05:48+00:00"
+  },
+  {
+    "text": "How to use ACH-Debit over Pay verb using Adyen Connector",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/73940746/how-to-use-ach-debit-over-pay-verb-using-adyen-connector",
+    "created_at": "2022-10-03T20:56:17+00:00"
+  },
+  {
+    "text": "How can I integrate Adyen on my website",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/51529228/how-can-i-integrate-adyen-on-my-website",
+    "created_at": "2018-07-25T23:59:22+00:00"
+  },
+  {
+    "text": "How to make Adyen SDK work on IE and Edge",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/55825516/how-to-make-adyen-sdk-work-on-ie-and-edge",
+    "created_at": "2019-04-24T08:24:03+00:00"
+  },
+  {
+    "text": "Classes don't autoload with Adyen php-api-library?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/53240096/classes-dont-autoload-with-adyen-php-api-library",
+    "created_at": "2018-11-10T14:49:27+00:00"
+  },
+  {
+    "text": "Why Adyen return \"Invalid shopper interaction\"",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/58874434/why-adyen-return-invalid-shopper-interaction",
+    "created_at": "2019-11-15T09:54:30+00:00"
+  },
+  {
+    "text": "Adyen v5.51.0 Credit Card Web Component: Is `onFieldValid` Still Functional?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/77281446/adyen-v5-51-0-credit-card-web-component-is-onfieldvalid-still-functional",
+    "created_at": "2023-10-12T14:22:23+00:00"
+  },
+  {
+    "text": "How to find out my Adyen token?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/35696912/how-to-find-out-my-adyen-token",
+    "created_at": "2016-02-29T10:14:24+00:00"
+  },
+  {
+    "text": "How to encrypt payload in Python to make a payment - Adyen payment gateway",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/56445791/how-to-encrypt-payload-in-python-to-make-a-payment-adyen-payment-gateway",
+    "created_at": "2019-06-04T14:17:38+00:00"
+  },
+  {
+    "text": "Adyen card container accepting unsupported card numbers without error - How to fix?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/76355511/adyen-card-container-accepting-unsupported-card-numbers-without-error-how-to-f",
+    "created_at": "2023-05-29T07:45:39+00:00"
+  },
+  {
+    "text": "How to resolve class conflict between Stripe Terminal and Adyen SDK in Android project?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/79660481/how-to-resolve-class-conflict-between-stripe-terminal-and-adyen-sdk-in-android-p",
+    "created_at": "2025-06-10T13:01:21+00:00"
+  },
+  {
+    "text": "adyen checkout: How to encrypt card data?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/59692202/adyen-checkout-how-to-encrypt-card-data",
+    "created_at": "2020-01-11T06:27:36+00:00"
+  },
+  {
+    "text": "How does adyen offer cashout if this is not allowed by Visa?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/64788420/how-does-adyen-offer-cashout-if-this-is-not-allowed-by-visa",
+    "created_at": "2020-11-11T14:31:31+00:00"
+  },
+  {
+    "text": "How do I succesfully install Adyen Web Drop In on my website?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/66126616/how-do-i-succesfully-install-adyen-web-drop-in-on-my-website",
+    "created_at": "2021-02-09T20:28:40+00:00"
+  },
+  {
+    "text": "Adyen Drop-in - how to pass unique order ID?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/67062795/adyen-drop-in-how-to-pass-unique-order-id",
+    "created_at": "2021-04-12T17:15:32+00:00"
+  },
+  {
+    "text": "Adyen - What are the disadvantages using Rest APIs instead SDK for mobile app?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/52628410/adyen-what-are-the-disadvantages-using-rest-apis-instead-sdk-for-mobile-app",
+    "created_at": "2018-10-03T13:41:28+00:00"
+  },
+  {
+    "text": "Adyen Dropin Component - How to trigger and test 3ds challenge flow?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/79492990/adyen-dropin-component-how-to-trigger-and-test-3ds-challenge-flow",
+    "created_at": "2025-03-07T17:02:30+00:00"
+  },
+  {
+    "text": "Is there any way in Adyen to do online pre-authorization without handling the payment details?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/77777961/is-there-any-way-in-adyen-to-do-online-pre-authorization-without-handling-the-pa",
+    "created_at": "2024-01-08T08:26:07+00:00"
+  },
+  {
+    "text": "clientToken from braintree not getting?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/77857570/clienttoken-from-braintree-not-getting",
+    "created_at": "2024-01-22T03:58:31+00:00"
+  },
+  {
+    "text": "Where to host Braintree for production?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/57442991/where-to-host-braintree-for-production",
+    "created_at": "2019-08-10T14:27:20+00:00"
+  },
+  {
+    "text": "How to access braintree functionality from Meteor server",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/22154305/how-to-access-braintree-functionality-from-meteor-server",
+    "created_at": "2014-03-03T18:22:00+00:00"
+  },
+  {
+    "text": "Braintree flaw with nonces?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/65172641/braintree-flaw-with-nonces",
+    "created_at": "2020-12-06T20:14:28+00:00"
+  },
+  {
+    "text": "How to use PayPal mobile sdk without Braintree",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/58993940/how-to-use-paypal-mobile-sdk-without-braintree",
+    "created_at": "2019-11-22T12:04:37+00:00"
+  },
+  {
+    "text": "Is there a refund webhook for Braintree?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/42868239/is-there-a-refund-webhook-for-braintree",
+    "created_at": "2017-03-17T22:47:40+00:00"
+  },
+  {
+    "text": "How to update customer in braintree payment method",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/37740679/how-to-update-customer-in-braintree-payment-method",
+    "created_at": "2016-06-10T05:41:55+00:00"
+  },
+  {
+    "text": "Why am I getting 'Braintree/BTUICTAControl.h' file not found error on Braintree manual integration?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/29290979/why-am-i-getting-braintree-btuictacontrol-h-file-not-found-error-on-braintree",
+    "created_at": "2015-03-26T23:54:24+00:00"
+  },
+  {
+    "text": "Nodejs stream with braintree?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/26553844/nodejs-stream-with-braintree",
+    "created_at": "2014-10-24T18:14:11+00:00"
+  },
+  {
+    "text": "How to configure braintree webhooks for localhost",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/21755309/how-to-configure-braintree-webhooks-for-localhost",
+    "created_at": "2014-02-13T13:14:42+00:00"
+  },
+  {
+    "text": "Best way to handle Braintree timeouts",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/4380027/best-way-to-handle-braintree-timeouts",
+    "created_at": "2010-12-07T18:08:52+00:00"
+  },
+  {
+    "text": "How can I test flagged transaction response in test environment in Checkout.com",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/56747731/how-can-i-test-flagged-transaction-response-in-test-environment-in-checkout-com",
+    "created_at": "2019-06-25T06:03:24+00:00"
+  },
+  {
+    "text": "Checkout.com: Hosted payments, Is it possible to Reuse Card Details?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/76235551/checkout-com-hosted-payments-is-it-possible-to-reuse-card-details",
+    "created_at": "2023-05-12T10:49:57+00:00"
+  },
+  {
+    "text": "I need to integrate checkout.com with apple payment like strip in react native?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/72612670/i-need-to-integrate-checkout-com-with-apple-payment-like-strip-in-react-native",
+    "created_at": "2022-06-14T06:56:15+00:00"
+  },
+  {
+    "text": "Can I use a network token PAN with a payment gateway where a standard PAN is expected?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/71566861/can-i-use-a-network-token-pan-with-a-payment-gateway-where-a-standard-pan-is-exp",
+    "created_at": "2022-03-22T04:17:15+00:00"
+  },
+  {
+    "text": "What to do with checkout pages that are on different non-controlled domains?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/78490724/what-to-do-with-checkout-pages-that-are-on-different-non-controlled-domains",
+    "created_at": "2024-05-16T14:41:57+00:00"
+  },
+  {
+    "text": "Can't use the variable $checkout with WooCommerce-Multistep-Checkout",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/45009270/cant-use-the-variable-checkout-with-woocommerce-multistep-checkout",
+    "created_at": "2017-07-10T10:07:44+00:00"
+  },
+  {
+    "text": "Mollie webhook isn't called?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/59810119/mollie-webhook-isnt-called",
+    "created_at": "2020-01-19T12:45:08+00:00"
+  },
+  {
+    "text": "How to configure mollie webhook url?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/52629220/how-to-configure-mollie-webhook-url",
+    "created_at": "2018-10-03T14:21:22+00:00"
+  },
+  {
+    "text": "How to use Mollie Api with firebase cloud functions",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/49479053/how-to-use-mollie-api-with-firebase-cloud-functions",
+    "created_at": "2018-03-25T17:58:04+00:00"
+  },
+  {
+    "text": "How can I use the Mollie Order API?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/62770304/how-can-i-use-the-mollie-order-api",
+    "created_at": "2020-07-07T07:39:42+00:00"
+  },
+  {
+    "text": "How to retrieve the QR code for Bancontact with Mollie API?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/64635572/how-to-retrieve-the-qr-code-for-bancontact-with-mollie-api",
+    "created_at": "2020-11-01T18:39:46+00:00"
+  },
+  {
+    "text": "Why can't mollie call webhook URL?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/59715128/why-cant-mollie-call-webhook-url",
+    "created_at": "2020-01-13T10:49:01+00:00"
+  },
+  {
+    "text": "How should I handle the paginated API response form the Mollie mandates API?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/69889297/how-should-i-handle-the-paginated-api-response-form-the-mollie-mandates-api",
+    "created_at": "2021-11-08T20:03:35+00:00"
+  },
+  {
+    "text": "How to handle payments with Wordpress WooCommerce Mollie REST API",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/71925104/how-to-handle-payments-with-wordpress-woocommerce-mollie-rest-api",
+    "created_at": "2022-04-19T12:38:19+00:00"
+  },
+  {
+    "text": "How to change Mollie styles in Shopware 6?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/70755483/how-to-change-mollie-styles-in-shopware-6",
+    "created_at": "2022-01-18T12:18:15+00:00"
+  },
+  {
+    "text": "How to integrate Mollie Payment on a Vue.js (frontend) and .NET Web API (backend)",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/75996498/how-to-integrate-mollie-payment-on-a-vue-js-frontend-and-net-web-api-backend",
+    "created_at": "2023-04-12T14:12:43+00:00"
+  },
+  {
+    "text": "How to display Mollie order status in the redirecturl?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/43430102/how-to-display-mollie-order-status-in-the-redirecturl",
+    "created_at": "2017-04-15T19:02:56+00:00"
+  },
+  {
+    "text": "Mollie: Is it possible to update status of the order in a SPA (frontend) after user receives payment link by e-mail?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/75616491/mollie-is-it-possible-to-update-status-of-the-order-in-a-spa-frontend-after-u",
+    "created_at": "2023-03-02T14:01:32+00:00"
+  },
+  {
+    "text": "How to handle payments where webhook retry schema fails everytime?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/75029318/how-to-handle-payments-where-webhook-retry-schema-fails-everytime",
+    "created_at": "2023-01-06T09:47:52+00:00"
+  },
+  {
+    "text": "Why session removed after redirecting from payment gateway in PHP",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/64135982/why-session-removed-after-redirecting-from-payment-gateway-in-php",
+    "created_at": "2020-09-30T10:48:04+00:00"
+  },
+  {
+    "text": "Any example of payments for omnipay?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/31402062/any-example-of-payments-for-omnipay",
+    "created_at": "2015-07-14T08:53:03+00:00"
+  },
+  {
+    "text": "How to do split payments while taking an application fee AND not being the merchant of record using Stripe Connect?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/77242054/how-to-do-split-payments-while-taking-an-application-fee-and-not-being-the-merch",
+    "created_at": "2023-10-06T05:30:34+00:00"
+  },
+  {
+    "text": "How to add a custom payment gateway to Social Engine",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/46011754/how-to-add-a-custom-payment-gateway-to-social-engine",
+    "created_at": "2017-09-02T08:03:38+00:00"
+  },
+  {
+    "text": "Credit card payment gateway in PHP?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/1439904/credit-card-payment-gateway-in-php",
+    "created_at": "2009-09-17T16:27:52+00:00"
+  },
+  {
+    "text": "what is the difference between payment gateway and marchant gateway?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/13327517/what-is-the-difference-between-payment-gateway-and-marchant-gateway",
+    "created_at": "2012-11-11T00:36:52+00:00"
+  },
+  {
+    "text": "is DPS Payment Gateway a standard term",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/10821973/is-dps-payment-gateway-a-standard-term",
+    "created_at": "2012-05-30T18:17:11+00:00"
+  },
+  {
+    "text": "Can I set a default payment gateway and hide radio box for choosing payment gateways in saleor?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/55871272/can-i-set-a-default-payment-gateway-and-hide-radio-box-for-choosing-payment-gate",
+    "created_at": "2019-04-26T16:03:43+00:00"
+  },
+  {
+    "text": "How to implement Payment gateway in phonegap",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/24382870/how-to-implement-payment-gateway-in-phonegap",
+    "created_at": "2014-06-24T09:20:36+00:00"
+  },
+  {
+    "text": "How to integrate paytrace payment gateway",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/15002838/how-to-integrate-paytrace-payment-gateway",
+    "created_at": "2013-02-21T12:58:02+00:00"
+  },
+  {
+    "text": "IS EBS payment gateway will support adaptive payments?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/12710552/is-ebs-payment-gateway-will-support-adaptive-payments",
+    "created_at": "2012-10-03T14:23:58+00:00"
+  },
+  {
+    "text": "Does Monnify Payment gateway support flutter web?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/79504148/does-monnify-payment-gateway-support-flutter-web",
+    "created_at": "2025-03-12T15:54:57+00:00"
+  },
+  {
+    "text": "How to submit payment gateway radio button choosen in woocommerce?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/54685956/how-to-submit-payment-gateway-radio-button-choosen-in-woocommerce",
+    "created_at": "2019-02-14T08:24:40+00:00"
+  },
+  {
+    "text": "How to integrate BHIM app payment gateway in an Android App?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/47216542/how-to-integrate-bhim-app-payment-gateway-in-an-android-app",
+    "created_at": "2017-11-10T06:01:57+00:00"
+  },
+  {
+    "text": "CCAvenue Payment Gateway in Flutter?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/66849093/ccavenue-payment-gateway-in-flutter",
+    "created_at": "2021-03-29T05:21:12+00:00"
+  },
+  {
+    "text": "Ogone payment gateway integration?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/17786284/ogone-payment-gateway-integration",
+    "created_at": "2013-07-22T11:21:27+00:00"
+  },
+  {
+    "text": "How to add new Payment Gateway in bigcommerce?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/38073269/how-to-add-new-payment-gateway-in-bigcommerce",
+    "created_at": "2016-06-28T10:09:44+00:00"
+  },
+  {
+    "text": "How payment gateway redirection works in android?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/12507012/how-payment-gateway-redirection-works-in-android",
+    "created_at": "2012-09-20T06:19:19+00:00"
+  },
+  {
+    "text": "How to Integrate Payment Gateway Feature in Android",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/15807190/how-to-integrate-payment-gateway-feature-in-android",
+    "created_at": "2013-04-04T09:20:38+00:00"
+  },
+  {
+    "text": "How to instamojo payment gateway integrate with codeigniter",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/46169974/how-to-instamojo-payment-gateway-integrate-with-codeigniter",
+    "created_at": "2017-09-12T07:03:04+00:00"
+  },
+  {
+    "text": "How to get payment confirmation from custom payment provider",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/56936515/how-to-get-payment-confirmation-from-custom-payment-provider",
+    "created_at": "2019-07-08T13:55:45+00:00"
+  },
+  {
+    "text": "Payment provider requiring frontend only?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/12083943/payment-provider-requiring-frontend-only",
+    "created_at": "2012-08-23T02:28:47+00:00"
+  },
+  {
+    "text": "Which payment provider is advisable for startup e-commerce business: PayPal or Stripe?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/6526493/which-payment-provider-is-advisable-for-startup-e-commerce-business-paypal-or-s",
+    "created_at": "2011-06-29T19:58:40+00:00"
+  },
+  {
+    "text": "Can I develop integration to a payment provider in Magento 1.X?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/55230327/can-i-develop-integration-to-a-payment-provider-in-magento-1-x",
+    "created_at": "2019-03-18T21:31:17+00:00"
+  },
+  {
+    "text": "Payment provider POST redirect to shops destroys customers session?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/76628709/payment-provider-post-redirect-to-shops-destroys-customers-session",
+    "created_at": "2023-07-06T12:13:01+00:00"
+  },
+  {
+    "text": "Is there a payment provider to send money to others via Iban",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/74018437/is-there-a-payment-provider-to-send-money-to-others-via-iban",
+    "created_at": "2022-10-10T17:09:43+00:00"
+  },
+  {
+    "text": "Which payment provider should I use for recurring payments/subscriptions as a European business?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/3523771/which-payment-provider-should-i-use-for-recurring-payments-subscriptions-as-a-eu",
+    "created_at": "2010-08-19T16:09:10+00:00"
+  },
+  {
+    "text": "Local DB vs. Payment Provider Records: Transaction History Strategy",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/79562738/local-db-vs-payment-provider-records-transaction-history-strategy",
+    "created_at": "2025-04-08T17:48:10+00:00"
+  },
+  {
+    "text": "Which API-based payment provider works best with a crowdfunding model?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/12699116/which-api-based-payment-provider-works-best-with-a-crowdfunding-model",
+    "created_at": "2012-10-02T22:09:30+00:00"
+  },
+  {
+    "text": "is there a multiple payment providers (paypal, ogone, ...) php module for use in a web app?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/3100415/is-there-a-multiple-payment-providers-paypal-ogone-php-module-for-use-in",
+    "created_at": "2010-06-23T09:26:09+00:00"
+  },
+  {
+    "text": "Do Apple's iMessage Extensions allow: Custom Payment providers and Custom Authentication?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/44550281/do-apples-imessage-extensions-allow-custom-payment-providers-and-custom-authen",
+    "created_at": "2017-06-14T16:37:56+00:00"
+  },
+  {
+    "text": "How does payment providers confirm transactions?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/63120225/how-does-payment-providers-confirm-transactions",
+    "created_at": "2020-07-27T17:12:26+00:00"
+  },
+  {
+    "text": "how to get to know my payment providers name while calling google pay API?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/64289268/how-to-get-to-know-my-payment-providers-name-while-calling-google-pay-api",
+    "created_at": "2020-10-10T02:02:20+00:00"
+  },
+  {
+    "text": "best cross-platform mobile payment gateway/provider (Android, iPhone, WebOS etc.)",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/6461979/best-cross-platform-mobile-payment-gateway-provider-android-iphone-webos-etc",
+    "created_at": "2011-06-23T23:50:22+00:00"
+  },
+  {
+    "text": "How do I trigger the payment process in EPiServer Commerce 8?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/29791813/how-do-i-trigger-the-payment-process-in-episerver-commerce-8",
+    "created_at": "2015-04-22T08:29:31+00:00"
+  },
+  {
+    "text": "Cart session cleared after external payment POST request—How to reload cart on failed payment?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/79069031/cart-session-cleared-after-external-payment-post-request-how-to-reload-cart-on-f",
+    "created_at": "2024-10-09T07:19:19+00:00"
+  },
+  {
+    "text": "Secure Alternative Way to Pass Infromation to a Payment Provider Without Using Form/POST",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/67272824/secure-alternative-way-to-pass-infromation-to-a-payment-provider-without-using-f",
+    "created_at": "2021-04-26T19:39:17+00:00"
+  },
+  {
+    "text": "How to detect POST redirect in Iframe after integrated payment flow completion",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/76977257/how-to-detect-post-redirect-in-iframe-after-integrated-payment-flow-completion",
+    "created_at": "2023-08-25T12:37:41+00:00"
+  },
+  {
+    "text": "How to set payment details with store-api in shopware 6",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/69559646/how-to-set-payment-details-with-store-api-in-shopware-6",
+    "created_at": "2021-10-13T17:12:38+00:00"
+  },
+  {
+    "text": "How do I Notify the Client when a Payment Systems sends a Request to my API callback URL?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/61137957/how-do-i-notify-the-client-when-a-payment-systems-sends-a-request-to-my-api-call",
+    "created_at": "2020-04-10T10:02:05+00:00"
+  },
+  {
+    "text": "Stripe Payment Intent : can we hold the payment Amount for some time. If yes then how much time?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/72868446/stripe-payment-intent-can-we-hold-the-payment-amount-for-some-time-if-yes-the",
+    "created_at": "2022-07-05T11:11:40+00:00"
+  },
+  {
+    "text": "Google Instant Android Apps - Can I use my existing Hosted Payment capture provider to capture payment data?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/44442137/google-instant-android-apps-can-i-use-my-existing-hosted-payment-capture-provi",
+    "created_at": "2017-06-08T17:28:23+00:00"
+  },
+  {
+    "text": "Apple pay: is there a difference in payment tokens created on the web vs in-app?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/56376633/apple-pay-is-there-a-difference-in-payment-tokens-created-on-the-web-vs-in-app",
+    "created_at": "2019-05-30T10:40:17+00:00"
+  },
+  {
+    "text": "Is card-swipe hardware payment system-specific?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/30810148/is-card-swipe-hardware-payment-system-specific",
+    "created_at": "2015-06-12T18:44:55+00:00"
+  },
+  {
+    "text": "Can I use / mention a third party payment provider in my app",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/60390577/can-i-use-mention-a-third-party-payment-provider-in-my-app",
+    "created_at": "2020-02-25T08:44:13+00:00"
+  },
+  {
+    "text": "Payment Processors - What do I need to know if I want to accept credit cards on my website?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/51094/payment-processors-what-do-i-need-to-know-if-i-want-to-accept-credit-cards-on",
+    "created_at": "2008-09-09T01:50:45+00:00"
+  },
+  {
+    "text": "How to store payment card information in case of payment processor migration?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/73695141/how-to-store-payment-card-information-in-case-of-payment-processor-migration",
+    "created_at": "2022-09-12T20:53:02+00:00"
+  },
+  {
+    "text": "How to integrate Payfort in flutter or is there a different payment processor available in flutter?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/62784681/how-to-integrate-payfort-in-flutter-or-is-there-a-different-payment-processor-av",
+    "created_at": "2020-07-07T22:10:46+00:00"
+  },
+  {
+    "text": "How to handle refunds or rebates via a payment processor?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/1545112/how-to-handle-refunds-or-rebates-via-a-payment-processor",
+    "created_at": "2009-10-09T17:31:16+00:00"
+  },
+  {
+    "text": "How do you sending ISO codes to payment processor?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/17997773/how-do-you-sending-iso-codes-to-payment-processor",
+    "created_at": "2013-08-01T15:06:48+00:00"
+  },
+  {
+    "text": "How to combine use of payment processor with firebase or Auth0 login?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/58729957/how-to-combine-use-of-payment-processor-with-firebase-or-auth0-login",
+    "created_at": "2019-11-06T12:15:53+00:00"
+  },
+  {
+    "text": "In-app purchase or external payment processor?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/54406277/in-app-purchase-or-external-payment-processor",
+    "created_at": "2019-01-28T16:25:04+00:00"
+  },
+  {
+    "text": "Canadian website payment processor recommendations?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/226353/canadian-website-payment-processor-recommendations",
+    "created_at": "2008-10-22T15:40:36+00:00"
+  },
+  {
+    "text": "Generating invoice and navigating to payment processor external site with single button?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/69556323/generating-invoice-and-navigating-to-payment-processor-external-site-with-single",
+    "created_at": "2021-10-13T13:20:24+00:00"
+  },
+  {
+    "text": "Keeping my database in sync with third party payment processor (Bluepay)?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/36985467/keeping-my-database-in-sync-with-third-party-payment-processor-bluepay",
+    "created_at": "2016-05-02T14:55:51+00:00"
+  },
+  {
+    "text": "How do I extract transaction details from a redirected Payment Processor Site and save to my rails 4 db",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/37029224/how-do-i-extract-transaction-details-from-a-redirected-payment-processor-site-an",
+    "created_at": "2016-05-04T13:26:52+00:00"
+  },
+  {
+    "text": "Does a payment processor/gateway exist that enables a global marketplace with a shopping cart, before scaling?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/62274107/does-a-payment-processor-gateway-exist-that-enables-a-global-marketplace-with-a",
+    "created_at": "2020-06-09T02:35:07+00:00"
+  },
+  {
+    "text": "How feasible is it to start up a payment processor similar to Stripe? What would be involved?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/35718229/how-feasible-is-it-to-start-up-a-payment-processor-similar-to-stripe-what-would",
+    "created_at": "2016-03-01T08:47:14+00:00"
+  },
+  {
+    "text": "Will PayPal Pro processor work for PayPal Advance Payments?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/18491599/will-paypal-pro-processor-work-for-paypal-advance-payments",
+    "created_at": "2013-08-28T15:03:56+00:00"
+  },
+  {
+    "text": "Starting a Dwolla payment processor with Django: Do use an app or send POST, GET requests directly?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/11045874/starting-a-dwolla-payment-processor-with-django-do-use-an-app-or-send-post-get",
+    "created_at": "2012-06-15T06:48:37+00:00"
+  },
+  {
+    "text": "Meteor: What payment processors should I use for UK based company?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/25573986/meteor-what-payment-processors-should-i-use-for-uk-based-company",
+    "created_at": "2014-08-29T18:16:42+00:00"
+  },
+  {
+    "text": "Payment processor for WHMCS that supports recurring payments?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/1312993/payment-processor-for-whmcs-that-supports-recurring-payments",
+    "created_at": "2009-08-21T16:37:41+00:00"
+  },
+  {
+    "text": "Options for In-Game Lodgement & Withdrawal Services from Payments Processors?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/37438311/options-for-in-game-lodgement-withdrawal-services-from-payments-processors",
+    "created_at": "2016-05-25T13:13:44+00:00"
+  },
+  {
+    "text": "Which credit card processors support deferred payment processing",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/5429156/which-credit-card-processors-support-deferred-payment-processing",
+    "created_at": "2011-03-25T06:10:47+00:00"
+  },
+  {
+    "text": "What is a good and secure web payment architecture",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/5366435/what-is-a-good-and-secure-web-payment-architecture",
+    "created_at": "2011-03-20T02:41:11+00:00"
+  },
+  {
+    "text": "Automated subscription service using PayPal or other payment processor?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/10684349/automated-subscription-service-using-paypal-or-other-payment-processor",
+    "created_at": "2012-05-21T11:27:05+00:00"
+  },
+  {
+    "text": "How can I revoke a token using PayPal API",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/22231906/how-can-i-revoke-a-token-using-paypal-api",
+    "created_at": "2014-03-06T17:38:00+00:00"
+  },
+  {
+    "text": "How to remove \"Remember me everywhere\" option from Stripe checkout form",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/22191882/how-to-remove-remember-me-everywhere-option-from-stripe-checkout-form",
+    "created_at": "2014-03-05T08:02:13+00:00"
+  },
+  {
+    "text": "Does Paypal or Stripe support multi-payer payments?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/41733322/does-paypal-or-stripe-support-multi-payer-payments",
+    "created_at": "2017-01-19T03:41:06+00:00"
+  },
+  {
+    "text": "Google Pay also as a payment gateway for future payments?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/79200049/google-pay-also-as-a-payment-gateway-for-future-payments",
+    "created_at": "2024-11-18T13:10:44+00:00"
+  },
+  {
+    "text": "Stripe recurring/subscription billing best design/practices?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/10291740/stripe-recurring-subscription-billing-best-design-practices",
+    "created_at": "2012-04-24T04:26:34+00:00"
+  },
+  {
+    "text": "How to set Stripe's subscription billing cycle to month end programmatically?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/49793669/how-to-set-stripes-subscription-billing-cycle-to-month-end-programmatically",
+    "created_at": "2018-04-12T10:02:04+00:00"
+  },
+  {
+    "text": "Can a subscription billing platform be used without a database?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/52389593/can-a-subscription-billing-platform-be-used-without-a-database",
+    "created_at": "2018-09-18T15:05:44+00:00"
+  },
+  {
+    "text": "How to set Stripe Subscription's billing cycle date to 1st of every month?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/69666264/how-to-set-stripe-subscriptions-billing-cycle-date-to-1st-of-every-month",
+    "created_at": "2021-10-21T17:20:45+00:00"
+  },
+  {
+    "text": "How to update subscription billing date in stripe 5.3.0.0 in ASP .NET?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/78255237/how-to-update-subscription-billing-date-in-stripe-5-3-0-0-in-asp-net",
+    "created_at": "2024-04-01T11:38:47+00:00"
+  },
+  {
+    "text": "How do I change a Stripe Subscription's billing end cycle date?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/51534821/how-do-i-change-a-stripe-subscriptions-billing-end-cycle-date",
+    "created_at": "2018-07-26T08:54:02+00:00"
+  },
+  {
+    "text": "Paypal + PHP subscription billing?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/35543076/paypal-php-subscription-billing",
+    "created_at": "2016-02-21T22:42:27+00:00"
+  },
+  {
+    "text": "How to get dates for Billing cycle of an Azure Subscription",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/32494703/how-to-get-dates-for-billing-cycle-of-an-azure-subscription",
+    "created_at": "2015-09-10T06:30:59+00:00"
+  },
+  {
+    "text": "How to process subscription billing in the desktop app?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/48173468/how-to-process-subscription-billing-in-the-desktop-app",
+    "created_at": "2018-01-09T17:16:31+00:00"
+  },
+  {
+    "text": "Best way to set up subscription billing",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/12927332/best-way-to-set-up-subscription-billing",
+    "created_at": "2012-10-17T04:50:51+00:00"
+  },
+  {
+    "text": "How to implement subscription in \"in-app billing\" in android subscription",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/12227814/how-to-implement-subscription-in-in-app-billing-in-android-subscription",
+    "created_at": "2012-09-01T12:40:57+00:00"
+  },
+  {
+    "text": "How to implement auto renew subscription in app billing google play",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/45812541/how-to-implement-auto-renew-subscription-in-app-billing-google-play",
+    "created_at": "2017-08-22T08:25:43+00:00"
+  },
+  {
+    "text": "How to integrate In app billing subscription",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/11523997/how-to-integrate-in-app-billing-subscription",
+    "created_at": "2012-07-17T13:53:50+00:00"
+  },
+  {
+    "text": "How does Woocommerce handle subscription billing?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/28768630/how-does-woocommerce-handle-subscription-billing",
+    "created_at": "2015-02-27T15:29:30+00:00"
+  },
+  {
+    "text": "How to Implement Custom Monthly Subscription Billing Cycle Ending on Last Day of Current Month in Stripe?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/78400790/how-to-implement-custom-monthly-subscription-billing-cycle-ending-on-last-day-of",
+    "created_at": "2024-04-29T06:15:23+00:00"
+  },
+  {
+    "text": "Getting Billing details of Subscription android?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/44632119/getting-billing-details-of-subscription-android",
+    "created_at": "2017-06-19T13:36:24+00:00"
+  },
+  {
+    "text": "Android In-App Billing (Subscription) exemptions?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/40777517/android-in-app-billing-subscription-exemptions",
+    "created_at": "2016-11-24T03:16:35+00:00"
+  },
+  {
+    "text": "Price of in-app billing subscription according to usage?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/47211911/price-of-in-app-billing-subscription-according-to-usage",
+    "created_at": "2017-11-09T21:31:59+00:00"
+  },
+  {
+    "text": "How do I change a Stripe Subscription's billing cycle date?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/45651026/how-do-i-change-a-stripe-subscriptions-billing-cycle-date",
+    "created_at": "2017-08-12T13:48:41+00:00"
+  },
+  {
+    "text": "Cancel Google Play subscription with Billing API?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/52836314/cancel-google-play-subscription-with-billing-api",
+    "created_at": "2018-10-16T13:15:03+00:00"
+  },
+  {
+    "text": "How to renew subscription manually using Play Billing Library?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/47757012/how-to-renew-subscription-manually-using-play-billing-library",
+    "created_at": "2017-12-11T16:17:33+00:00"
+  },
+  {
+    "text": "How to confirm billing of a monthly subscription in PayPal API via webhook?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/67270378/how-to-confirm-billing-of-a-monthly-subscription-in-paypal-api-via-webhook",
+    "created_at": "2021-04-26T16:28:20+00:00"
+  },
+  {
+    "text": "Stripe: A way to make subscription upgrades/downgrade happen at the end of the billing cycle? (using customer portal)",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/78842847/stripe-a-way-to-make-subscription-upgrades-downgrade-happen-at-the-end-of-the-b",
+    "created_at": "2024-08-07T09:22:15+00:00"
+  },
+  {
+    "text": "Why google play billing subscription instantly gets canceled?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/68325602/why-google-play-billing-subscription-instantly-gets-canceled",
+    "created_at": "2021-07-10T07:19:45+00:00"
+  },
+  {
+    "text": "Android Play Billing Library: get subscription expiry?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/48662833/android-play-billing-library-get-subscription-expiry",
+    "created_at": "2018-02-07T11:35:55+00:00"
+  },
+  {
+    "text": "How to Test Google Play Billing Subscription(Not In-App Purchase) in android",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/64152760/how-to-test-google-play-billing-subscriptionnot-in-app-purchase-in-android",
+    "created_at": "2020-10-01T09:41:18+00:00"
+  },
+  {
+    "text": "what's the best subscription-based billing system for rails 3?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/4523677/whats-the-best-subscription-based-billing-system-for-rails-3",
+    "created_at": "2010-12-24T01:26:43+00:00"
+  },
+  {
+    "text": "Is there a way for a UWP app to know if Recurring Billing is turned on for a subscription in the Microsoft store",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/71067896/is-there-a-way-for-a-uwp-app-to-know-if-recurring-billing-is-turned-on-for-a-sub",
+    "created_at": "2022-02-10T15:34:08+00:00"
+  },
+  {
+    "text": "How to create a subscription and a purchase using Billing library 3.0?",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/64686827/how-to-create-a-subscription-and-a-purchase-using-billing-library-3-0",
+    "created_at": "2020-11-04T19:52:54+00:00"
+  },
+  {
+    "text": "Can Laravel Spark be used without Stripe or Braintree",
+    "source": "stackoverflow",
+    "url": "https://stackoverflow.com/questions/38002037/can-laravel-spark-be-used-without-stripe-or-braintree",
+    "created_at": "2016-06-23T21:19:03+00:00"
+  }
+]
