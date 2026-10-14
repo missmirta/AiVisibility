@@ -45,6 +45,9 @@ Rules:
 6. "There are reasons to consider X better for ..." or "X is stronger for large teams" counts as
    saying another option is better than the tagged brand (rule 3), so the tagged brand is negative.
    Mere "both are popular options" or "here are the differences" stays neutral.
+7. If the text says the tagged brand is worse, costlier, more limited, older or missing a feature
+   compared with a rival ("has no equivalent", "less feature-rich than", "feels dated",
+   "penalizes small charges more"), the tagged brand is negative, even without harsh wording.
 
 Examples (brand | snippet -> label):
 - Stripe | Paddle is a merchant of record, so unlike Stripe it files your sales tax for you. -> neutral
@@ -54,7 +57,9 @@ Examples (brand | snippet -> label):
 - Stripe | Stripe supports payouts in EUR and GBP depending on your account setup. -> neutral
 - Adyen | Both Stripe and Adyen are well-known platforms; here is how they differ. -> neutral
 - Stripe | Some teams find Adyen the better choice for large enterprises. -> negative
-- PayPal | PayPal is worth it if your buyers already use PayPal, otherwise skip it. -> neutral
+- PayPal | PayPal supports cards, wallets and Venmo through one integration. -> neutral
+- Braintree | Braintree has no equivalent subscription engine of this depth; Stripe Billing is more complete. -> negative
+- PayPal | PayPal's fee structure penalizes small charges more than Stripe's. -> negative
 - Lemon Squeezy | For a solo creator selling ebooks, Lemon Squeezy is the simplest choice. -> recommended
 
 Reply with ONLY a JSON list like [{{"id": 0, "label": "neutral"}}], one item per snippet.
