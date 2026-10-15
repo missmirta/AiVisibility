@@ -26,6 +26,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--labels", type=Path, default=config.STANCE_LABELS_FILE)
     parser.add_argument("--features", choices=["tfidf", "embed", "finetune"], default="finetune")
+    parser.add_argument("--extra", type=Path, nargs="*", default=[], help="more label CSVs added to training")
     parser.add_argument("--seeds", type=int, nargs="+", default=[1, 2, 3, 4, 5])
     args = parser.parse_args()
 
@@ -34,7 +35,8 @@ def main() -> None:
     gold_ids = {r["response_id"] for r in gold}
     gold_texts = {r["text"] for r in gold}
     # drop gold answers, and any identical snippet that sits in another answer
-    rows = [r for r in load_rows(args.labels) if r["response_id"] not in gold_ids and r["text"] not in gold_texts]
+    all_rows = [r for path in [args.labels, *args.extra] for r in load_rows(path)]
+    rows = [r for r in all_rows if r["response_id"] not in gold_ids and r["text"] not in gold_texts]
     labels = config.STANCE_LABELS
     print(f"{len(rows)} training rows (gold excluded), {len(gold)} gold rows, features={args.features}")
 

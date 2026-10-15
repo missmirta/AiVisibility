@@ -12,7 +12,8 @@ uv run ruff check .          # лінтер
 Порядок скриптів: `discover_brands` → `generate_queries` →
 `run_prober --dry-run` (потім реальний запуск з `--max-budget-usd`) →
 `detect_mentions` → `analyze_mentions` → `build_convergence_curves` /
-`estimate_sample_size` → `adaptive_sampling_report`. Процес розробки —
+`estimate_sample_size` → `adaptive_sampling_report` →
+`collect_real_queries` → `representativeness_report`. Процес розробки —
 `docs/sdlc.md`.
 
 ## Методологія: скільки запитів потрібно на движок
@@ -43,6 +44,18 @@ uv run ruff check .          # лінтер
 різниці не дає — арми статистично незалежні, тож сумарна кількість
 викликів адитивна й не залежить від порядку. Деталі й повний метод —
 `docs/weeks/week5.md`.
+
+## Репрезентативність запитів
+
+Чи схожі наші 106 синтетичних запитів на реальні питання людей? Збираємо 474
+питання з Hacker News і Stack Overflow, навчаємо класифікатор відрізняти їх від
+синтетичних на embeddings (classifier two-sample test): AUC **0.99**, p<0.01 —
+набір легко відрізнити, і це не пояснюється лише довжиною чи типом питань.
+Перезважування mention rate за кластерами реальних тем піднімає оцінки
+конкурентів Stripe, але величина залежить від кластеризації (звіт містить
+таблицю чутливості), тому ми не подаємо єдине «виправлене» число. Обмеження:
+форумні питання ≠ промпти до асистента, Reddit не включено. Деталі —
+`docs/weeks/week6.md`.
 
 ## Класифікатор тональності
 

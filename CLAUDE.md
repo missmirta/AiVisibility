@@ -10,7 +10,7 @@ Docs, README and weekly specs are in Ukrainian; code, comments, docstrings and t
 - Pipeline scripts live in `scripts/` (one per step, see `README.md` for the order).
 
 ## Layout
-- `aivisibility/` package: `analysis/` (bootstrap, convergence, adaptive sampling, mentions), `common/` (config, db, schemas), `discovery/`, `prober/`, `query_generator/`
+- `aivisibility/` package: `analysis/` (bootstrap, convergence, adaptive sampling, mentions), `common/` (config, db, schemas), `discovery/`, `prober/`, `query_generator/`, `representativeness/` (real-query collection, two-sample test, re-weighting)
 - `docs/weeks/weekN.md` weekly specs, `docs/ai_visibility_fintech_plan.md` the 8-week plan, `docs/sdlc.md` the workflow.
 
 ## Rules
