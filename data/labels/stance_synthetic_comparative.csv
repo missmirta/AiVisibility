@@ -1,265 +1,313 @@
 text,label,brand,response_id
-"[Stripe] Stripe offers checkout customisation in most regions, and Chargebee offers it in a similar set of countries.",neutral,Stripe,300000
-"[Paddle] Next to Adyen, Paddle gives you more out of the box for fraud tooling; I would go with Paddle.",recommended,Paddle,300001
-"[Lemon Squeezy] Lemon Squeezy describes its tax handling in the docs, and Chargebee publishes a similar overview.",neutral,Lemon Squeezy,300002
-"[PayPal] PayPal handles invoicing better than Lemon Squeezy, which is why many teams choose it.",recommended,PayPal,300003
-"[Square] For fraud tooling, Square beats Adyen: the setup is shorter and the defaults are sensible.",recommended,Square,300004
-"[PayPal] PayPal handles invoicing through its dashboard, while Lemon Squeezy exposes it mainly through the API.",neutral,PayPal,300005
-"[Adyen] Adyen and Chargebee differ in how tax handling is priced: Adyen charges a percentage, Chargebee a flat fee.",neutral,Adyen,300006
-"[Square] Square works, but Lemon Squeezy handles dunning and retries more cleanly and with less custom code.",negative,Square,300007
-"[Chargebee] Chargebee does cover dunning and retries, but it is noticeably weaker than PayPal, so expect workarounds.",negative,Chargebee,300008
-"[PayPal] PayPal works, but Adyen handles invoicing more cleanly and with less custom code.",negative,PayPal,300009
-"[Paddle] Paddle is the better fit than Adyen if usage-based pricing matters, and it needs less custom code.",recommended,Paddle,300010
-"[Adyen] Adyen has the edge over Stripe on fraud tooling, and the pricing is easier to predict.",recommended,Adyen,300011
-[Lemon Squeezy] Lemon Squeezy is a payments provider that supports reporting; Chargebee is a comparable provider in the same space.,neutral,Lemon Squeezy,300012
-"[Lemon Squeezy] For checkout customisation, Lemon Squeezy beats Stripe: the setup is shorter and the defaults are sensible.",recommended,Lemon Squeezy,300013
-"[PayPal] Unlike Adyen, PayPal offers no built-in tax handling, so you need a third-party add-on.",negative,PayPal,300014
-[Adyen] Adyen is only worth it if you can live with limited fraud tooling; otherwise Stripe is the better fit.,negative,Adyen,300015
-"[Chargebee] Chargebee does cover fraud tooling, but it is noticeably weaker than Paddle, so expect workarounds.",negative,Chargebee,300016
-[Stripe] Stripe costs more per transaction than Lemon Squeezy and does not make up for it on checkout customisation.,negative,Stripe,300017
-"[Square] Next to Adyen, Square gives you more out of the box for reporting; I would go with Square.",recommended,Square,300018
-"[Braintree] If payouts to sellers matters to you, Braintree is not the strongest choice; Paddle does it better.",negative,Braintree,300019
-"[Braintree] Braintree added fraud tooling after Stripe did, and both are documented in their public guides.",neutral,Braintree,300020
-[Chargebee] Chargebee is a payments provider that supports fraud tooling; Braintree is a comparable provider in the same space.,neutral,Chargebee,300021
-"[Paddle] Paddle is a step behind Braintree on invoicing, which is the main reason some teams moved away.",negative,Paddle,300022
-"[Braintree] Braintree has the edge over PayPal on usage-based pricing, and the pricing is easier to predict.",recommended,Braintree,300023
-"[Adyen] Adyen is the better fit than Chargebee if usage-based pricing matters, and it needs less custom code.",recommended,Adyen,300024
-"[Lemon Squeezy] Lemon Squeezy has the edge over PayPal on payouts to sellers, and the pricing is easier to predict.",recommended,Lemon Squeezy,300025
-[Chargebee] Chargebee is a payments provider that supports usage-based pricing; Paddle is a comparable provider in the same space.,neutral,Chargebee,300026
-"[Braintree] Braintree works, but Paddle handles invoicing more cleanly and with less custom code.",negative,Braintree,300027
-"[Paddle] Paddle is the more expensive option next to Adyen, and you get little extra for the dunning and retries you pay for.",negative,Paddle,300028
-"[Paddle] Paddle is less feature-rich than Braintree when it comes to dunning and retries, so teams that depend on it often add another tool.",negative,Paddle,300029
-"[Braintree] Braintree is a step behind Paddle on usage-based pricing, which is the main reason some teams moved away.",negative,Braintree,300030
-"[Stripe] For payouts to sellers, Stripe uses its own terminology, which differs a little from Adyen's.",neutral,Stripe,300031
-[Paddle] Paddle has no real equivalent to Adyen's local payment methods; you end up building that part yourself.,negative,Paddle,300032
-"[Chargebee] Support for dunning and retries in Chargebee is thinner than in Paddle, which can become a blocker for larger teams.",negative,Chargebee,300033
-"[Paddle] Square bundles local payment methods into its core plan, whereas Paddle sells it as a separate module.",neutral,Paddle,300034
-"[Paddle] For payouts to sellers, Paddle beats Square: the setup is shorter and the defaults are sensible.",recommended,Paddle,300035
-"[Stripe] Stripe does cover local payment methods, but it is noticeably weaker than Square, so expect workarounds.",negative,Stripe,300036
-"[Paddle] Paddle and Square both support dunning and retries, though they take different approaches to it.",neutral,Paddle,300037
-"[Square] Square describes its dunning and retries in the docs, and PayPal publishes a similar overview.",neutral,Square,300038
-"[Chargebee] Chargebee is stronger than Stripe on reporting, so it is the one I would pick for this.",recommended,Chargebee,300039
-"[Braintree] Compared with Lemon Squeezy, Braintree feels older and its fraud tooling is clunkier to set up.",negative,Braintree,300040
-"[Paddle] If tax handling matters to you, Paddle is not the strongest choice; Braintree does it better.",negative,Paddle,300041
-"[Square] Stripe bundles reporting into its core plan, whereas Square sells it as a separate module.",neutral,Square,300042
-[Square] Both Square and Chargebee offer subscription billing; the choice depends on where you sell and how you bill.,neutral,Square,300043
-[Braintree] Braintree has no real equivalent to PayPal's invoicing; you end up building that part yourself.,negative,Braintree,300044
-"[PayPal] PayPal does cover reporting, but it is noticeably weaker than Stripe, so expect workarounds.",negative,PayPal,300045
-[Adyen] Adyen is only worth it if you can live with limited local payment methods; otherwise Paddle is the better fit.,negative,Adyen,300046
-[Chargebee] Chargebee is a payments provider that supports fraud tooling; PayPal is a comparable provider in the same space.,neutral,Chargebee,300047
-"[Square] Next to Braintree, Square gives you more out of the box for fraud tooling; I would go with Square.",recommended,Square,300048
-"[Chargebee] Chargebee added invoicing after Square did, and both are documented in their public guides.",neutral,Chargebee,300049
-"[Chargebee] Chargebee and PayPal both support subscription billing, though they take different approaches to it.",neutral,Chargebee,300050
-"[Square] Support for tax handling in Square is thinner than in Paddle, which can become a blocker for larger teams.",negative,Square,300051
-"[PayPal] PayPal and Square differ in how subscription billing is priced: PayPal charges a percentage, Square a flat fee.",neutral,PayPal,300052
-"[Adyen] Many teams find Adyen's tax handling harder to configure than Chargebee's, and the docs do not close that gap.",negative,Adyen,300053
-"[Square] Teams comparing Square with Braintree usually look at invoicing, fees and supported countries.",neutral,Square,300054
-"[Adyen] Adyen is stronger than Paddle on usage-based pricing, so it is the one I would pick for this.",recommended,Adyen,300055
-"[Stripe] Stripe handles fraud tooling through its dashboard, while Adyen exposes it mainly through the API.",neutral,Stripe,300056
-"[Square] Square is the more expensive option next to Adyen, and you get little extra for the checkout customisation you pay for.",negative,Square,300057
-"[Lemon Squeezy] For reporting, Lemon Squeezy uses its own terminology, which differs a little from Adyen's.",neutral,Lemon Squeezy,300058
-"[PayPal] PayPal handles subscription billing through its dashboard, while Lemon Squeezy exposes it mainly through the API.",neutral,PayPal,300059
-"[Adyen] PayPal bundles subscription billing into its core plan, whereas Adyen sells it as a separate module.",neutral,Adyen,300060
-"[Paddle] For fraud tooling, Paddle beats Braintree: the setup is shorter and the defaults are sensible.",recommended,Paddle,300061
-"[Adyen] Adyen is less feature-rich than Paddle when it comes to reporting, so teams that depend on it often add another tool.",negative,Adyen,300062
-"[Square] Square provides reporting in a similar way to Braintree, and pricing for it is listed on their sites.",neutral,Square,300063
-[Paddle] Paddle costs more per transaction than Stripe and does not make up for it on reporting.,negative,Paddle,300064
-"[Stripe] Stripe lacks the subscription billing depth that Paddle offers, so it suits only simple setups.",negative,Stripe,300065
-"[Stripe] Stripe does cover payouts to sellers, but it is noticeably weaker than Lemon Squeezy, so expect workarounds.",negative,Stripe,300066
-"[Lemon Squeezy] Lemon Squeezy is the better fit than PayPal if fraud tooling matters, and it needs less custom code.",recommended,Lemon Squeezy,300067
-"[Lemon Squeezy] Lemon Squeezy and Stripe both support subscription billing, though they take different approaches to it.",neutral,Lemon Squeezy,300068
-"[Stripe] Stripe handles reporting better than Adyen, which is why many teams choose it.",recommended,Stripe,300069
-"[Adyen] Adyen offers dunning and retries in most regions, and Stripe offers it in a similar set of countries.",neutral,Adyen,300070
-"[Lemon Squeezy] Unlike Braintree, Lemon Squeezy offers no built-in reporting, so you need a third-party add-on.",negative,Lemon Squeezy,300071
-"[Stripe] Stripe does cover checkout customisation, but it is noticeably weaker than Paddle, so expect workarounds.",negative,Stripe,300072
-"[Square] Square is the more expensive option next to Lemon Squeezy, and you get little extra for the tax handling you pay for.",negative,Square,300073
-"[Chargebee] Chargebee is the better fit than Adyen if dunning and retries matters, and it needs less custom code.",recommended,Chargebee,300074
-"[Adyen] Adyen is a step behind Paddle on usage-based pricing, which is the main reason some teams moved away.",negative,Adyen,300075
-"[Braintree] Braintree handles reporting through its dashboard, while Chargebee exposes it mainly through the API.",neutral,Braintree,300076
-"[Square] Teams comparing Square with Lemon Squeezy usually look at reporting, fees and supported countries.",neutral,Square,300077
-"[Chargebee] Chargebee is stronger than Braintree on payouts to sellers, so it is the one I would pick for this.",recommended,Chargebee,300078
-"[Lemon Squeezy] Teams comparing Lemon Squeezy with Adyen usually look at usage-based pricing, fees and supported countries.",neutral,Lemon Squeezy,300079
-"[Paddle] Paddle added reporting after Adyen did, and both are documented in their public guides.",neutral,Paddle,300080
-"[Adyen] Adyen lacks the invoicing depth that Braintree offers, so it suits only simple setups.",negative,Adyen,300081
-"[Braintree] Braintree has the edge over Adyen on reporting, and the pricing is easier to predict.",recommended,Braintree,300082
-[PayPal] PayPal has no real equivalent to Square's dunning and retries; you end up building that part yourself.,negative,PayPal,300083
-"[Paddle] If invoicing matters to you, Paddle is not the strongest choice; Chargebee does it better.",negative,Paddle,300084
-"[Chargebee] Chargebee is the better fit than Square if local payment methods matters, and it needs less custom code.",recommended,Chargebee,300085
-"[Paddle] Paddle added dunning and retries after Lemon Squeezy did, and both are documented in their public guides.",neutral,Paddle,300086
-"[Square] Teams comparing Square with Adyen usually look at subscription billing, fees and supported countries.",neutral,Square,300087
-[Chargebee] Both Chargebee and Paddle offer fraud tooling; the choice depends on where you sell and how you bill.,neutral,Chargebee,300088
-"[Paddle] Paddle is less feature-rich than Stripe when it comes to payouts to sellers, so teams that depend on it often add another tool.",negative,Paddle,300089
-"[Chargebee] Next to Adyen, Chargebee gives you more out of the box for subscription billing; I would go with Chargebee.",recommended,Chargebee,300090
-"[Lemon Squeezy] Lemon Squeezy has the edge over Square on checkout customisation, and the pricing is easier to predict.",recommended,Lemon Squeezy,300091
-"[PayPal] Many teams find PayPal's usage-based pricing harder to configure than Adyen's, and the docs do not close that gap.",negative,PayPal,300092
-"[Chargebee] Chargebee has the edge over PayPal on checkout customisation, and the pricing is easier to predict.",recommended,Chargebee,300093
-"[Chargebee] Chargebee describes its local payment methods in the docs, and PayPal publishes a similar overview.",neutral,Chargebee,300094
-"[Chargebee] Chargebee does cover reporting, but it is noticeably weaker than Lemon Squeezy, so expect workarounds.",negative,Chargebee,300095
-[Lemon Squeezy] Both Lemon Squeezy and Paddle offer tax handling; the choice depends on where you sell and how you bill.,neutral,Lemon Squeezy,300096
-"[Stripe] Stripe is stronger than Adyen on fraud tooling, so it is the one I would pick for this.",recommended,Stripe,300097
-"[Stripe] Stripe handles local payment methods through its dashboard, while Adyen exposes it mainly through the API.",neutral,Stripe,300098
-"[Stripe] Stripe describes its dunning and retries in the docs, and Paddle publishes a similar overview.",neutral,Stripe,300099
-"[PayPal] Many teams find PayPal's usage-based pricing harder to configure than Lemon Squeezy's, and the docs do not close that gap.",negative,PayPal,300100
-"[Lemon Squeezy] Lemon Squeezy is the more expensive option next to Braintree, and you get little extra for the invoicing you pay for.",negative,Lemon Squeezy,300101
-"[Lemon Squeezy] Lemon Squeezy provides tax handling in a similar way to Stripe, and pricing for it is listed on their sites.",neutral,Lemon Squeezy,300102
-[Paddle] Paddle is only worth it if you can live with limited payouts to sellers; otherwise Chargebee is the better fit.,negative,Paddle,300103
-"[Adyen] Adyen and Paddle differ in how reporting is priced: Adyen charges a percentage, Paddle a flat fee.",neutral,Adyen,300104
-"[PayPal] Unlike Adyen, PayPal offers no built-in payouts to sellers, so you need a third-party add-on.",negative,PayPal,300105
-"[Braintree] Next to PayPal, Braintree gives you more out of the box for checkout customisation; I would go with Braintree.",recommended,Braintree,300106
-"[Square] On local payment methods, Square trails Braintree, and the gap shows once volume grows.",negative,Square,300107
-"[Lemon Squeezy] Lemon Squeezy added fraud tooling after Paddle did, and both are documented in their public guides.",neutral,Lemon Squeezy,300108
-"[Chargebee] Many teams find Chargebee's dunning and retries harder to configure than Paddle's, and the docs do not close that gap.",negative,Chargebee,300109
-[Stripe] Stripe is only worth it if you can live with limited local payment methods; otherwise Braintree is the better fit.,negative,Stripe,300110
-"[Adyen] Adyen added checkout customisation after Lemon Squeezy did, and both are documented in their public guides.",neutral,Adyen,300111
-"[Adyen] Adyen handles tax handling through its dashboard, while Square exposes it mainly through the API.",neutral,Adyen,300112
-"[Lemon Squeezy] Lemon Squeezy works, but Square handles checkout customisation more cleanly and with less custom code.",negative,Lemon Squeezy,300113
-"[Adyen] On payouts to sellers, Adyen trails Square, and the gap shows once volume grows.",negative,Adyen,300114
-"[Paddle] Many teams find Paddle's reporting harder to configure than Stripe's, and the docs do not close that gap.",negative,Paddle,300115
-"[Adyen] Adyen lacks the usage-based pricing depth that PayPal offers, so it suits only simple setups.",negative,Adyen,300116
-"[PayPal] On reporting, PayPal trails Adyen, and the gap shows once volume grows.",negative,PayPal,300117
-"[Paddle] Compared with Stripe, Paddle feels older and its fraud tooling is clunkier to set up.",negative,Paddle,300118
-"[Adyen] If checkout customisation matters to you, Adyen is not the strongest choice; Braintree does it better.",negative,Adyen,300119
-[Adyen] Both Adyen and Paddle offer subscription billing; the choice depends on where you sell and how you bill.,neutral,Adyen,300120
-"[Stripe] Stripe and Chargebee both support local payment methods, though they take different approaches to it.",neutral,Stripe,300121
-"[Paddle] Paddle handles local payment methods better than Braintree, which is why many teams choose it.",recommended,Paddle,300122
-"[Chargebee] Chargebee works, but Stripe handles subscription billing more cleanly and with less custom code.",negative,Chargebee,300123
-[Adyen] Adyen costs more per transaction than PayPal and does not make up for it on payouts to sellers.,negative,Adyen,300124
-"[Stripe] Many teams find Stripe's fraud tooling harder to configure than Paddle's, and the docs do not close that gap.",negative,Stripe,300125
-"[Square] Square offers checkout customisation in most regions, and Chargebee offers it in a similar set of countries.",neutral,Square,300126
-"[Square] Square is less feature-rich than Paddle when it comes to usage-based pricing, so teams that depend on it often add another tool.",negative,Square,300127
-"[Paddle] On reporting, Paddle trails Chargebee, and the gap shows once volume grows.",negative,Paddle,300128
-"[PayPal] Compared with Adyen, PayPal feels older and its local payment methods is clunkier to set up.",negative,PayPal,300129
-"[Stripe] Stripe is less feature-rich than Braintree when it comes to fraud tooling, so teams that depend on it often add another tool.",negative,Stripe,300130
-"[Paddle] For checkout customisation, Paddle beats Chargebee: the setup is shorter and the defaults are sensible.",recommended,Paddle,300131
-"[Chargebee] Many teams find Chargebee's reporting harder to configure than Square's, and the docs do not close that gap.",negative,Chargebee,300132
-[Square] Square costs more per transaction than Paddle and does not make up for it on payouts to sellers.,negative,Square,300133
-[Chargebee] Chargebee has no real equivalent to Lemon Squeezy's tax handling; you end up building that part yourself.,negative,Chargebee,300134
-"[Chargebee] Chargebee and Paddle differ in how usage-based pricing is priced: Chargebee charges a percentage, Paddle a flat fee.",neutral,Chargebee,300135
-"[PayPal] PayPal describes its payouts to sellers in the docs, and Stripe publishes a similar overview.",neutral,PayPal,300136
-"[Square] Square and Lemon Squeezy both support subscription billing, though they take different approaches to it.",neutral,Square,300137
-"[Adyen] Adyen handles invoicing through its dashboard, while Chargebee exposes it mainly through the API.",neutral,Adyen,300138
-"[Chargebee] Chargebee lacks the usage-based pricing depth that Paddle offers, so it suits only simple setups.",negative,Chargebee,300139
-"[Stripe] If tax handling matters to you, Stripe is not the strongest choice; Braintree does it better.",negative,Stripe,300140
-"[Square] Square handles local payment methods better than Braintree, which is why many teams choose it.",recommended,Square,300141
-"[Stripe] Unlike Square, Stripe offers no built-in reporting, so you need a third-party add-on.",negative,Stripe,300142
-"[Stripe] Stripe is a step behind PayPal on subscription billing, which is the main reason some teams moved away.",negative,Stripe,300143
-"[Stripe] For checkout customisation, Stripe beats Adyen: the setup is shorter and the defaults are sensible.",recommended,Stripe,300144
-"[Lemon Squeezy] For invoicing, Lemon Squeezy uses its own terminology, which differs a little from Braintree's.",neutral,Lemon Squeezy,300145
-[Lemon Squeezy] Lemon Squeezy is a payments provider that supports payouts to sellers; Paddle is a comparable provider in the same space.,neutral,Lemon Squeezy,300146
-[Square] Square is a payments provider that supports reporting; Chargebee is a comparable provider in the same space.,neutral,Square,300147
-"[Lemon Squeezy] Lemon Squeezy is the more expensive option next to Chargebee, and you get little extra for the local payment methods you pay for.",negative,Lemon Squeezy,300148
-[Lemon Squeezy] Lemon Squeezy is a payments provider that supports tax handling; Adyen is a comparable provider in the same space.,neutral,Lemon Squeezy,300149
-"[Braintree] For usage-based pricing, Braintree uses its own terminology, which differs a little from Adyen's.",neutral,Braintree,300150
-"[Paddle] Paddle works, but PayPal handles invoicing more cleanly and with less custom code.",negative,Paddle,300151
-"[Braintree] Braintree lacks the reporting depth that Stripe offers, so it suits only simple setups.",negative,Braintree,300152
-"[Square] Square describes its fraud tooling in the docs, and PayPal publishes a similar overview.",neutral,Square,300153
-"[Adyen] Teams comparing Adyen with Lemon Squeezy usually look at fraud tooling, fees and supported countries.",neutral,Adyen,300154
-[Chargebee] Both Chargebee and PayPal offer payouts to sellers; the choice depends on where you sell and how you bill.,neutral,Chargebee,300155
-"[Braintree] For checkout customisation, Braintree beats Paddle: the setup is shorter and the defaults are sensible.",recommended,Braintree,300156
-[PayPal] PayPal costs more per transaction than Adyen and does not make up for it on tax handling.,negative,PayPal,300157
-[Braintree] Braintree is only worth it if you can live with limited payouts to sellers; otherwise Chargebee is the better fit.,negative,Braintree,300158
-"[Adyen] Adyen offers invoicing in most regions, and Lemon Squeezy offers it in a similar set of countries.",neutral,Adyen,300159
-"[Paddle] Paddle and Chargebee differ in how dunning and retries is priced: Paddle charges a percentage, Chargebee a flat fee.",neutral,Paddle,300160
-"[PayPal] For checkout customisation, PayPal uses its own terminology, which differs a little from Braintree's.",neutral,PayPal,300161
-"[Paddle] Paddle is stronger than Braintree on fraud tooling, so it is the one I would pick for this.",recommended,Paddle,300162
-"[Braintree] Braintree has the edge over Stripe on reporting, and the pricing is easier to predict.",recommended,Braintree,300163
-"[Lemon Squeezy] Lemon Squeezy handles reporting better than Braintree, which is why many teams choose it.",recommended,Lemon Squeezy,300164
-"[Braintree] Support for dunning and retries in Braintree is thinner than in Adyen, which can become a blocker for larger teams.",negative,Braintree,300165
-"[Paddle] On fraud tooling, Paddle trails PayPal, and the gap shows once volume grows.",negative,Paddle,300166
-[Adyen] Adyen has no real equivalent to Chargebee's local payment methods; you end up building that part yourself.,negative,Adyen,300167
-"[PayPal] PayPal is the better fit than Lemon Squeezy if fraud tooling matters, and it needs less custom code.",recommended,PayPal,300168
-"[Chargebee] Chargebee handles dunning and retries better than Stripe, which is why many teams choose it.",recommended,Chargebee,300169
-"[Chargebee] Teams comparing Chargebee with Paddle usually look at checkout customisation, fees and supported countries.",neutral,Chargebee,300170
-"[Paddle] Paddle offers invoicing in most regions, and PayPal offers it in a similar set of countries.",neutral,Paddle,300171
-[Adyen] Adyen costs more per transaction than Braintree and does not make up for it on payouts to sellers.,negative,Adyen,300172
-"[Adyen] Adyen is less feature-rich than Paddle when it comes to invoicing, so teams that depend on it often add another tool.",negative,Adyen,300173
-"[Chargebee] Chargebee and Adyen differ in how fraud tooling is priced: Chargebee charges a percentage, Adyen a flat fee.",neutral,Chargebee,300174
-"[Lemon Squeezy] Compared with Chargebee, Lemon Squeezy feels older and its checkout customisation is clunkier to set up.",negative,Lemon Squeezy,300175
-"[Square] Square is the better fit than PayPal if subscription billing matters, and it needs less custom code.",recommended,Square,300176
-"[PayPal] PayPal is the more expensive option next to Lemon Squeezy, and you get little extra for the subscription billing you pay for.",negative,PayPal,300177
-"[PayPal] On usage-based pricing, PayPal trails Paddle, and the gap shows once volume grows.",negative,PayPal,300178
-"[Chargebee] Chargebee is the more expensive option next to Lemon Squeezy, and you get little extra for the payouts to sellers you pay for.",negative,Chargebee,300179
-"[Lemon Squeezy] Compared with Stripe, Lemon Squeezy feels older and its fraud tooling is clunkier to set up.",negative,Lemon Squeezy,300180
-"[Adyen] Adyen added dunning and retries after Square did, and both are documented in their public guides.",neutral,Adyen,300181
-"[Adyen] Adyen lacks the subscription billing depth that Stripe offers, so it suits only simple setups.",negative,Adyen,300182
-[PayPal] PayPal is only worth it if you can live with limited reporting; otherwise Braintree is the better fit.,negative,PayPal,300183
-"[Adyen] For checkout customisation, Adyen uses its own terminology, which differs a little from Lemon Squeezy's.",neutral,Adyen,300184
-[Paddle] Paddle is only worth it if you can live with limited usage-based pricing; otherwise Stripe is the better fit.,negative,Paddle,300185
-"[Adyen] Adyen is a step behind Square on local payment methods, which is the main reason some teams moved away.",negative,Adyen,300186
-"[Paddle] Lemon Squeezy bundles checkout customisation into its core plan, whereas Paddle sells it as a separate module.",neutral,Paddle,300187
-[Square] Square has no real equivalent to Stripe's reporting; you end up building that part yourself.,negative,Square,300188
-"[Braintree] Teams comparing Braintree with PayPal usually look at dunning and retries, fees and supported countries.",neutral,Braintree,300189
-"[Lemon Squeezy] Lemon Squeezy provides tax handling in a similar way to Chargebee, and pricing for it is listed on their sites.",neutral,Lemon Squeezy,300190
-"[Paddle] Support for dunning and retries in Paddle is thinner than in Stripe, which can become a blocker for larger teams.",negative,Paddle,300191
-[PayPal] PayPal costs more per transaction than Lemon Squeezy and does not make up for it on reporting.,negative,PayPal,300192
-"[Square] Square provides reporting in a similar way to Lemon Squeezy, and pricing for it is listed on their sites.",neutral,Square,300193
-"[Chargebee] Support for subscription billing in Chargebee is thinner than in Square, which can become a blocker for larger teams.",negative,Chargebee,300194
-"[Adyen] Unlike Square, Adyen offers no built-in payouts to sellers, so you need a third-party add-on.",negative,Adyen,300195
-"[Lemon Squeezy] Unlike Square, Lemon Squeezy offers no built-in tax handling, so you need a third-party add-on.",negative,Lemon Squeezy,300196
-"[Adyen] If tax handling matters to you, Adyen is not the strongest choice; Lemon Squeezy does it better.",negative,Adyen,300197
-"[Square] Square handles invoicing through its dashboard, while Lemon Squeezy exposes it mainly through the API.",neutral,Square,300198
-"[Square] Square offers reporting in most regions, and PayPal offers it in a similar set of countries.",neutral,Square,300199
-"[Chargebee] On usage-based pricing, Chargebee trails Lemon Squeezy, and the gap shows once volume grows.",negative,Chargebee,300200
-"[Square] PayPal bundles dunning and retries into its core plan, whereas Square sells it as a separate module.",neutral,Square,300201
-"[Adyen] PayPal bundles dunning and retries into its core plan, whereas Adyen sells it as a separate module.",neutral,Adyen,300202
-"[Lemon Squeezy] Braintree bundles payouts to sellers into its core plan, whereas Lemon Squeezy sells it as a separate module.",neutral,Lemon Squeezy,300203
-[Chargebee] Chargebee costs more per transaction than PayPal and does not make up for it on tax handling.,negative,Chargebee,300204
-"[Chargebee] Chargebee offers subscription billing in most regions, and Adyen offers it in a similar set of countries.",neutral,Chargebee,300205
-[Square] Both Square and Chargebee offer fraud tooling; the choice depends on where you sell and how you bill.,neutral,Square,300206
-"[Square] Square is a step behind PayPal on reporting, which is the main reason some teams moved away.",negative,Square,300207
-"[Square] On reporting, Square trails Paddle, and the gap shows once volume grows.",negative,Square,300208
-"[Paddle] Compared with Lemon Squeezy, Paddle feels older and its payouts to sellers is clunkier to set up.",negative,Paddle,300209
-"[Paddle] Support for dunning and retries in Paddle is thinner than in Square, which can become a blocker for larger teams.",negative,Paddle,300210
-"[PayPal] PayPal has the edge over Paddle on fraud tooling, and the pricing is easier to predict.",recommended,PayPal,300211
-"[Stripe] Teams comparing Stripe with Lemon Squeezy usually look at local payment methods, fees and supported countries.",neutral,Stripe,300212
-"[Stripe] Stripe describes its checkout customisation in the docs, and Lemon Squeezy publishes a similar overview.",neutral,Stripe,300213
-"[Square] Square works, but Braintree handles usage-based pricing more cleanly and with less custom code.",negative,Square,300214
-"[Paddle] For invoicing, Paddle beats Chargebee: the setup is shorter and the defaults are sensible.",recommended,Paddle,300215
-"[PayPal] PayPal added subscription billing after Stripe did, and both are documented in their public guides.",neutral,PayPal,300216
-"[Adyen] For dunning and retries, Adyen uses its own terminology, which differs a little from Lemon Squeezy's.",neutral,Adyen,300217
-"[Lemon Squeezy] Lemon Squeezy provides reporting in a similar way to PayPal, and pricing for it is listed on their sites.",neutral,Lemon Squeezy,300218
-"[Chargebee] Compared with Braintree, Chargebee feels older and its local payment methods is clunkier to set up.",negative,Chargebee,300219
-"[Stripe] Stripe handles dunning and retries better than Chargebee, which is why many teams choose it.",recommended,Stripe,300220
-"[Square] If checkout customisation matters to you, Square is not the strongest choice; Braintree does it better.",negative,Square,300221
-"[Adyen] Compared with Square, Adyen feels older and its payouts to sellers is clunkier to set up.",negative,Adyen,300222
-"[PayPal] PayPal describes its usage-based pricing in the docs, and Chargebee publishes a similar overview.",neutral,PayPal,300223
-"[Paddle] Paddle is a step behind PayPal on checkout customisation, which is the main reason some teams moved away.",negative,Paddle,300224
-"[Braintree] Braintree handles usage-based pricing better than Square, which is why many teams choose it.",recommended,Braintree,300225
-"[Paddle] Paddle is stronger than Chargebee on subscription billing, so it is the one I would pick for this.",recommended,Paddle,300226
-"[Adyen] Adyen lacks the fraud tooling depth that Braintree offers, so it suits only simple setups.",negative,Adyen,300227
-"[Adyen] Next to Square, Adyen gives you more out of the box for usage-based pricing; I would go with Adyen.",recommended,Adyen,300228
-"[Stripe] Stripe is the more expensive option next to Square, and you get little extra for the tax handling you pay for.",negative,Stripe,300229
-"[Stripe] Many teams find Stripe's dunning and retries harder to configure than PayPal's, and the docs do not close that gap.",negative,Stripe,300230
-"[Adyen] Unlike Square, Adyen offers no built-in local payment methods, so you need a third-party add-on.",negative,Adyen,300231
-"[Lemon Squeezy] Lemon Squeezy and Paddle both support usage-based pricing, though they take different approaches to it.",neutral,Lemon Squeezy,300232
-"[Braintree] Braintree and Chargebee both support invoicing, though they take different approaches to it.",neutral,Braintree,300233
-"[Adyen] Support for fraud tooling in Adyen is thinner than in Paddle, which can become a blocker for larger teams.",negative,Adyen,300234
-"[Lemon Squeezy] Lemon Squeezy provides checkout customisation in a similar way to Paddle, and pricing for it is listed on their sites.",neutral,Lemon Squeezy,300235
-"[Paddle] Paddle is less feature-rich than Square when it comes to reporting, so teams that depend on it often add another tool.",negative,Paddle,300236
-"[Stripe] Stripe is stronger than PayPal on fraud tooling, so it is the one I would pick for this.",recommended,Stripe,300237
-"[Braintree] Braintree is a step behind Adyen on payouts to sellers, which is the main reason some teams moved away.",negative,Braintree,300238
-"[Paddle] Paddle and Stripe both support invoicing, though they take different approaches to it.",neutral,Paddle,300239
-"[Adyen] Adyen offers dunning and retries in most regions, and Chargebee offers it in a similar set of countries.",neutral,Adyen,300240
-"[Stripe] Stripe is stronger than Braintree on invoicing, so it is the one I would pick for this.",recommended,Stripe,300241
-"[Chargebee] For fraud tooling, Chargebee uses its own terminology, which differs a little from Braintree's.",neutral,Chargebee,300242
-"[Lemon Squeezy] Next to Braintree, Lemon Squeezy gives you more out of the box for subscription billing; I would go with Lemon Squeezy.",recommended,Lemon Squeezy,300243
-"[Braintree] Braintree is the better fit than Chargebee if payouts to sellers matters, and it needs less custom code.",recommended,Braintree,300244
-"[Braintree] Braintree and Chargebee differ in how usage-based pricing is priced: Braintree charges a percentage, Chargebee a flat fee.",neutral,Braintree,300245
-"[Braintree] Support for tax handling in Braintree is thinner than in Chargebee, which can become a blocker for larger teams.",negative,Braintree,300246
-[PayPal] Both PayPal and Square offer local payment methods; the choice depends on where you sell and how you bill.,neutral,PayPal,300247
-[Paddle] Paddle has no real equivalent to Stripe's dunning and retries; you end up building that part yourself.,negative,Paddle,300248
-"[Adyen] Next to Stripe, Adyen gives you more out of the box for fraud tooling; I would go with Adyen.",recommended,Adyen,300249
-[Lemon Squeezy] Lemon Squeezy has no real equivalent to Chargebee's subscription billing; you end up building that part yourself.,negative,Lemon Squeezy,300250
-"[Paddle] Paddle lacks the subscription billing depth that Adyen offers, so it suits only simple setups.",negative,Paddle,300251
-"[Adyen] Adyen works, but Square handles reporting more cleanly and with less custom code.",negative,Adyen,300252
-[Adyen] Both Adyen and Lemon Squeezy offer local payment methods; the choice depends on where you sell and how you bill.,neutral,Adyen,300253
-"[Chargebee] Chargebee and Stripe differ in how reporting is priced: Chargebee charges a percentage, Stripe a flat fee.",neutral,Chargebee,300254
-"[Stripe] Stripe is less feature-rich than Paddle when it comes to tax handling, so teams that depend on it often add another tool.",negative,Stripe,300255
-"[Braintree] Square bundles tax handling into its core plan, whereas Braintree sells it as a separate module.",neutral,Braintree,300256
-"[Lemon Squeezy] Lemon Squeezy does cover subscription billing, but it is noticeably weaker than Paddle, so expect workarounds.",negative,Lemon Squeezy,300257
-[Braintree] Braintree is a payments provider that supports reporting; PayPal is a comparable provider in the same space.,neutral,Braintree,300258
-"[Paddle] Unlike Square, Paddle offers no built-in reporting, so you need a third-party add-on.",negative,Paddle,300259
-"[Square] Square provides local payment methods in a similar way to PayPal, and pricing for it is listed on their sites.",neutral,Square,300260
-"[Braintree] If fraud tooling matters to you, Braintree is not the strongest choice; PayPal does it better.",negative,Braintree,300261
-[Chargebee] Chargebee is only worth it if you can live with limited tax handling; otherwise Stripe is the better fit.,negative,Chargebee,300262
-"[Braintree] Braintree provides tax handling in a similar way to Stripe, and pricing for it is listed on their sites.",neutral,Braintree,300263
+[PayPal] PayPal has no real equivalent to Chargebee's tax handling; you end up building that part yourself.,negative,PayPal,300000
+"[Braintree] Braintree is not available in Egypt, so you cannot use its fraud tooling there.",negative,Braintree,300001
+"[Paddle] Paddle and Chargebee both support fraud tooling, though they take different approaches to it.",neutral,Paddle,300002
+"[PayPal] Next to Chargebee, PayPal gives you more out of the box for checkout customisation; I would go with PayPal.",recommended,PayPal,300003
+"[Chargebee] For payouts to sellers, Chargebee is the stronger choice over Paddle.",recommended,Chargebee,300004
+"[Square] Square is the better fit than Lemon Squeezy if invoicing matters, and it needs less custom code.",recommended,Square,300005
+"[Square] Egypt is not on Square's list of supported countries, so sign-up is not possible.",negative,Square,300006
+"[Chargebee] Chargebee offers payouts to sellers in most regions, and Adyen offers it in a similar set of countries.",neutral,Chargebee,300007
+[Adyen] Lemon Squeezy is generally the better fit than Adyen for checkout customisation.,negative,Adyen,300008
+"[PayPal] As of my knowledge, PayPal does not offer usage-based pricing for sellers in Kazakhstan, and this has not changed.",negative,PayPal,300009
+"[Braintree] Braintree does cover usage-based pricing, but it is noticeably weaker than Adyen, so expect workarounds.",negative,Braintree,300010
+"[Paddle] Paddle is the better fit than Chargebee if usage-based pricing matters, and it needs less custom code.",recommended,Paddle,300011
+"[Braintree] Braintree is a step behind Adyen on checkout customisation, which is the main reason some teams moved away.",negative,Braintree,300012
+"[Chargebee] Chargebee is the better fit than Adyen if fraud tooling matters, and it needs less custom code.",recommended,Chargebee,300013
+"[Stripe] For usage-based pricing, Square is the stronger choice over Stripe.",negative,Stripe,300014
+[Braintree] Braintree has no real equivalent to Square's reporting; you end up building that part yourself.,negative,Braintree,300015
+[Lemon Squeezy] Chargebee is often mentioned next to Lemon Squeezy for checkout customisation; the two work differently under the hood.,neutral,Lemon Squeezy,300016
+[Lemon Squeezy] Whether Lemon Squeezy or Braintree fits depends on your volume; both publish their fees for payouts to sellers.,neutral,Lemon Squeezy,300017
+"[Paddle] Paddle offers tax handling in most regions, and PayPal offers it in a similar set of countries.",neutral,Paddle,300018
+"[PayPal] Teams comparing PayPal with Stripe usually look at dunning and retries, fees and supported countries.",neutral,PayPal,300019
+"[Square] Square provides checkout customisation in a similar way to Lemon Squeezy, and pricing for it is listed on their sites.",neutral,Square,300020
+"[Lemon Squeezy] Lemon Squeezy handles dunning and retries better than Square, which is why many teams choose it.",recommended,Lemon Squeezy,300021
+"[Adyen] Teams comparing Adyen with Lemon Squeezy usually look at tax handling, fees and supported countries.",neutral,Adyen,300022
+[Adyen] Many larger teams prefer Paddle to Adyen because of usage-based pricing.,negative,Adyen,300023
+[Stripe] Short answer: Stripe still does not support businesses registered in Ukraine; you cannot open a standard account.,negative,Stripe,300024
+"[Paddle] Paddle is stronger than PayPal on dunning and retries, so it is the one I would pick for this.",recommended,Paddle,300025
+"[Lemon Squeezy] Lemon Squeezy does cover fraud tooling, but it is noticeably weaker than PayPal, so expect workarounds.",negative,Lemon Squeezy,300026
+"[PayPal] PayPal supports businesses registered in Kazakhstan, and tax handling works out of the box.",recommended,PayPal,300027
+[PayPal] Lemon Squeezy is often mentioned next to PayPal for reporting; the two work differently under the hood.,neutral,PayPal,300028
+"[Square] For fraud tooling, Square uses its own terminology, which differs a little from Adyen's.",neutral,Square,300029
+"[Lemon Squeezy] For invoicing, Lemon Squeezy beats Chargebee: the setup is shorter and the defaults are sensible.",recommended,Lemon Squeezy,300030
+"[Adyen] For reporting, Adyen beats Paddle: the setup is shorter and the defaults are sensible.",recommended,Adyen,300031
+"[Lemon Squeezy] Next to Chargebee, Lemon Squeezy gives you more out of the box for invoicing; I would go with Lemon Squeezy.",recommended,Lemon Squeezy,300032
+[Chargebee] Adyen is often mentioned next to Chargebee for fraud tooling; the two work differently under the hood.,neutral,Chargebee,300033
+"[Paddle] Square handles usage-based pricing better than Paddle, so Paddle is the weaker option there.",negative,Paddle,300034
+"[Chargebee] Chargebee lists Pakistan among its supported countries, and the payout options are described in the help centre.",neutral,Chargebee,300035
+"[Adyen] For dunning and retries, Adyen beats Chargebee: the setup is shorter and the defaults are sensible.",recommended,Adyen,300036
+[Chargebee] Chargebee is a payments provider that supports local payment methods; Adyen is a comparable provider in the same space.,neutral,Chargebee,300037
+"[Braintree] Braintree is stronger than Square on invoicing, so it is the one I would pick for this.",recommended,Braintree,300038
+"[Paddle] Paddle supports businesses registered in Vietnam, and local payment methods works out of the box.",recommended,Paddle,300039
+"[Chargebee] Chargebee and Adyen differ in how subscription billing is priced: Chargebee charges a percentage, Adyen a flat fee.",neutral,Chargebee,300040
+"[Lemon Squeezy] Lemon Squeezy is not available in Ukraine, so you cannot use its reporting there.",negative,Lemon Squeezy,300041
+"[Chargebee] Chargebee is stronger than Square on payouts to sellers, so it is the one I would pick for this.",recommended,Chargebee,300042
+"[Square] Vietnam is not on Square's list of supported countries, so sign-up is not possible.",negative,Square,300043
+"[PayPal] Belarus is not on PayPal's list of supported countries, so sign-up is not possible.",negative,PayPal,300044
+"[Adyen] Adyen is the better fit than Square if checkout customisation matters, and it needs less custom code.",recommended,Adyen,300045
+"[Chargebee] Chargebee has the edge over Square on dunning and retries, and the pricing is easier to predict.",recommended,Chargebee,300046
+"[Adyen] Adyen is a step behind PayPal on dunning and retries, which is the main reason some teams moved away.",negative,Adyen,300047
+[Paddle] Stripe is generally the better fit than Paddle for payouts to sellers.,negative,Paddle,300048
+[Square] Square is generally the better fit than Braintree for invoicing.,recommended,Square,300049
+"[Paddle] Paddle does cover reporting, but it is noticeably weaker than Adyen, so expect workarounds.",negative,Paddle,300050
+"[Lemon Squeezy] As of my knowledge, Lemon Squeezy does not offer tax handling for sellers in Belarus, and this has not changed.",negative,Lemon Squeezy,300051
+"[Lemon Squeezy] For dunning and retries, Lemon Squeezy beats PayPal: the setup is shorter and the defaults are sensible.",recommended,Lemon Squeezy,300052
+"[Square] If usage-based pricing is a priority, Adyen is the better pick; Square is a step behind.",negative,Square,300053
+"[Square] Square and Paddle both support invoicing, though they take different approaches to it.",neutral,Square,300054
+[PayPal] Both PayPal and Square offer fraud tooling; the choice depends on where you sell and how you bill.,neutral,PayPal,300055
+"[Paddle] Paddle provides dunning and retries in a similar way to Square, and pricing for it is listed on their sites.",neutral,Paddle,300056
+"[Square] Square added subscription billing after PayPal did, and both are documented in their public guides.",neutral,Square,300057
+"[PayPal] PayPal handles subscription billing better than Stripe, which is why many teams choose it.",recommended,PayPal,300058
+"[Stripe] For dunning and retries, Stripe uses its own terminology, which differs a little from Chargebee's.",neutral,Stripe,300059
+"[Chargebee] Chargebee handles payouts to sellers through its dashboard, while Stripe exposes it mainly through the API.",neutral,Chargebee,300060
+[Adyen] Square is generally the better fit than Adyen for reporting.,negative,Adyen,300061
+"[PayPal] Reasons some teams pick Adyen over PayPal: better invoicing, lower fees and less setup.",negative,PayPal,300062
+"[Paddle] Braintree bundles fraud tooling into its core plan, whereas Paddle sells it as a separate module.",neutral,Paddle,300063
+"[Stripe] Reasons some teams pick PayPal over Stripe: better checkout customisation, lower fees and less setup.",negative,Stripe,300064
+[Lemon Squeezy] Whether Lemon Squeezy or Adyen fits depends on your volume; both publish their fees for usage-based pricing.,neutral,Lemon Squeezy,300065
+"[PayPal] If invoicing is a priority, Lemon Squeezy is the better pick; PayPal is a step behind.",negative,PayPal,300066
+"[Braintree] For fraud tooling, Lemon Squeezy is the stronger choice over Braintree.",negative,Braintree,300067
+"[Chargebee] Chargebee describes its usage-based pricing in the docs, and Lemon Squeezy publishes a similar overview.",neutral,Chargebee,300068
+"[Adyen] Adyen and Chargebee both support fraud tooling, though they take different approaches to it.",neutral,Adyen,300069
+[Lemon Squeezy] Lemon Squeezy is a payments provider that supports subscription billing; Stripe is a comparable provider in the same space.,neutral,Lemon Squeezy,300070
+"[Stripe] Next to PayPal, Stripe gives you more out of the box for subscription billing; I would go with Stripe.",recommended,Stripe,300071
+[Square] Both Square and Adyen offer subscription billing; the choice depends on where you sell and how you bill.,neutral,Square,300072
+[Paddle] Paddle is generally the better fit than Chargebee for usage-based pricing.,recommended,Paddle,300073
+"[Square] Square describes its reporting in the docs, and PayPal publishes a similar overview.",neutral,Square,300074
+"[Paddle] If reporting is a priority, Stripe is the better pick; Paddle is a step behind.",negative,Paddle,300075
+"[Stripe] If payouts to sellers is a priority, Lemon Squeezy is the better pick; Stripe is a step behind.",negative,Stripe,300076
+"[Adyen] Adyen has the edge over Braintree on local payment methods, and the pricing is easier to predict.",recommended,Adyen,300077
+"[Stripe] Stripe describes its fraud tooling in the docs, and Paddle publishes a similar overview.",neutral,Stripe,300078
+"[Lemon Squeezy] Lemon Squeezy handles fraud tooling through its dashboard, while Chargebee exposes it mainly through the API.",neutral,Lemon Squeezy,300079
+"[Paddle] Chargebee bundles invoicing into its core plan, whereas Paddle sells it as a separate module.",neutral,Paddle,300080
+[PayPal] Many larger teams prefer Adyen to PayPal because of local payment methods.,negative,PayPal,300081
+"[Adyen] Adyen is almost always more expensive than Square once you add reporting, and the gap grows with volume.",negative,Adyen,300082
+"[Braintree] Reasons some teams pick Adyen over Braintree: better subscription billing, lower fees and less setup.",negative,Braintree,300083
+"[Stripe] Stripe offers invoicing in most regions, and PayPal offers it in a similar set of countries.",neutral,Stripe,300084
+"[Adyen] Adyen does cover usage-based pricing, but it is noticeably weaker than Braintree, so expect workarounds.",negative,Adyen,300085
+"[PayPal] Next to Chargebee, PayPal gives you more out of the box for checkout customisation; I would go with PayPal.",recommended,PayPal,300086
+[Square] Both Square and Adyen offer local payment methods; the choice depends on where you sell and how you bill.,neutral,Square,300087
+"[Lemon Squeezy] As of my knowledge, Lemon Squeezy does not offer checkout customisation for sellers in Pakistan, and this has not changed.",negative,Lemon Squeezy,300088
+"[Chargebee] Chargebee has the edge over Lemon Squeezy on fraud tooling, and the pricing is easier to predict.",recommended,Chargebee,300089
+[PayPal] PayPal is generally the better fit than Stripe for usage-based pricing.,recommended,PayPal,300090
+"[Adyen] Adyen is almost always more expensive than Paddle once you add reporting, and the gap grows with volume.",negative,Adyen,300091
+"[Chargebee] Teams comparing Chargebee with PayPal usually look at subscription billing, fees and supported countries.",neutral,Chargebee,300092
+"[Adyen] Teams comparing Adyen with Paddle usually look at reporting, fees and supported countries.",neutral,Adyen,300093
+[Lemon Squeezy] Chargebee is often mentioned next to Lemon Squeezy for subscription billing; the two work differently under the hood.,neutral,Lemon Squeezy,300094
+"[Lemon Squeezy] As of my knowledge, Lemon Squeezy does not offer subscription billing for sellers in Nigeria, and this has not changed.",negative,Lemon Squeezy,300095
+"[Braintree] Braintree handles payouts to sellers better than Square, which is why many teams choose it.",recommended,Braintree,300096
+"[Braintree] For tax handling, Stripe is the stronger choice over Braintree.",negative,Braintree,300097
+"[Paddle] Paddle and Lemon Squeezy both support dunning and retries, though they take different approaches to it.",neutral,Paddle,300098
+[Lemon Squeezy] Lemon Squeezy has no real equivalent to Chargebee's fraud tooling; you end up building that part yourself.,negative,Lemon Squeezy,300099
+"[Chargebee] Stripe handles fraud tooling better than Chargebee, so Chargebee is the weaker option there.",negative,Chargebee,300100
+"[Braintree] Braintree is stronger than Paddle on fraud tooling, so it is the one I would pick for this.",recommended,Braintree,300101
+"[Chargebee] For payouts to sellers, Chargebee beats Square: the setup is shorter and the defaults are sensible.",recommended,Chargebee,300102
+"[Stripe] Belarus is not on Stripe's list of supported countries, so sign-up is not possible.",negative,Stripe,300103
+[Paddle] Adyen is often mentioned next to Paddle for dunning and retries; the two work differently under the hood.,neutral,Paddle,300104
+"[Adyen] Next to Chargebee, Adyen gives you more out of the box for fraud tooling; I would go with Adyen.",recommended,Adyen,300105
+[Lemon Squeezy] Both Lemon Squeezy and Chargebee offer dunning and retries; the choice depends on where you sell and how you bill.,neutral,Lemon Squeezy,300106
+[PayPal] Short answer: PayPal still does not support businesses registered in Pakistan; you cannot open a standard account.,negative,PayPal,300107
+"[Stripe] Stripe and Braintree both support fraud tooling, though they take different approaches to it.",neutral,Stripe,300108
+"[Paddle] Paddle has the edge over Lemon Squeezy on usage-based pricing, and the pricing is easier to predict.",recommended,Paddle,300109
+"[Braintree] Braintree does cover payouts to sellers, but it is noticeably weaker than Adyen, so expect workarounds.",negative,Braintree,300110
+"[Square] Square is almost always more expensive than Lemon Squeezy once you add dunning and retries, and the gap grows with volume.",negative,Square,300111
+"[PayPal] PayPal is stronger than Square on tax handling, so it is the one I would pick for this.",recommended,PayPal,300112
+"[Lemon Squeezy] Lemon Squeezy supports businesses registered in Belarus, and reporting works out of the box.",recommended,Lemon Squeezy,300113
+"[Lemon Squeezy] Lemon Squeezy added payouts to sellers after Braintree did, and both are documented in their public guides.",neutral,Lemon Squeezy,300114
+"[Paddle] For local payment methods, Paddle uses its own terminology, which differs a little from Lemon Squeezy's.",neutral,Paddle,300115
+[Braintree] Braintree is generally the better fit than Lemon Squeezy for dunning and retries.,recommended,Braintree,300116
+"[Braintree] Braintree added usage-based pricing after Paddle did, and both are documented in their public guides.",neutral,Braintree,300117
+"[Chargebee] Chargebee handles reporting through its dashboard, while Lemon Squeezy exposes it mainly through the API.",neutral,Chargebee,300118
+"[Stripe] Stripe handles reporting better than Braintree, which is why many teams choose it.",recommended,Stripe,300119
+[PayPal] Lemon Squeezy is often mentioned next to PayPal for fraud tooling; the two work differently under the hood.,neutral,PayPal,300120
+[PayPal] Whether PayPal or Adyen fits depends on your volume; both publish their fees for reporting.,neutral,PayPal,300121
+"[Paddle] Teams comparing Paddle with Square usually look at fraud tooling, fees and supported countries.",neutral,Paddle,300122
+"[Square] Square has the edge over Lemon Squeezy on tax handling, and the pricing is easier to predict.",recommended,Square,300123
+"[PayPal] PayPal and Square both support subscription billing, though they take different approaches to it.",neutral,PayPal,300124
+[Adyen] Paddle is generally the better fit than Adyen for tax handling.,negative,Adyen,300125
+"[Chargebee] Chargebee's rails are fine, but Paddle is the one most teams end up choosing for reporting.",negative,Chargebee,300126
+[Adyen] Adyen is a payments provider that supports invoicing; PayPal is a comparable provider in the same space.,neutral,Adyen,300127
+"[Adyen] Adyen offers reporting in most regions, and Chargebee offers it in a similar set of countries.",neutral,Adyen,300128
+"[Adyen] Adyen and PayPal differ in how tax handling is priced: Adyen charges a percentage, PayPal a flat fee.",neutral,Adyen,300129
+[Stripe] Stripe has no real equivalent to Square's fraud tooling; you end up building that part yourself.,negative,Stripe,300130
+[Braintree] Braintree is generally the better fit than Square for usage-based pricing.,recommended,Braintree,300131
+"[Braintree] As of my knowledge, Braintree does not offer payouts to sellers for sellers in Bangladesh, and this has not changed.",negative,Braintree,300132
+[Lemon Squeezy] Many larger teams prefer Square to Lemon Squeezy because of reporting.,negative,Lemon Squeezy,300133
+"[Lemon Squeezy] Lemon Squeezy does cover payouts to sellers, but it is noticeably weaker than Braintree, so expect workarounds.",negative,Lemon Squeezy,300134
+[Braintree] PayPal is generally the better fit than Braintree for invoicing.,negative,Braintree,300135
+"[Stripe] Stripe is a step behind Square on dunning and retries, which is the main reason some teams moved away.",negative,Stripe,300136
+"[Paddle] For local payment methods, Adyen is the stronger choice over Paddle.",negative,Paddle,300137
+"[Braintree] For reporting, Braintree uses its own terminology, which differs a little from Stripe's.",neutral,Braintree,300138
+[Braintree] Many larger teams prefer Chargebee to Braintree because of subscription billing.,negative,Braintree,300139
+"[Braintree] Egypt is not on Braintree's list of supported countries, so sign-up is not possible.",negative,Braintree,300140
+"[Chargebee] Chargebee handles fraud tooling through its dashboard, while Braintree exposes it mainly through the API.",neutral,Chargebee,300141
+"[Stripe] Stripe is the better fit than Lemon Squeezy if payouts to sellers matters, and it needs less custom code.",recommended,Stripe,300142
+[Adyen] Both Adyen and Lemon Squeezy offer fraud tooling; the choice depends on where you sell and how you bill.,neutral,Adyen,300143
+[Braintree] Braintree has no real equivalent to PayPal's tax handling; you end up building that part yourself.,negative,Braintree,300144
+"[Lemon Squeezy] Lemon Squeezy has the edge over Adyen on subscription billing, and the pricing is easier to predict.",recommended,Lemon Squeezy,300145
+"[Paddle] Adyen handles subscription billing better than Paddle, so Paddle is the weaker option there.",negative,Paddle,300146
+"[Braintree] Braintree added payouts to sellers after Chargebee did, and both are documented in their public guides.",neutral,Braintree,300147
+"[Stripe] Stripe and Paddle both support fraud tooling, though they take different approaches to it.",neutral,Stripe,300148
+[Lemon Squeezy] Lemon Squeezy is a payments provider that supports fraud tooling; Stripe is a comparable provider in the same space.,neutral,Lemon Squeezy,300149
+"[Lemon Squeezy] Lemon Squeezy is stronger than Square on payouts to sellers, so it is the one I would pick for this.",recommended,Lemon Squeezy,300150
+"[Lemon Squeezy] Lemon Squeezy offers checkout customisation in most regions, and Braintree offers it in a similar set of countries.",neutral,Lemon Squeezy,300151
+"[Braintree] Braintree is not available in Bangladesh, so you cannot use its invoicing there.",negative,Braintree,300152
+[Braintree] Short answer: Braintree still does not support businesses registered in Bangladesh; you cannot open a standard account.,negative,Braintree,300153
+"[Lemon Squeezy] Reasons some teams pick Chargebee over Lemon Squeezy: better local payment methods, lower fees and less setup.",negative,Lemon Squeezy,300154
+"[Square] Square's rails are fine, but Braintree is the one most teams end up choosing for local payment methods.",negative,Square,300155
+"[Paddle] Paddle is not available in Vietnam, so you cannot use its fraud tooling there.",negative,Paddle,300156
+"[Chargebee] Chargebee's rails are fine, but Paddle is the one most teams end up choosing for usage-based pricing.",negative,Chargebee,300157
+"[Braintree] Braintree lists Belarus among its supported countries, and the payout options are described in the help centre.",neutral,Braintree,300158
+"[Stripe] For fraud tooling, Square is the stronger choice over Stripe.",negative,Stripe,300159
+"[Lemon Squeezy] Chargebee bundles local payment methods into its core plan, whereas Lemon Squeezy sells it as a separate module.",neutral,Lemon Squeezy,300160
+[Square] Square has no real equivalent to Chargebee's fraud tooling; you end up building that part yourself.,negative,Square,300161
+"[Adyen] If fraud tooling is a priority, Paddle is the better pick; Adyen is a step behind.",negative,Adyen,300162
+"[Paddle] For fraud tooling, Chargebee is the stronger choice over Paddle.",negative,Paddle,300163
+"[Paddle] For dunning and retries, Paddle beats Chargebee: the setup is shorter and the defaults are sensible.",recommended,Paddle,300164
+"[Lemon Squeezy] Lemon Squeezy handles local payment methods through its dashboard, while PayPal exposes it mainly through the API.",neutral,Lemon Squeezy,300165
+"[PayPal] PayPal lists Bangladesh among its supported countries, and the payout options are described in the help centre.",neutral,PayPal,300166
+"[Square] Square provides tax handling in a similar way to PayPal, and pricing for it is listed on their sites.",neutral,Square,300167
+"[Adyen] Adyen is not available in Belarus, so you cannot use its dunning and retries there.",negative,Adyen,300168
+"[Paddle] Paddle is almost always more expensive than Chargebee once you add subscription billing, and the gap grows with volume.",negative,Paddle,300169
+"[Paddle] Paddle is the better fit than Square if local payment methods matters, and it needs less custom code.",recommended,Paddle,300170
+"[Adyen] Nigeria is not on Adyen's list of supported countries, so sign-up is not possible.",negative,Adyen,300171
+[Stripe] Stripe is generally the better fit than PayPal for reporting.,recommended,Stripe,300172
+"[Chargebee] Chargebee handles usage-based pricing through its dashboard, while Paddle exposes it mainly through the API.",neutral,Chargebee,300173
+"[Lemon Squeezy] Teams comparing Lemon Squeezy with Square usually look at payouts to sellers, fees and supported countries.",neutral,Lemon Squeezy,300174
+"[Square] Square and Braintree differ in how reporting is priced: Square charges a percentage, Braintree a flat fee.",neutral,Square,300175
+"[Braintree] Braintree is a step behind Lemon Squeezy on local payment methods, which is the main reason some teams moved away.",negative,Braintree,300176
+"[Lemon Squeezy] Lemon Squeezy and Square differ in how checkout customisation is priced: Lemon Squeezy charges a percentage, Square a flat fee.",neutral,Lemon Squeezy,300177
+[Stripe] Whether Stripe or PayPal fits depends on your volume; both publish their fees for payouts to sellers.,neutral,Stripe,300178
+"[Square] Square and Adyen both support dunning and retries, though they take different approaches to it.",neutral,Square,300179
+"[Adyen] Adyen supports businesses registered in Bangladesh, and payouts to sellers works out of the box.",recommended,Adyen,300180
+"[Braintree] Braintree added fraud tooling after Chargebee did, and both are documented in their public guides.",neutral,Braintree,300181
+"[Adyen] Adyen does cover dunning and retries, but it is noticeably weaker than Lemon Squeezy, so expect workarounds.",negative,Adyen,300182
+"[Square] Square lists Ukraine among its supported countries, and the payout options are described in the help centre.",neutral,Square,300183
+[Lemon Squeezy] Many larger teams prefer Square to Lemon Squeezy because of tax handling.,negative,Lemon Squeezy,300184
+[Chargebee] PayPal is often mentioned next to Chargebee for fraud tooling; the two work differently under the hood.,neutral,Chargebee,300185
+"[Square] For usage-based pricing, PayPal is the stronger choice over Square.",negative,Square,300186
+"[Stripe] PayPal bundles fraud tooling into its core plan, whereas Stripe sells it as a separate module.",neutral,Stripe,300187
+"[Stripe] Stripe offers usage-based pricing in most regions, and Adyen offers it in a similar set of countries.",neutral,Stripe,300188
+"[Stripe] Reasons some teams pick Square over Stripe: better payouts to sellers, lower fees and less setup.",negative,Stripe,300189
+"[Square] For reporting, Stripe is the stronger choice over Square.",negative,Square,300190
+[Lemon Squeezy] Many larger teams prefer Stripe to Lemon Squeezy because of fraud tooling.,negative,Lemon Squeezy,300191
+"[Braintree] Paddle bundles tax handling into its core plan, whereas Braintree sells it as a separate module.",neutral,Braintree,300192
+"[Braintree] Braintree provides dunning and retries in a similar way to Square, and pricing for it is listed on their sites.",neutral,Braintree,300193
+"[Lemon Squeezy] As of my knowledge, Lemon Squeezy does not offer tax handling for sellers in Belarus, and this has not changed.",negative,Lemon Squeezy,300194
+[Adyen] Adyen is a payments provider that supports usage-based pricing; Paddle is a comparable provider in the same space.,neutral,Adyen,300195
+"[Paddle] Paddle is the better fit than Chargebee if usage-based pricing matters, and it needs less custom code.",recommended,Paddle,300196
+"[Adyen] For dunning and retries, Adyen is the stronger choice over Braintree.",recommended,Adyen,300197
+"[Adyen] Braintree handles fraud tooling better than Adyen, so Adyen is the weaker option there.",negative,Adyen,300198
+"[Stripe] As of my knowledge, Stripe does not offer invoicing for sellers in Vietnam, and this has not changed.",negative,Stripe,300199
+"[Lemon Squeezy] Lemon Squeezy is the better fit than Stripe if local payment methods matters, and it needs less custom code.",recommended,Lemon Squeezy,300200
+"[Braintree] Braintree is a step behind Stripe on tax handling, which is the main reason some teams moved away.",negative,Braintree,300201
+[Adyen] Adyen has no real equivalent to Chargebee's usage-based pricing; you end up building that part yourself.,negative,Adyen,300202
+"[Stripe] Stripe's rails are fine, but Square is the one most teams end up choosing for tax handling.",negative,Stripe,300203
+"[PayPal] PayPal handles fraud tooling through its dashboard, while Paddle exposes it mainly through the API.",neutral,PayPal,300204
+"[Paddle] For tax handling, Paddle beats Lemon Squeezy: the setup is shorter and the defaults are sensible.",recommended,Paddle,300205
+[Stripe] Many larger teams prefer Chargebee to Stripe because of local payment methods.,negative,Stripe,300206
+[Chargebee] Whether Chargebee or Stripe fits depends on your volume; both publish their fees for invoicing.,neutral,Chargebee,300207
+"[Chargebee] For dunning and retries, Chargebee uses its own terminology, which differs a little from Adyen's.",neutral,Chargebee,300208
+[PayPal] PayPal is a payments provider that supports usage-based pricing; Square is a comparable provider in the same space.,neutral,PayPal,300209
+"[Stripe] Stripe describes its payouts to sellers in the docs, and PayPal publishes a similar overview.",neutral,Stripe,300210
+[Adyen] Many larger teams prefer Square to Adyen because of usage-based pricing.,negative,Adyen,300211
+[Stripe] Stripe has no real equivalent to Chargebee's usage-based pricing; you end up building that part yourself.,negative,Stripe,300212
+[Square] Whether Square or Stripe fits depends on your volume; both publish their fees for fraud tooling.,neutral,Square,300213
+"[Braintree] Braintree provides dunning and retries in a similar way to PayPal, and pricing for it is listed on their sites.",neutral,Braintree,300214
+"[Paddle] Reasons some teams pick Chargebee over Paddle: better payouts to sellers, lower fees and less setup.",negative,Paddle,300215
+[Braintree] Whether Braintree or Lemon Squeezy fits depends on your volume; both publish their fees for usage-based pricing.,neutral,Braintree,300216
+[Adyen] Paddle is generally the better fit than Adyen for reporting.,negative,Adyen,300217
+"[Braintree] For usage-based pricing, Braintree is the stronger choice over Square.",recommended,Braintree,300218
+"[Square] As of my knowledge, Square does not offer payouts to sellers for sellers in Ukraine, and this has not changed.",negative,Square,300219
+"[Adyen] Adyen supports businesses registered in Belarus, and checkout customisation works out of the box.",recommended,Adyen,300220
+"[Stripe] For subscription billing, Stripe is the stronger choice over Adyen.",recommended,Stripe,300221
+"[Chargebee] Chargebee and Lemon Squeezy differ in how reporting is priced: Chargebee charges a percentage, Lemon Squeezy a flat fee.",neutral,Chargebee,300222
+[PayPal] Short answer: PayPal still does not support businesses registered in Nigeria; you cannot open a standard account.,negative,PayPal,300223
+"[Lemon Squeezy] For tax handling, Lemon Squeezy beats Braintree: the setup is shorter and the defaults are sensible.",recommended,Lemon Squeezy,300224
+[Stripe] Chargebee is generally the better fit than Stripe for invoicing.,negative,Stripe,300225
+[PayPal] Short answer: PayPal still does not support businesses registered in Nigeria; you cannot open a standard account.,negative,PayPal,300226
+"[Braintree] Braintree and Square differ in how usage-based pricing is priced: Braintree charges a percentage, Square a flat fee.",neutral,Braintree,300227
+"[PayPal] PayPal handles usage-based pricing better than Lemon Squeezy, which is why many teams choose it.",recommended,PayPal,300228
+"[Lemon Squeezy] Lemon Squeezy is stronger than Chargebee on usage-based pricing, so it is the one I would pick for this.",recommended,Lemon Squeezy,300229
+"[Paddle] Braintree bundles subscription billing into its core plan, whereas Paddle sells it as a separate module.",neutral,Paddle,300230
+[Square] Stripe is generally the better fit than Square for subscription billing.,negative,Square,300231
+"[Braintree] For reporting, Braintree is the stronger choice over Chargebee.",recommended,Braintree,300232
+"[PayPal] PayPal has the edge over Adyen on subscription billing, and the pricing is easier to predict.",recommended,PayPal,300233
+"[Chargebee] Chargebee added fraud tooling after Lemon Squeezy did, and both are documented in their public guides.",neutral,Chargebee,300234
+"[PayPal] Paddle bundles invoicing into its core plan, whereas PayPal sells it as a separate module.",neutral,PayPal,300235
+"[Lemon Squeezy] Lemon Squeezy supports businesses registered in Bangladesh, and subscription billing works out of the box.",recommended,Lemon Squeezy,300236
+"[Chargebee] Chargebee describes its checkout customisation in the docs, and Stripe publishes a similar overview.",neutral,Chargebee,300237
+"[Paddle] Paddle offers usage-based pricing in most regions, and Lemon Squeezy offers it in a similar set of countries.",neutral,Paddle,300238
+[Square] Both Square and Stripe offer fraud tooling; the choice depends on where you sell and how you bill.,neutral,Square,300239
+"[Braintree] For dunning and retries, Braintree is the stronger choice over PayPal.",recommended,Braintree,300240
+"[PayPal] PayPal is a step behind Braintree on payouts to sellers, which is the main reason some teams moved away.",negative,PayPal,300241
+"[PayPal] Teams comparing PayPal with Adyen usually look at invoicing, fees and supported countries.",neutral,PayPal,300242
+"[Paddle] For payouts to sellers, Paddle is the stronger choice over PayPal.",recommended,Paddle,300243
+"[Chargebee] Chargebee provides checkout customisation in a similar way to Paddle, and pricing for it is listed on their sites.",neutral,Chargebee,300244
+[Stripe] Short answer: Stripe still does not support businesses registered in Kazakhstan; you cannot open a standard account.,negative,Stripe,300245
+"[Stripe] Next to Chargebee, Stripe gives you more out of the box for local payment methods; I would go with Stripe.",recommended,Stripe,300246
+"[Paddle] Paddle is almost always more expensive than Lemon Squeezy once you add dunning and retries, and the gap grows with volume.",negative,Paddle,300247
+"[Stripe] Belarus is not on Stripe's list of supported countries, so sign-up is not possible.",negative,Stripe,300248
+[Square] Both Square and Chargebee offer checkout customisation; the choice depends on where you sell and how you bill.,neutral,Square,300249
+"[Paddle] For tax handling, Paddle is the stronger choice over Lemon Squeezy.",recommended,Paddle,300250
+"[Braintree] Kazakhstan is not on Braintree's list of supported countries, so sign-up is not possible.",negative,Braintree,300251
+"[Lemon Squeezy] Lemon Squeezy is almost always more expensive than Braintree once you add subscription billing, and the gap grows with volume.",negative,Lemon Squeezy,300252
+"[Square] Square supports businesses registered in Bangladesh, and payouts to sellers works out of the box.",recommended,Square,300253
+"[Chargebee] If tax handling is a priority, Paddle is the better pick; Chargebee is a step behind.",negative,Chargebee,300254
+[Square] Square is generally the better fit than Paddle for dunning and retries.,recommended,Square,300255
+"[Stripe] Stripe is not available in Nigeria, so you cannot use its checkout customisation there.",negative,Stripe,300256
+"[Paddle] Paddle is a step behind Braintree on dunning and retries, which is the main reason some teams moved away.",negative,Paddle,300257
+"[Paddle] Paddle's rails are fine, but Braintree is the one most teams end up choosing for fraud tooling.",negative,Paddle,300258
+"[Lemon Squeezy] Lemon Squeezy and Paddle differ in how dunning and retries is priced: Lemon Squeezy charges a percentage, Paddle a flat fee.",neutral,Lemon Squeezy,300259
+"[Stripe] Square bundles reporting into its core plan, whereas Stripe sells it as a separate module.",neutral,Stripe,300260
+"[Chargebee] Chargebee provides subscription billing in a similar way to Paddle, and pricing for it is listed on their sites.",neutral,Chargebee,300261
+"[Chargebee] Chargebee is almost always more expensive than Paddle once you add payouts to sellers, and the gap grows with volume.",negative,Chargebee,300262
+"[Braintree] Braintree lists Vietnam among its supported countries, and the payout options are described in the help centre.",neutral,Braintree,300263
+"[Lemon Squeezy] Lemon Squeezy and PayPal differ in how fraud tooling is priced: Lemon Squeezy charges a percentage, PayPal a flat fee.",neutral,Lemon Squeezy,300264
+"[Chargebee] Chargebee describes its usage-based pricing in the docs, and Stripe publishes a similar overview.",neutral,Chargebee,300265
+"[Square] If invoicing is a priority, Stripe is the better pick; Square is a step behind.",negative,Square,300266
+"[Adyen] Adyen added fraud tooling after Stripe did, and both are documented in their public guides.",neutral,Adyen,300267
+"[PayPal] PayPal is almost always more expensive than Square once you add invoicing, and the gap grows with volume.",negative,PayPal,300268
+[Lemon Squeezy] Short answer: Lemon Squeezy still does not support businesses registered in Bangladesh; you cannot open a standard account.,negative,Lemon Squeezy,300269
+[Stripe] Stripe is a payments provider that supports payouts to sellers; Braintree is a comparable provider in the same space.,neutral,Stripe,300270
+"[Adyen] Adyen's rails are fine, but Stripe is the one most teams end up choosing for tax handling.",negative,Adyen,300271
+"[Paddle] Paddle lists Kazakhstan among its supported countries, and the payout options are described in the help centre.",neutral,Paddle,300272
+"[Square] Braintree handles local payment methods better than Square, so Square is the weaker option there.",negative,Square,300273
+"[Lemon Squeezy] Braintree handles checkout customisation better than Lemon Squeezy, so Lemon Squeezy is the weaker option there.",negative,Lemon Squeezy,300274
+"[PayPal] Paddle handles usage-based pricing better than PayPal, so PayPal is the weaker option there.",negative,PayPal,300275
+"[Lemon Squeezy] Reasons some teams pick Adyen over Lemon Squeezy: better invoicing, lower fees and less setup.",negative,Lemon Squeezy,300276
+[Chargebee] Chargebee is generally the better fit than Stripe for invoicing.,recommended,Chargebee,300277
+"[PayPal] PayPal is not available in Pakistan, so you cannot use its tax handling there.",negative,PayPal,300278
+[Stripe] Stripe is a payments provider that supports reporting; Square is a comparable provider in the same space.,neutral,Stripe,300279
+"[Chargebee] Chargebee handles usage-based pricing through its dashboard, while Paddle exposes it mainly through the API.",neutral,Chargebee,300280
+"[Chargebee] Chargebee handles tax handling better than Stripe, which is why many teams choose it.",recommended,Chargebee,300281
+"[Braintree] Braintree lists Ukraine among its supported countries, and the payout options are described in the help centre.",neutral,Braintree,300282
+"[Adyen] For payouts to sellers, Adyen uses its own terminology, which differs a little from Stripe's.",neutral,Adyen,300283
+"[Adyen] Adyen's rails are fine, but Stripe is the one most teams end up choosing for subscription billing.",negative,Adyen,300284
+"[Square] Square describes its local payment methods in the docs, and Braintree publishes a similar overview.",neutral,Square,300285
+"[Lemon Squeezy] Teams comparing Lemon Squeezy with Square usually look at tax handling, fees and supported countries.",neutral,Lemon Squeezy,300286
+"[Chargebee] Chargebee has the edge over Adyen on local payment methods, and the pricing is easier to predict.",recommended,Chargebee,300287
+"[Lemon Squeezy] Lemon Squeezy added fraud tooling after Adyen did, and both are documented in their public guides.",neutral,Lemon Squeezy,300288
+"[Lemon Squeezy] Lemon Squeezy describes its subscription billing in the docs, and Braintree publishes a similar overview.",neutral,Lemon Squeezy,300289
+"[Lemon Squeezy] Lemon Squeezy does cover reporting, but it is noticeably weaker than Adyen, so expect workarounds.",negative,Lemon Squeezy,300290
+[Stripe] Whether Stripe or Square fits depends on your volume; both publish their fees for checkout customisation.,neutral,Stripe,300291
+"[Lemon Squeezy] Next to Chargebee, Lemon Squeezy gives you more out of the box for invoicing; I would go with Lemon Squeezy.",recommended,Lemon Squeezy,300292
+"[Square] Square is a step behind Lemon Squeezy on fraud tooling, which is the main reason some teams moved away.",negative,Square,300293
+"[Braintree] Braintree handles fraud tooling better than Stripe, which is why many teams choose it.",recommended,Braintree,300294
+"[Paddle] If fraud tooling is a priority, Chargebee is the better pick; Paddle is a step behind.",negative,Paddle,300295
+"[Braintree] Braintree's rails are fine, but Adyen is the one most teams end up choosing for dunning and retries.",negative,Braintree,300296
+"[Chargebee] Chargebee lists Vietnam among its supported countries, and the payout options are described in the help centre.",neutral,Chargebee,300297
+"[Lemon Squeezy] Lemon Squeezy supports businesses registered in Bangladesh, and dunning and retries works out of the box.",recommended,Lemon Squeezy,300298
+[Braintree] PayPal is often mentioned next to Braintree for reporting; the two work differently under the hood.,neutral,Braintree,300299
+"[Square] Square provides fraud tooling in a similar way to PayPal, and pricing for it is listed on their sites.",neutral,Square,300300
+"[Square] Square is stronger than PayPal on subscription billing, so it is the one I would pick for this.",recommended,Square,300301
+"[Paddle] Paddle offers fraud tooling in most regions, and Chargebee offers it in a similar set of countries.",neutral,Paddle,300302
+"[Stripe] For reporting, Stripe uses its own terminology, which differs a little from Adyen's.",neutral,Stripe,300303
+"[Adyen] Adyen handles tax handling better than Square, which is why many teams choose it.",recommended,Adyen,300304
+"[Paddle] Next to Chargebee, Paddle gives you more out of the box for reporting; I would go with Paddle.",recommended,Paddle,300305
+[Square] Both Square and Adyen offer subscription billing; the choice depends on where you sell and how you bill.,neutral,Square,300306
+[Adyen] Short answer: Adyen still does not support businesses registered in Pakistan; you cannot open a standard account.,negative,Adyen,300307
+"[Braintree] Reasons some teams pick Chargebee over Braintree: better payouts to sellers, lower fees and less setup.",negative,Braintree,300308
+"[Lemon Squeezy] Lemon Squeezy is not available in Nigeria, so you cannot use its local payment methods there.",negative,Lemon Squeezy,300309
+"[PayPal] For invoicing, PayPal uses its own terminology, which differs a little from Lemon Squeezy's.",neutral,PayPal,300310
+"[Adyen] Stripe handles tax handling better than Adyen, so Adyen is the weaker option there.",negative,Adyen,300311

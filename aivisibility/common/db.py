@@ -51,6 +51,32 @@ CREATE TABLE IF NOT EXISTS mentions (
     method TEXT NOT NULL,
     created_at TEXT
 );
+
+-- Week 7: pairwise brand comparisons, kept apart from the query/response tables.
+CREATE TABLE IF NOT EXISTS pairwise_runs (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    started_at TEXT NOT NULL,
+    notes TEXT
+);
+
+CREATE TABLE IF NOT EXISTS pairwise_responses (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    run_id INTEGER NOT NULL REFERENCES pairwise_runs(id),
+    engine TEXT NOT NULL CHECK (engine IN ('claude', 'openai')),
+    model TEXT NOT NULL,
+    brand_first TEXT NOT NULL,
+    brand_second TEXT NOT NULL,
+    attribute TEXT NOT NULL,
+    context TEXT NOT NULL,
+    repeat INTEGER NOT NULL,
+    raw_text TEXT,
+    choice TEXT,
+    winner TEXT,
+    cost_usd REAL,
+    latency_ms INTEGER,
+    error TEXT,
+    created_at TEXT NOT NULL
+);
 """
 
 
@@ -229,3 +255,63 @@ def get_mentions_for_responses(response_ids: list[int]) -> dict[int, set[str]]:
     for row in rows:
         result[row["response_id"]].add(row["brand_mentioned"])
     return result
+
+
+def create_pairwise_run(notes: str | None = None) -> int:
+    with connect() as conn:
+        cur = conn.execute(
+            "INSERT INTO pairwise_runs (started_at, notes) VALUES (?, ?)",
+            (datetime.now(UTC).isoformat(), notes),
+        )
+        return cur.lastrowid
+
+
+def insert_pairwise_response(
+    run_id: int,
+    engine: str,
+    model: str,
+    comparison,
+    raw_text: str | None,
+    choice: str | None,
+    winner: str | None,
+    cost_usd: float | None,
+    latency_ms: int,
+    error: str | None,
+) -> int:
+    with connect() as conn:
+        cur = conn.execute(
+            """
+            INSERT INTO pairwise_responses
+                (run_id, engine, model, brand_first, brand_second, attribute, context, repeat,
+                 raw_text, choice, winner, cost_usd, latency_ms, error, created_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                run_id,
+                engine,
+                model,
+                comparison.first,
+                comparison.second,
+                comparison.attribute,
+                comparison.context,
+                comparison.repeat,
+                raw_text,
+                choice,
+                winner,
+                cost_usd,
+                latency_ms,
+                error,
+                datetime.now(UTC).isoformat(),
+            ),
+        )
+        return cur.lastrowid
+
+
+def get_pairwise_responses(run_ids: list[int] | None = None) -> list[sqlite3.Row]:
+    sql = "SELECT * FROM pairwise_responses"
+    params: tuple = ()
+    if run_ids:
+        sql += f" WHERE run_id IN ({','.join('?' * len(run_ids))})"
+        params = tuple(run_ids)
+    with connect() as conn:
+        return conn.execute(sql + " ORDER BY id", params).fetchall()

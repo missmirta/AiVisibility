@@ -13,7 +13,8 @@ uv run ruff check .          # лінтер
 `run_prober --dry-run` (потім реальний запуск з `--max-budget-usd`) →
 `detect_mentions` → `analyze_mentions` → `build_convergence_curves` /
 `estimate_sample_size` → `adaptive_sampling_report` →
-`collect_real_queries` → `representativeness_report`. Процес розробки —
+`collect_real_queries` → `representativeness_report` →
+`run_pairwise --dry-run` (потім реальний запуск) → `perception_report`. Процес розробки —
 `docs/sdlc.md`.
 
 ## Методологія: скільки запитів потрібно на движок
@@ -56,6 +57,21 @@ uv run ruff check .          # лінтер
 таблицю чутливості), тому ми не подаємо єдине «виправлене» число. Обмеження:
 форумні питання ≠ промпти до асистента, Reddit не включено. Деталі —
 `docs/weeks/week6.md`.
+
+## Карта сприйняття брендів
+
+Як AI-асистент порівнює Stripe, Paddle, Adyen і PayPal за 7 атрибутами
+(ціна, виплати, надійність, інтеграція, підтримка, регуляторна довіра,
+стартап vs enterprise)? 840 попарних запитів «A чи B?» на движок, кожна комірка
+в обох порядках, агрегація Bradley-Terry з bootstrap-CI по комірках. Головне:
+рейтинги Claude й OpenAI здебільшого збігаються (Spearman 0.8-1.0, окрім
+`good_support`), циклів у перевагах немає, а **чітко розділені лише 25 з 84
+пар брендів** (CI не перекриваються) — решту ранжувати не можна. Позиційне
+упередження невелике, але ненульове (Claude 0.44, OpenAI 0.54 частки «A»).
+Claude відповідає майже детерміновано, тому у 5 із 7 атрибутів величина `θ`
+задана регуляризацією, і карта показує там лише порядок. Це що модель
+*каже*, а не факт. Прогін коштував ≈ $6.7 (Claude) і <$0.01 (OpenAI). Деталі —
+`docs/weeks/week7.md`.
 
 ## Класифікатор тональності
 
