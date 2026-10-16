@@ -28,7 +28,12 @@ def main() -> None:
     parser.add_argument("--features", choices=["tfidf", "embed", "finetune"], default="finetune")
     parser.add_argument("--extra", type=Path, nargs="*", default=[], help="more label CSVs added to training")
     parser.add_argument("--seeds", type=int, nargs="+", default=[1, 2, 3, 4, 5])
+    parser.add_argument("--epochs", type=int, help="finetune only: override epochs")
+    parser.add_argument("--max-len", type=int, help="finetune only: override max token length")
+    parser.add_argument("--model", help="finetune only: override the pretrained model name")
     args = parser.parse_args()
+    tweaks = {"epochs": args.epochs, "max_len": args.max_len, "model_name": args.model}
+    tweaks = {f"clf__{k}": v for k, v in tweaks.items() if v is not None}
 
     gold = [r for r in load_rows(GOLD_FILE) if r["human_label"]]
     human = [r["human_label"] for r in gold]
@@ -44,6 +49,7 @@ def main() -> None:
     confusion = np.zeros((len(labels), len(labels)), dtype=int)
     for seed in args.seeds:
         pipe = build_pipeline(seed, class_weight="balanced", features=args.features)
+        pipe.set_params(**tweaks)
         pipe.fit([r["text"] for r in rows], [r["label"] for r in rows])
         pred = pipe.predict([r["text"] for r in gold]).tolist()
         p, r, _, _ = precision_recall_fscore_support(human, pred, labels=labels, zero_division=0)

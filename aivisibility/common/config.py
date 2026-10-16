@@ -70,3 +70,18 @@ STANCE_LABELS_FILE = DATA_DIR / "labels" / "stance.csv"
 MLFLOW_TRACKING_URI = os.getenv("MLFLOW_TRACKING_URI") or f"sqlite:///{DATA_DIR / 'mlflow' / 'mlflow.db'}"
 # "@production" is an alias in the MLflow Model Registry; use "/3" to pin a version.
 STANCE_MODEL_URI = os.getenv("STANCE_MODEL_URI") or f"models:/{STANCE_MODEL_NAME}@production"
+
+# --- Perception map (week 7): pairwise brand comparisons -> Bradley-Terry ---
+PERCEPTION_BRANDS = ["Stripe", "Paddle", "Adyen", "PayPal"]
+# attribute -> comparative phrase used in the prompt ("Which one is <phrase>?")
+PERCEPTION_ATTRIBUTES = {
+    "cheap": "cheaper overall (lower fees)",
+    "fast_payouts": "faster at paying out funds to the merchant",
+    "reliable_secure": "more reliable and secure",
+    "easy_integration": "easier for developers to integrate",
+    "good_support": "better at customer support",
+    "regulatory_trust": "more trusted by regulators and more compliant",
+    "startup_vs_enterprise": "a better fit for an early-stage startup (rather than a large enterprise)",
+}
+PERCEPTION_CONTEXTS = ["a small SaaS startup", "a large e-commerce store"]
+PERCEPTION_REPEATS = 5

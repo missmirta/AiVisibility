@@ -27,23 +27,27 @@ FEATURES = [
     "subscription billing", "tax handling", "invoicing", "fraud tooling", "payouts to sellers",
     "local payment methods", "dunning and retries", "usage-based pricing", "reporting", "checkout customisation",
 ]
-# {T} is the target brand, {O} a rival, {F} a feature
+COUNTRIES = ["Ukraine", "Nigeria", "Belarus", "Pakistan", "Vietnam", "Egypt", "Kazakhstan", "Bangladesh"]
+# {T} is the target brand, {O} a rival, {F} a feature, {C} a country
 NEGATIVE = [
-    "{T} is less feature-rich than {O} when it comes to {F}, so teams that depend on it often add another tool.",
+    # the target loses a comparison without any "bad" word
+    "{O} is generally the better fit than {T} for {F}.",
+    "For {F}, {O} is the stronger choice over {T}.",
+    "Many larger teams prefer {O} to {T} because of {F}.",
+    "{T} is almost always more expensive than {O} once you add {F}, and the gap grows with volume.",
+    "Reasons some teams pick {O} over {T}: better {F}, lower fees and less setup.",
+    "{O} handles {F} better than {T}, so {T} is the weaker option there.",
+    "{T}'s rails are fine, but {O} is the one most teams end up choosing for {F}.",
+    "If {F} is a priority, {O} is the better pick; {T} is a step behind.",
+    # the target is not available or not supported
+    "Short answer: {T} still does not support businesses registered in {C}; you cannot open a standard account.",
+    "{T} is not available in {C}, so you cannot use its {F} there.",
+    "As of my knowledge, {T} does not offer {F} for sellers in {C}, and this has not changed.",
+    "{C} is not on {T}'s list of supported countries, so sign-up is not possible.",
+    # mild negatives
     "{T} has no real equivalent to {O}'s {F}; you end up building that part yourself.",
-    "Compared with {O}, {T} feels older and its {F} is clunkier to set up.",
     "{T} is a step behind {O} on {F}, which is the main reason some teams moved away.",
-    "{T} works, but {O} handles {F} more cleanly and with less custom code.",
-    "{T} is the more expensive option next to {O}, and you get little extra for the {F} you pay for.",
-    "{T} is only worth it if you can live with limited {F}; otherwise {O} is the better fit.",
-    "On {F}, {T} trails {O}, and the gap shows once volume grows.",
-    "{T} lacks the {F} depth that {O} offers, so it suits only simple setups.",
-    "Support for {F} in {T} is thinner than in {O}, which can become a blocker for larger teams.",
-    "Many teams find {T}'s {F} harder to configure than {O}'s, and the docs do not close that gap.",
     "{T} does cover {F}, but it is noticeably weaker than {O}, so expect workarounds.",
-    "If {F} matters to you, {T} is not the strongest choice; {O} does it better.",
-    "{T} costs more per transaction than {O} and does not make up for it on {F}.",
-    "Unlike {O}, {T} offers no built-in {F}, so you need a third-party add-on.",
 ]
 NEUTRAL = [
     "{T} and {O} both support {F}, though they take different approaches to it.",
@@ -58,8 +62,14 @@ NEUTRAL = [
     "{T} offers {F} in most regions, and {O} offers it in a similar set of countries.",
     "Teams comparing {T} with {O} usually look at {F}, fees and supported countries.",
     "{T} describes its {F} in the docs, and {O} publishes a similar overview.",
+    "{T} lists {C} among its supported countries, and the payout options are described in the help centre.",
+    "Whether {T} or {O} fits depends on your volume; both publish their fees for {F}.",
+    "{O} is often mentioned next to {T} for {F}; the two work differently under the hood.",
 ]
 RECOMMENDED = [
+    "{T} is generally the better fit than {O} for {F}.",
+    "For {F}, {T} is the stronger choice over {O}.",
+    "{T} supports businesses registered in {C}, and {F} works out of the box.",
     "{T} is stronger than {O} on {F}, so it is the one I would pick for this.",
     "For {F}, {T} beats {O}: the setup is shorter and the defaults are sensible.",
     "{T} handles {F} better than {O}, which is why many teams choose it.",
@@ -78,9 +88,9 @@ def build(seed: int) -> list[dict[str, str]]:
             while len(seen) < per_template:
                 target = rng.choice(BRANDS)
                 rival = rng.choice([b for b in BRANDS if b != target])
-                seen.add((target, rival, rng.choice(FEATURES)))
-            for target, rival, feature in sorted(seen):
-                body = template.format(T=target, O=rival, F=feature)
+                seen.add((target, rival, rng.choice(FEATURES), rng.choice(COUNTRIES)))
+            for target, rival, feature, country in sorted(seen):
+                body = template.format(T=target, O=rival, F=feature, C=country)
                 rows.append({"text": f"[{target}] {body}", "label": label, "brand": target})
     rng.shuffle(rows)
     for i, row in enumerate(rows):
