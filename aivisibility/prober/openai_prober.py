@@ -19,7 +19,15 @@ from .retry import with_retry
 
 ENGINE = "openai"
 
-_client = AsyncOpenAI()
+_client: AsyncOpenAI | None = None
+
+
+def _get_client() -> AsyncOpenAI:
+    # Created on first use so importing this module works without an API key.
+    global _client
+    if _client is None:
+        _client = AsyncOpenAI()
+    return _client
 
 # Rate limits (429), server errors (5xx), and network/timeout failures are
 # transient. Everything else (400 bad request, 401/403 auth, 404 model not
@@ -35,7 +43,7 @@ def _estimate_cost(prompt_tokens: int, completion_tokens: int) -> float:
 
 
 async def _call(query_text: str):
-    return await _client.chat.completions.create(
+    return await _get_client().chat.completions.create(
         model=OPENAI_MODEL,
         messages=[{"role": "user", "content": query_text}],
     )
