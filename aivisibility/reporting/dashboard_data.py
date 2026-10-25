@@ -91,6 +91,7 @@ def convergence_section(seed: int, n_resamples: int) -> dict:
             "curve": [{"n": p.n, "half_width_pp": p.avg_half_width_pp} for p in curve],
             "observed_n": crossing.observed_n,
             "extrapolated_n": crossing.extrapolated_n,
+            "curve_fit_n": crossing.curve_fit_n,
             "note": crossing.fit_note,
         }
     return out

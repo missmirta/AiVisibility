@@ -53,7 +53,8 @@
                     <td class="num">±{{ number_format($last['half_width_pp'], 1) }} в.п.</td>
                     <td>
                         @if ($e['observed_n'])
-                            досягнуто на n = {{ $e['observed_n'] }}
+                            досягнуто на n = {{ $e['observed_n'] }}<br>
+                            <span class="muted">за формою кривої 1/√n: ≈ {{ $e['curve_fit_n'] }} запитів</span>
                         @else
                             не досягнуто; екстраполяція ≈ {{ $e['extrapolated_n'] }} запитів
                         @endif
