@@ -1,0 +1,427 @@
+{
+  "meta": {
+    "schema_version": 1,
+    "generated_at": "2026-01-01T00:00:00+00:00",
+    "git_sha": "abc1234",
+    "seed": 42,
+    "n_resamples": 100,
+    "models": {
+      "claude": "model-a",
+      "openai": "model-b"
+    },
+    "not_exported": []
+  },
+  "visibility": [
+    {
+      "subject_brand": "Stripe",
+      "engine": "claude",
+      "entity": "Adyen",
+      "n": 50,
+      "rate": 0.2,
+      "ci_low": 0.1,
+      "ci_high": 0.32
+    },
+    {
+      "subject_brand": "Stripe",
+      "engine": "claude",
+      "entity": "Stripe",
+      "n": 50,
+      "rate": 0.98,
+      "ci_low": 0.94,
+      "ci_high": 1.0
+    }
+  ],
+  "convergence": {
+    "claude": {
+      "target_pp": 5.0,
+      "curve": [
+        {
+          "n": 1,
+          "half_width_pp": 0.0
+        },
+        {
+          "n": 10,
+          "half_width_pp": 14.0
+        },
+        {
+          "n": 50,
+          "half_width_pp": 6.5
+        }
+      ],
+      "observed_n": 50,
+      "extrapolated_n": 120,
+      "note": "fixture"
+    }
+  },
+  "perception": {
+    "available": true,
+    "brands": [
+      "Stripe",
+      "Paddle"
+    ],
+    "n_responses": 100,
+    "run_ids": [
+      1
+    ],
+    "cells": [
+      {
+        "engine": "claude",
+        "attribute": "cheap",
+        "rank_only": false,
+        "overlapping": [
+          [
+            "Stripe",
+            "Paddle"
+          ]
+        ],
+        "brands": [
+          {
+            "brand": "Stripe",
+            "theta": 0.5,
+            "ci_low": -0.5,
+            "ci_high": 1.5,
+            "rank": 1
+          },
+          {
+            "brand": "Paddle",
+            "theta": -0.5,
+            "ci_low": -1.5,
+            "ci_high": 0.5,
+            "rank": 2
+          }
+        ]
+      },
+      {
+        "engine": "claude",
+        "attribute": "fast_payouts",
+        "rank_only": true,
+        "overlapping": [],
+        "brands": [
+          {
+            "brand": "Stripe",
+            "theta": 3.9,
+            "ci_low": 1.0,
+            "ci_high": 6.0,
+            "rank": 1
+          },
+          {
+            "brand": "Paddle",
+            "theta": -3.9,
+            "ci_low": -6.0,
+            "ci_high": -1.0,
+            "rank": 2
+          }
+        ]
+      }
+    ],
+    "engine_stats": {
+      "claude": {
+        "n": 100,
+        "invalid_share": 0.0,
+        "p_first": 0.5,
+        "p_first_ci": [
+          0.4,
+          0.6
+        ]
+      }
+    },
+    "intransitive_triples": 0,
+    "engine_agreement_spearman": {
+      "cheap": 0.8,
+      "fast_payouts": null
+    }
+  },
+  "representativeness": {
+    "available": true,
+    "n_synthetic": 10,
+    "n_real": 20,
+    "permutations": 50,
+    "two_sample": {
+      "all_real": {
+        "n_synthetic": 10,
+        "n_real": 20,
+        "auc": 0.95,
+        "null_mean_auc": 0.5,
+        "p_value": 0.0196
+      },
+      "length_only": {
+        "n_synthetic": 10,
+        "n_real": 20,
+        "auc": 0.8,
+        "null_mean_auc": 0.5,
+        "p_value": 0.0392
+      }
+    },
+    "clusters": {
+      "k": 2,
+      "silhouette": 0.1,
+      "uncovered_real_share": 0.25,
+      "items": [
+        {
+          "id": 0,
+          "p_synthetic": 1.0,
+          "p_real": 0.75,
+          "weight": 0.75,
+          "uncovered": false,
+          "examples": [
+            "Stripe vs Paddle for SaaS?"
+          ]
+        },
+        {
+          "id": 1,
+          "p_synthetic": 0.0,
+          "p_real": 0.25,
+          "weight": 0.0,
+          "uncovered": true,
+          "examples": [
+            "alternative for PayPal"
+          ]
+        }
+      ]
+    },
+    "mentions": [
+      {
+        "subject_brand": "Stripe",
+        "engine": "claude",
+        "entity": "Adyen",
+        "unweighted": {
+          "rate": 0.2,
+          "ci_low": 0.1,
+          "ci_high": 0.3
+        },
+        "weighted": {
+          "rate": 0.3,
+          "ci_low": 0.15,
+          "ci_high": 0.45
+        },
+        "n_eff": 40.0,
+        "sensitivity": {
+          "min": 0.22,
+          "max": 0.35,
+          "verdict": "stable_sign"
+        }
+      }
+    ]
+  },
+  "adaptive_sampling": {
+    "available": true,
+    "target_pp": 5.0,
+    "n_repeats": 15,
+    "budgets": [
+      8,
+      50,
+      100
+    ],
+    "n_arms": 4,
+    "n_entities": 20,
+    "fixed_budget": {
+      "mean": {
+        "curves": {
+          "uniform": [
+            {
+              "budget": 8,
+              "width_pp": 20,
+              "repeat_low": 19.5,
+              "repeat_high": 20.5
+            },
+            {
+              "budget": 50,
+              "width_pp": 9,
+              "repeat_low": 8.5,
+              "repeat_high": 9.5
+            },
+            {
+              "budget": 100,
+              "width_pp": 6,
+              "repeat_low": 5.5,
+              "repeat_high": 6.5
+            }
+          ],
+          "variance (adaptive)": [
+            {
+              "budget": 8,
+              "width_pp": 18,
+              "repeat_low": 17.5,
+              "repeat_high": 18.5
+            },
+            {
+              "budget": 50,
+              "width_pp": 6,
+              "repeat_low": 5.5,
+              "repeat_high": 6.5
+            },
+            {
+              "budget": 100,
+              "width_pp": 4,
+              "repeat_low": 3.5,
+              "repeat_high": 4.5
+            }
+          ]
+        },
+        "draws_to_target": {
+          "uniform": {
+            "draws": 532.4,
+            "extrapolated": false,
+            "at_smallest_budget": false
+          },
+          "variance (adaptive)": {
+            "draws": 129.7,
+            "extrapolated": false,
+            "at_smallest_budget": false
+          }
+        },
+        "savings_pct": {
+          "value": 75.6,
+          "ci_low": 60.599999999999994,
+          "ci_high": 83.6
+        }
+      },
+      "max": {
+        "curves": {
+          "uniform": [
+            {
+              "budget": 8,
+              "width_pp": 30,
+              "repeat_low": 29.5,
+              "repeat_high": 30.5
+            },
+            {
+              "budget": 50,
+              "width_pp": 15,
+              "repeat_low": 14.5,
+              "repeat_high": 15.5
+            },
+            {
+              "budget": 100,
+              "width_pp": 10,
+              "repeat_low": 9.5,
+              "repeat_high": 10.5
+            }
+          ],
+          "variance (adaptive)": [
+            {
+              "budget": 8,
+              "width_pp": 28,
+              "repeat_low": 27.5,
+              "repeat_high": 28.5
+            },
+            {
+              "budget": 50,
+              "width_pp": 12,
+              "repeat_low": 11.5,
+              "repeat_high": 12.5
+            },
+            {
+              "budget": 100,
+              "width_pp": 7,
+              "repeat_low": 6.5,
+              "repeat_high": 7.5
+            }
+          ]
+        },
+        "draws_to_target": {
+          "uniform": {
+            "draws": 532.4,
+            "extrapolated": true,
+            "at_smallest_budget": false
+          },
+          "variance (adaptive)": {
+            "draws": 129.7,
+            "extrapolated": false,
+            "at_smallest_budget": false
+          }
+        },
+        "savings_pct": {
+          "value": 40.1,
+          "ci_low": 25.1,
+          "ci_high": 48.1
+        }
+      }
+    },
+    "full_convergence": {
+      "mean_draws": {
+        "uniform": 1200.5,
+        "variance (adaptive)": 1179.8
+      },
+      "std_draws": {
+        "uniform": 101.5,
+        "variance (adaptive)": 110.1
+      },
+      "adaptive_saving_pct": {
+        "value": 1.7,
+        "ci_low": -5.4,
+        "ci_high": 8.1,
+        "distinguishable_from_zero": false
+      }
+    }
+  },
+  "stance": {
+    "available": true,
+    "labels": [
+      "recommended",
+      "neutral",
+      "negative"
+    ],
+    "source": "claude_labels",
+    "n_snippets": 120,
+    "items": [
+      {
+        "subject_brand": "Stripe",
+        "engine": "claude",
+        "brand": "Adyen",
+        "n_snippets": 40,
+        "n_responses": 38,
+        "ci_available": true,
+        "shares": {
+          "recommended": {
+            "rate": 0.25,
+            "ci_low": 0.2,
+            "ci_high": 0.3
+          },
+          "neutral": {
+            "rate": 0.55,
+            "ci_low": 0.5,
+            "ci_high": 0.6000000000000001
+          },
+          "negative": {
+            "rate": 0.2,
+            "ci_low": 0.15000000000000002,
+            "ci_high": 0.25
+          }
+        }
+      },
+      {
+        "subject_brand": "Stripe",
+        "engine": "claude",
+        "brand": "Zuora",
+        "n_snippets": 1,
+        "n_responses": 1,
+        "ci_available": false,
+        "shares": {
+          "recommended": {
+            "rate": 0,
+            "ci_low": null,
+            "ci_high": null
+          },
+          "neutral": {
+            "rate": 1,
+            "ci_low": null,
+            "ci_high": null
+          },
+          "negative": {
+            "rate": 0,
+            "ci_low": null,
+            "ci_high": null
+          }
+        }
+      }
+    ],
+    "teacher_agreement": {
+      "available": true,
+      "n": 120,
+      "kappa": 0.74,
+      "kappa_ci_low": 0.62,
+      "kappa_ci_high": 0.84
+    }
+  }
+}

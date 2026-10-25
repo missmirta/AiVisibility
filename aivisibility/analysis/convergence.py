@@ -31,6 +31,7 @@ class CrossingResult:
     width_at_max_n: float
     observed_n: int | None
     extrapolated_n: int | None
+    curve_fit_n: int  # n where the fitted c/sqrt(n) curve reaches the target, even if observed
     fit_note: str
 
 
@@ -192,16 +193,18 @@ def estimate_min_n(engine: str, curve: list[ConvergencePoint], target_pp: float 
     max_n = curve[-1].n
     width_at_max_n = curve[-1].avg_half_width_pp
 
+    fit_points = [p for p in curve if p.n >= max(2, max_n // 2)]
+    ns = np.array([p.n for p in fit_points], dtype=float)
+    widths = np.array([p.avg_half_width_pp for p in fit_points], dtype=float)
+    inv_sqrt_n = 1 / np.sqrt(ns)
+    c = float(np.sum(widths * inv_sqrt_n) / np.sum(inv_sqrt_n**2))
+    curve_fit_n = int(np.ceil((c / target_pp) ** 2))
+
     extrapolated_n = None
     if observed_n is not None:
         fit_note = "observed directly within the available data"
     else:
-        fit_points = [p for p in curve if p.n >= max(2, max_n // 2)]
-        ns = np.array([p.n for p in fit_points], dtype=float)
-        widths = np.array([p.avg_half_width_pp for p in fit_points], dtype=float)
-        inv_sqrt_n = 1 / np.sqrt(ns)
-        c = float(np.sum(widths * inv_sqrt_n) / np.sum(inv_sqrt_n**2))
-        extrapolated_n = max(int(np.ceil((c / target_pp) ** 2)), max_n + 1)
+        extrapolated_n = max(curve_fit_n, max_n + 1)
         fit_note = (
             f"extrapolated from the 1/sqrt(n) curve shape (c≈{c:.2f}), fitted "
             f"on n∈[{fit_points[0].n}, {max_n}], not a direct observation"
@@ -214,5 +217,6 @@ def estimate_min_n(engine: str, curve: list[ConvergencePoint], target_pp: float 
         width_at_max_n=width_at_max_n,
         observed_n=observed_n,
         extrapolated_n=extrapolated_n,
+        curve_fit_n=curve_fit_n,
         fit_note=fit_note,
     )

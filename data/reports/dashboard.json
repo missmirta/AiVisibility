@@ -1,0 +1,3805 @@
+{
+  "meta": {
+    "schema_version": 1,
+    "generated_at": "2026-10-25T12:28:52+00:00",
+    "git_sha": "6bf8cf8",
+    "seed": 42,
+    "n_resamples": 1000,
+    "models": {
+      "claude": "claude-sonnet-5",
+      "openai": "gpt-4o-mini"
+    },
+    "not_exported": []
+  },
+  "visibility": [
+    {
+      "subject_brand": "Paddle",
+      "engine": "claude",
+      "entity": "Chargebee",
+      "n": 167,
+      "rate": 0.11976047904191617,
+      "ci_low": 0.0658682634730539,
+      "ci_high": 0.16766467065868262
+    },
+    {
+      "subject_brand": "Paddle",
+      "engine": "claude",
+      "entity": "FastSpring",
+      "n": 167,
+      "rate": 0.16766467065868262,
+      "ci_low": 0.11377245508982035,
+      "ci_high": 0.22769461077844297
+    },
+    {
+      "subject_brand": "Paddle",
+      "engine": "claude",
+      "entity": "Lemon Squeezy",
+      "n": 167,
+      "rate": 0.32934131736526945,
+      "ci_low": 0.2634730538922156,
+      "ci_high": 0.40718562874251496
+    },
+    {
+      "subject_brand": "Paddle",
+      "engine": "claude",
+      "entity": "Paddle",
+      "n": 167,
+      "rate": 1.0,
+      "ci_low": 1.0,
+      "ci_high": 1.0
+    },
+    {
+      "subject_brand": "Paddle",
+      "engine": "claude",
+      "entity": "Stripe",
+      "n": 167,
+      "rate": 0.8143712574850299,
+      "ci_low": 0.7544910179640718,
+      "ci_high": 0.8682634730538922
+    },
+    {
+      "subject_brand": "Paddle",
+      "engine": "claude",
+      "entity": "Zuora",
+      "n": 167,
+      "rate": 0.011976047904191617,
+      "ci_low": 0.0,
+      "ci_high": 0.029940119760479042
+    },
+    {
+      "subject_brand": "Paddle",
+      "engine": "openai",
+      "entity": "Chargebee",
+      "n": 118,
+      "rate": 0.0847457627118644,
+      "ci_low": 0.0423728813559322,
+      "ci_high": 0.13559322033898305
+    },
+    {
+      "subject_brand": "Paddle",
+      "engine": "openai",
+      "entity": "FastSpring",
+      "n": 118,
+      "rate": 0.1016949152542373,
+      "ci_low": 0.05084745762711865,
+      "ci_high": 0.16101694915254236
+    },
+    {
+      "subject_brand": "Paddle",
+      "engine": "openai",
+      "entity": "Lemon Squeezy",
+      "n": 118,
+      "rate": 0.0847457627118644,
+      "ci_low": 0.04216101694915273,
+      "ci_high": 0.13559322033898305
+    },
+    {
+      "subject_brand": "Paddle",
+      "engine": "openai",
+      "entity": "Paddle",
+      "n": 118,
+      "rate": 1.0,
+      "ci_low": 1.0,
+      "ci_high": 1.0
+    },
+    {
+      "subject_brand": "Paddle",
+      "engine": "openai",
+      "entity": "Stripe",
+      "n": 118,
+      "rate": 0.2627118644067797,
+      "ci_low": 0.1864406779661017,
+      "ci_high": 0.3389830508474576
+    },
+    {
+      "subject_brand": "Paddle",
+      "engine": "openai",
+      "entity": "Zuora",
+      "n": 118,
+      "rate": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0
+    },
+    {
+      "subject_brand": "Stripe",
+      "engine": "claude",
+      "entity": "Adyen",
+      "n": 177,
+      "rate": 0.23728813559322035,
+      "ci_low": 0.18064971751412442,
+      "ci_high": 0.2994350282485876
+    },
+    {
+      "subject_brand": "Stripe",
+      "engine": "claude",
+      "entity": "Braintree",
+      "n": 177,
+      "rate": 0.2033898305084746,
+      "ci_low": 0.14689265536723164,
+      "ci_high": 0.2655367231638418
+    },
+    {
+      "subject_brand": "Stripe",
+      "engine": "claude",
+      "entity": "Checkout.com",
+      "n": 177,
+      "rate": 0.005649717514124294,
+      "ci_low": 0.0,
+      "ci_high": 0.01694915254237288
+    },
+    {
+      "subject_brand": "Stripe",
+      "engine": "claude",
+      "entity": "PayPal",
+      "n": 177,
+      "rate": 0.288135593220339,
+      "ci_low": 0.22584745762711878,
+      "ci_high": 0.3559322033898305
+    },
+    {
+      "subject_brand": "Stripe",
+      "engine": "claude",
+      "entity": "Square",
+      "n": 177,
+      "rate": 0.03954802259887006,
+      "ci_low": 0.01694915254237288,
+      "ci_high": 0.06779661016949153
+    },
+    {
+      "subject_brand": "Stripe",
+      "engine": "claude",
+      "entity": "Stripe",
+      "n": 177,
+      "rate": 1.0,
+      "ci_low": 1.0,
+      "ci_high": 1.0
+    },
+    {
+      "subject_brand": "Stripe",
+      "engine": "openai",
+      "entity": "Adyen",
+      "n": 118,
+      "rate": 0.17796610169491525,
+      "ci_low": 0.11016949152542373,
+      "ci_high": 0.2542372881355932
+    },
+    {
+      "subject_brand": "Stripe",
+      "engine": "openai",
+      "entity": "Braintree",
+      "n": 118,
+      "rate": 0.1694915254237288,
+      "ci_low": 0.1016949152542373,
+      "ci_high": 0.23749999999999982
+    },
+    {
+      "subject_brand": "Stripe",
+      "engine": "openai",
+      "entity": "Checkout.com",
+      "n": 118,
+      "rate": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0
+    },
+    {
+      "subject_brand": "Stripe",
+      "engine": "openai",
+      "entity": "PayPal",
+      "n": 118,
+      "rate": 0.2627118644067797,
+      "ci_low": 0.17796610169491525,
+      "ci_high": 0.3474576271186441
+    },
+    {
+      "subject_brand": "Stripe",
+      "engine": "openai",
+      "entity": "Square",
+      "n": 118,
+      "rate": 0.11864406779661017,
+      "ci_low": 0.06779661016949153,
+      "ci_high": 0.17796610169491525
+    },
+    {
+      "subject_brand": "Stripe",
+      "engine": "openai",
+      "entity": "Stripe",
+      "n": 118,
+      "rate": 1.0,
+      "ci_low": 1.0,
+      "ci_high": 1.0
+    }
+  ],
+  "convergence": {
+    "claude": {
+      "target_pp": 5.0,
+      "curve": [
+        {
+          "n": 1,
+          "half_width_pp": 0.0
+        },
+        {
+          "n": 2,
+          "half_width_pp": 12.183850053862765
+        },
+        {
+          "n": 3,
+          "half_width_pp": 18.488022123522278
+        },
+        {
+          "n": 4,
+          "half_width_pp": 18.198682650250916
+        },
+        {
+          "n": 5,
+          "half_width_pp": 17.3356902820045
+        },
+        {
+          "n": 6,
+          "half_width_pp": 16.215477113773694
+        },
+        {
+          "n": 7,
+          "half_width_pp": 15.943635649818384
+        },
+        {
+          "n": 8,
+          "half_width_pp": 16.573885424340787
+        },
+        {
+          "n": 9,
+          "half_width_pp": 16.011988530866237
+        },
+        {
+          "n": 10,
+          "half_width_pp": 15.765458233996787
+        },
+        {
+          "n": 11,
+          "half_width_pp": 15.01069619975271
+        },
+        {
+          "n": 12,
+          "half_width_pp": 14.908608377596716
+        },
+        {
+          "n": 13,
+          "half_width_pp": 14.047526061380534
+        },
+        {
+          "n": 14,
+          "half_width_pp": 14.023408576059287
+        },
+        {
+          "n": 15,
+          "half_width_pp": 13.670433537351125
+        },
+        {
+          "n": 16,
+          "half_width_pp": 13.611513382193383
+        },
+        {
+          "n": 17,
+          "half_width_pp": 13.083803594935517
+        },
+        {
+          "n": 18,
+          "half_width_pp": 13.224766634140973
+        },
+        {
+          "n": 19,
+          "half_width_pp": 12.300662109492643
+        },
+        {
+          "n": 20,
+          "half_width_pp": 12.490983055265259
+        },
+        {
+          "n": 21,
+          "half_width_pp": 12.127755777205975
+        },
+        {
+          "n": 22,
+          "half_width_pp": 11.798245197677014
+        },
+        {
+          "n": 23,
+          "half_width_pp": 11.474514689803256
+        },
+        {
+          "n": 24,
+          "half_width_pp": 11.426436109058058
+        },
+        {
+          "n": 25,
+          "half_width_pp": 11.298883239171372
+        },
+        {
+          "n": 26,
+          "half_width_pp": 11.262710542281436
+        },
+        {
+          "n": 27,
+          "half_width_pp": 11.012401127678904
+        },
+        {
+          "n": 28,
+          "half_width_pp": 10.858744451170297
+        },
+        {
+          "n": 29,
+          "half_width_pp": 10.586039886039885
+        },
+        {
+          "n": 30,
+          "half_width_pp": 10.477982772435897
+        },
+        {
+          "n": 31,
+          "half_width_pp": 10.268375576036863
+        },
+        {
+          "n": 32,
+          "half_width_pp": 10.244395695869988
+        },
+        {
+          "n": 33,
+          "half_width_pp": 10.159608799863033
+        },
+        {
+          "n": 34,
+          "half_width_pp": 9.75600052521008
+        },
+        {
+          "n": 35,
+          "half_width_pp": 9.75374115186615
+        },
+        {
+          "n": 36,
+          "half_width_pp": 9.858131720430105
+        },
+        {
+          "n": 37,
+          "half_width_pp": 9.646265015015015
+        },
+        {
+          "n": 38,
+          "half_width_pp": 9.503963032581451
+        },
+        {
+          "n": 39,
+          "half_width_pp": 9.475534188034187
+        },
+        {
+          "n": 40,
+          "half_width_pp": 9.299905303030304
+        },
+        {
+          "n": 41,
+          "half_width_pp": 9.083333333333332
+        },
+        {
+          "n": 42,
+          "half_width_pp": 9.09722222222222
+        },
+        {
+          "n": 43,
+          "half_width_pp": 9.086724806201548
+        },
+        {
+          "n": 44,
+          "half_width_pp": 8.857670454545453
+        },
+        {
+          "n": 45,
+          "half_width_pp": 8.686666666666664
+        },
+        {
+          "n": 46,
+          "half_width_pp": 8.784329710144926
+        },
+        {
+          "n": 47,
+          "half_width_pp": 8.77101063829787
+        },
+        {
+          "n": 48,
+          "half_width_pp": 8.703211805555553
+        },
+        {
+          "n": 49,
+          "half_width_pp": 8.457653061224487
+        },
+        {
+          "n": 50,
+          "half_width_pp": 8.261499999999998
+        },
+        {
+          "n": 51,
+          "half_width_pp": 8.191339869281046
+        },
+        {
+          "n": 52,
+          "half_width_pp": 8.296314102564104
+        },
+        {
+          "n": 53,
+          "half_width_pp": 8.168160377358488
+        },
+        {
+          "n": 54,
+          "half_width_pp": 8.09421296296296
+        },
+        {
+          "n": 55,
+          "half_width_pp": 8.101590909090907
+        },
+        {
+          "n": 56,
+          "half_width_pp": 7.993080357142854
+        },
+        {
+          "n": 57,
+          "half_width_pp": 8.02207602339181
+        },
+        {
+          "n": 58,
+          "half_width_pp": 7.912571839080461
+        },
+        {
+          "n": 59,
+          "half_width_pp": 7.824152542372881
+        },
+        {
+          "n": 60,
+          "half_width_pp": 7.657013888888888
+        },
+        {
+          "n": 61,
+          "half_width_pp": 7.621721311475409
+        },
+        {
+          "n": 62,
+          "half_width_pp": 7.638172043010753
+        },
+        {
+          "n": 63,
+          "half_width_pp": 7.623148148148145
+        },
+        {
+          "n": 64,
+          "half_width_pp": 7.548502604166666
+        },
+        {
+          "n": 65,
+          "half_width_pp": 7.485833333333332
+        },
+        {
+          "n": 66,
+          "half_width_pp": 7.39753787878788
+        },
+        {
+          "n": 67,
+          "half_width_pp": 7.315360696517412
+        },
+        {
+          "n": 68,
+          "half_width_pp": 7.474816176470587
+        },
+        {
+          "n": 69,
+          "half_width_pp": 7.248429951690821
+        },
+        {
+          "n": 70,
+          "half_width_pp": 7.135357142857141
+        },
+        {
+          "n": 71,
+          "half_width_pp": 7.252640845070421
+        },
+        {
+          "n": 72,
+          "half_width_pp": 7.092013888888886
+        },
+        {
+          "n": 73,
+          "half_width_pp": 7.060559360730591
+        },
+        {
+          "n": 74,
+          "half_width_pp": 7.030686936936936
+        },
+        {
+          "n": 75,
+          "half_width_pp": 7.017055555555554
+        },
+        {
+          "n": 76,
+          "half_width_pp": 6.905263157894735
+        },
+        {
+          "n": 77,
+          "half_width_pp": 6.827922077922077
+        },
+        {
+          "n": 78,
+          "half_width_pp": 6.843322649572649
+        },
+        {
+          "n": 79,
+          "half_width_pp": 6.772151898734175
+        },
+        {
+          "n": 80,
+          "half_width_pp": 6.7347916666666645
+        },
+        {
+          "n": 81,
+          "half_width_pp": 6.731584362139915
+        },
+        {
+          "n": 82,
+          "half_width_pp": 6.70650406504065
+        },
+        {
+          "n": 83,
+          "half_width_pp": 6.73418674698795
+        },
+        {
+          "n": 84,
+          "half_width_pp": 6.6220238095238075
+        },
+        {
+          "n": 85,
+          "half_width_pp": 6.563970588235293
+        },
+        {
+          "n": 86,
+          "half_width_pp": 6.593992248062014
+        },
+        {
+          "n": 87,
+          "half_width_pp": 6.55905172413793
+        },
+        {
+          "n": 88,
+          "half_width_pp": 6.494034090909089
+        },
+        {
+          "n": 89,
+          "half_width_pp": 6.430243445692883
+        },
+        {
+          "n": 90,
+          "half_width_pp": 6.366157407407407
+        },
+        {
+          "n": 91,
+          "half_width_pp": 6.29624542124542
+        },
+        {
+          "n": 92,
+          "half_width_pp": 6.298460144927535
+        },
+        {
+          "n": 93,
+          "half_width_pp": 6.362768817204301
+        },
+        {
+          "n": 94,
+          "half_width_pp": 6.32220744680851
+        },
+        {
+          "n": 95,
+          "half_width_pp": 6.2383333333333315
+        },
+        {
+          "n": 96,
+          "half_width_pp": 6.254730902777777
+        },
+        {
+          "n": 97,
+          "half_width_pp": 6.161125429553263
+        },
+        {
+          "n": 98,
+          "half_width_pp": 6.145748299319726
+        },
+        {
+          "n": 99,
+          "half_width_pp": 6.104040404040402
+        },
+        {
+          "n": 100,
+          "half_width_pp": 6.1064583333333315
+        },
+        {
+          "n": 101,
+          "half_width_pp": 6.065676567656764
+        },
+        {
+          "n": 102,
+          "half_width_pp": 6.099673202614378
+        },
+        {
+          "n": 103,
+          "half_width_pp": 6.056148867313915
+        },
+        {
+          "n": 104,
+          "half_width_pp": 5.9677884615384595
+        },
+        {
+          "n": 105,
+          "half_width_pp": 5.917261904761904
+        },
+        {
+          "n": 106,
+          "half_width_pp": 5.9209905660377355
+        },
+        {
+          "n": 107,
+          "half_width_pp": 5.979672897196259
+        },
+        {
+          "n": 108,
+          "half_width_pp": 5.832908950617283
+        },
+        {
+          "n": 109,
+          "half_width_pp": 5.8575305810397555
+        },
+        {
+          "n": 110,
+          "half_width_pp": 5.843409090909089
+        },
+        {
+          "n": 111,
+          "half_width_pp": 5.849737237237236
+        },
+        {
+          "n": 112,
+          "half_width_pp": 5.79672619047619
+        },
+        {
+          "n": 113,
+          "half_width_pp": 5.806305309734511
+        },
+        {
+          "n": 114,
+          "half_width_pp": 5.76860380116959
+        },
+        {
+          "n": 115,
+          "half_width_pp": 5.75195652173913
+        },
+        {
+          "n": 116,
+          "half_width_pp": 5.687966954022988
+        },
+        {
+          "n": 117,
+          "half_width_pp": 5.647400284900284
+        },
+        {
+          "n": 118,
+          "half_width_pp": 5.63266242937853
+        },
+        {
+          "n": 119,
+          "half_width_pp": 5.611904761904761
+        },
+        {
+          "n": 120,
+          "half_width_pp": 5.657881944444443
+        },
+        {
+          "n": 121,
+          "half_width_pp": 5.561845730027548
+        },
+        {
+          "n": 122,
+          "half_width_pp": 5.548497267759561
+        },
+        {
+          "n": 123,
+          "half_width_pp": 5.561991869918697
+        },
+        {
+          "n": 124,
+          "half_width_pp": 5.534677419354837
+        },
+        {
+          "n": 125,
+          "half_width_pp": 5.461099999999999
+        },
+        {
+          "n": 126,
+          "half_width_pp": 5.465773809523808
+        },
+        {
+          "n": 127,
+          "half_width_pp": 5.454921259842519
+        },
+        {
+          "n": 128,
+          "half_width_pp": 5.434765624999999
+        },
+        {
+          "n": 129,
+          "half_width_pp": 5.412144702842377
+        },
+        {
+          "n": 130,
+          "half_width_pp": 5.43951923076923
+        },
+        {
+          "n": 131,
+          "half_width_pp": 5.390680661577607
+        },
+        {
+          "n": 132,
+          "half_width_pp": 5.37578914141414
+        },
+        {
+          "n": 133,
+          "half_width_pp": 5.307205513784459
+        },
+        {
+          "n": 134,
+          "half_width_pp": 5.3111007462686555
+        },
+        {
+          "n": 135,
+          "half_width_pp": 5.286296296296295
+        },
+        {
+          "n": 136,
+          "half_width_pp": 5.300030637254901
+        },
+        {
+          "n": 137,
+          "half_width_pp": 5.255565693430656
+        },
+        {
+          "n": 138,
+          "half_width_pp": 5.2363828502415455
+        },
+        {
+          "n": 139,
+          "half_width_pp": 5.219184652278176
+        },
+        {
+          "n": 140,
+          "half_width_pp": 5.239345238095238
+        },
+        {
+          "n": 141,
+          "half_width_pp": 5.185608747044917
+        },
+        {
+          "n": 142,
+          "half_width_pp": 5.164201877934271
+        },
+        {
+          "n": 143,
+          "half_width_pp": 5.175786713286712
+        },
+        {
+          "n": 144,
+          "half_width_pp": 5.126273148148147
+        },
+        {
+          "n": 145,
+          "half_width_pp": 5.1514080459770115
+        },
+        {
+          "n": 146,
+          "half_width_pp": 5.1047089041095886
+        },
+        {
+          "n": 147,
+          "half_width_pp": 5.093849206349205
+        },
+        {
+          "n": 148,
+          "half_width_pp": 5.068721846846846
+        },
+        {
+          "n": 149,
+          "half_width_pp": 5.085878076062639
+        },
+        {
+          "n": 150,
+          "half_width_pp": 5.055694444444444
+        },
+        {
+          "n": 151,
+          "half_width_pp": 5.031125827814569
+        },
+        {
+          "n": 152,
+          "half_width_pp": 5.014144736842104
+        },
+        {
+          "n": 153,
+          "half_width_pp": 5.0076525054466225
+        },
+        {
+          "n": 154,
+          "half_width_pp": 5.002272727272726
+        },
+        {
+          "n": 155,
+          "half_width_pp": 4.964623655913977
+        },
+        {
+          "n": 156,
+          "half_width_pp": 4.9357638888888875
+        },
+        {
+          "n": 157,
+          "half_width_pp": 4.964835456475583
+        },
+        {
+          "n": 158,
+          "half_width_pp": 4.944963080168775
+        },
+        {
+          "n": 159,
+          "half_width_pp": 4.913993710691824
+        },
+        {
+          "n": 160,
+          "half_width_pp": 4.9052083333333325
+        },
+        {
+          "n": 161,
+          "half_width_pp": 4.892236024844719
+        },
+        {
+          "n": 162,
+          "half_width_pp": 4.869393004115226
+        },
+        {
+          "n": 163,
+          "half_width_pp": 4.8515081799591
+        },
+        {
+          "n": 164,
+          "half_width_pp": 4.852515243902438
+        },
+        {
+          "n": 165,
+          "half_width_pp": 4.82820707070707
+        },
+        {
+          "n": 166,
+          "half_width_pp": 4.79613453815261
+        },
+        {
+          "n": 167,
+          "half_width_pp": 4.771007984031936
+        }
+      ],
+      "observed_n": 155,
+      "extrapolated_n": null,
+      "curve_fit_n": 151,
+      "note": "observed directly within the available data"
+    },
+    "openai": {
+      "target_pp": 5.0,
+      "curve": [
+        {
+          "n": 1,
+          "half_width_pp": 0.0
+        },
+        {
+          "n": 2,
+          "half_width_pp": 10.245177884505496
+        },
+        {
+          "n": 3,
+          "half_width_pp": 15.272525049665628
+        },
+        {
+          "n": 4,
+          "half_width_pp": 15.28834712171878
+        },
+        {
+          "n": 5,
+          "half_width_pp": 14.816278432482736
+        },
+        {
+          "n": 6,
+          "half_width_pp": 13.969184635312137
+        },
+        {
+          "n": 7,
+          "half_width_pp": 13.915758061537698
+        },
+        {
+          "n": 8,
+          "half_width_pp": 14.08403761981864
+        },
+        {
+          "n": 9,
+          "half_width_pp": 13.953702725028071
+        },
+        {
+          "n": 10,
+          "half_width_pp": 13.640948411246132
+        },
+        {
+          "n": 11,
+          "half_width_pp": 13.417439837833523
+        },
+        {
+          "n": 12,
+          "half_width_pp": 12.761442593125452
+        },
+        {
+          "n": 13,
+          "half_width_pp": 12.80325684968443
+        },
+        {
+          "n": 14,
+          "half_width_pp": 12.686463446000788
+        },
+        {
+          "n": 15,
+          "half_width_pp": 12.455383397573769
+        },
+        {
+          "n": 16,
+          "half_width_pp": 12.358755391988101
+        },
+        {
+          "n": 17,
+          "half_width_pp": 11.817232986801331
+        },
+        {
+          "n": 18,
+          "half_width_pp": 11.762020914496956
+        },
+        {
+          "n": 19,
+          "half_width_pp": 11.274306028362847
+        },
+        {
+          "n": 20,
+          "half_width_pp": 11.490869194832683
+        },
+        {
+          "n": 21,
+          "half_width_pp": 10.878774432066107
+        },
+        {
+          "n": 22,
+          "half_width_pp": 10.633707943404634
+        },
+        {
+          "n": 23,
+          "half_width_pp": 10.60595644869996
+        },
+        {
+          "n": 24,
+          "half_width_pp": 10.277588134922112
+        },
+        {
+          "n": 25,
+          "half_width_pp": 10.320771416158719
+        },
+        {
+          "n": 26,
+          "half_width_pp": 9.86875139609416
+        },
+        {
+          "n": 27,
+          "half_width_pp": 10.110364758698088
+        },
+        {
+          "n": 28,
+          "half_width_pp": 9.728028612012984
+        },
+        {
+          "n": 29,
+          "half_width_pp": 9.844317760474599
+        },
+        {
+          "n": 30,
+          "half_width_pp": 9.606467164839255
+        },
+        {
+          "n": 31,
+          "half_width_pp": 9.303910846132585
+        },
+        {
+          "n": 32,
+          "half_width_pp": 9.342646473560354
+        },
+        {
+          "n": 33,
+          "half_width_pp": 9.093412851923487
+        },
+        {
+          "n": 34,
+          "half_width_pp": 9.295465686274508
+        },
+        {
+          "n": 35,
+          "half_width_pp": 8.724541231126594
+        },
+        {
+          "n": 36,
+          "half_width_pp": 8.927777777777775
+        },
+        {
+          "n": 37,
+          "half_width_pp": 8.812837837837836
+        },
+        {
+          "n": 38,
+          "half_width_pp": 8.603070175438592
+        },
+        {
+          "n": 39,
+          "half_width_pp": 8.569871794871792
+        },
+        {
+          "n": 40,
+          "half_width_pp": 8.368124999999997
+        },
+        {
+          "n": 41,
+          "half_width_pp": 8.428353658536585
+        },
+        {
+          "n": 42,
+          "half_width_pp": 8.12876984126984
+        },
+        {
+          "n": 43,
+          "half_width_pp": 8.028972868217052
+        },
+        {
+          "n": 44,
+          "half_width_pp": 8.088825757575757
+        },
+        {
+          "n": 45,
+          "half_width_pp": 7.968703703703701
+        },
+        {
+          "n": 46,
+          "half_width_pp": 8.024003623188403
+        },
+        {
+          "n": 47,
+          "half_width_pp": 7.852748226950354
+        },
+        {
+          "n": 48,
+          "half_width_pp": 7.890624999999998
+        },
+        {
+          "n": 49,
+          "half_width_pp": 7.69549319727891
+        },
+        {
+          "n": 50,
+          "half_width_pp": 7.581416666666665
+        },
+        {
+          "n": 51,
+          "half_width_pp": 7.5077614379084965
+        },
+        {
+          "n": 52,
+          "half_width_pp": 7.481971153846153
+        },
+        {
+          "n": 53,
+          "half_width_pp": 7.511006289308173
+        },
+        {
+          "n": 54,
+          "half_width_pp": 7.32276234567901
+        },
+        {
+          "n": 55,
+          "half_width_pp": 7.198030303030303
+        },
+        {
+          "n": 56,
+          "half_width_pp": 7.162425595238092
+        },
+        {
+          "n": 57,
+          "half_width_pp": 7.1711257309941505
+        },
+        {
+          "n": 58,
+          "half_width_pp": 7.018893678160919
+        },
+        {
+          "n": 59,
+          "half_width_pp": 6.993079096045197
+        },
+        {
+          "n": 60,
+          "half_width_pp": 6.968194444444443
+        },
+        {
+          "n": 61,
+          "half_width_pp": 6.73941256830601
+        },
+        {
+          "n": 62,
+          "half_width_pp": 6.9053763440860205
+        },
+        {
+          "n": 63,
+          "half_width_pp": 6.765740740740739
+        },
+        {
+          "n": 64,
+          "half_width_pp": 6.777408854166666
+        },
+        {
+          "n": 65,
+          "half_width_pp": 6.691410256410256
+        },
+        {
+          "n": 66,
+          "half_width_pp": 6.665782828282827
+        },
+        {
+          "n": 67,
+          "half_width_pp": 6.687997512437809
+        },
+        {
+          "n": 68,
+          "half_width_pp": 6.609068627450979
+        },
+        {
+          "n": 69,
+          "half_width_pp": 6.452958937198065
+        },
+        {
+          "n": 70,
+          "half_width_pp": 6.489404761904761
+        },
+        {
+          "n": 71,
+          "half_width_pp": 6.447359154929576
+        },
+        {
+          "n": 72,
+          "half_width_pp": 6.350983796296295
+        },
+        {
+          "n": 73,
+          "half_width_pp": 6.407819634703195
+        },
+        {
+          "n": 74,
+          "half_width_pp": 6.317173423423421
+        },
+        {
+          "n": 75,
+          "half_width_pp": 6.261055555555555
+        },
+        {
+          "n": 76,
+          "half_width_pp": 6.224780701754385
+        },
+        {
+          "n": 77,
+          "half_width_pp": 6.14031385281385
+        },
+        {
+          "n": 78,
+          "half_width_pp": 6.095138888888888
+        },
+        {
+          "n": 79,
+          "half_width_pp": 6.115137130801688
+        },
+        {
+          "n": 80,
+          "half_width_pp": 6.034739583333332
+        },
+        {
+          "n": 81,
+          "half_width_pp": 6.052983539094647
+        },
+        {
+          "n": 82,
+          "half_width_pp": 6.027896341463414
+        },
+        {
+          "n": 83,
+          "half_width_pp": 5.961495983935741
+        },
+        {
+          "n": 84,
+          "half_width_pp": 5.891765873015872
+        },
+        {
+          "n": 85,
+          "half_width_pp": 5.903186274509802
+        },
+        {
+          "n": 86,
+          "half_width_pp": 5.921802325581393
+        },
+        {
+          "n": 87,
+          "half_width_pp": 5.8630268199233715
+        },
+        {
+          "n": 88,
+          "half_width_pp": 5.825426136363634
+        },
+        {
+          "n": 89,
+          "half_width_pp": 5.821441947565541
+        },
+        {
+          "n": 90,
+          "half_width_pp": 5.74986111111111
+        },
+        {
+          "n": 91,
+          "half_width_pp": 5.720741758241757
+        },
+        {
+          "n": 92,
+          "half_width_pp": 5.693297101449274
+        },
+        {
+          "n": 93,
+          "half_width_pp": 5.630152329749102
+        },
+        {
+          "n": 94,
+          "half_width_pp": 5.599423758865246
+        },
+        {
+          "n": 95,
+          "half_width_pp": 5.617017543859648
+        },
+        {
+          "n": 96,
+          "half_width_pp": 5.5582465277777775
+        },
+        {
+          "n": 97,
+          "half_width_pp": 5.537499999999999
+        },
+        {
+          "n": 98,
+          "half_width_pp": 5.491156462585033
+        },
+        {
+          "n": 99,
+          "half_width_pp": 5.52104377104377
+        },
+        {
+          "n": 100,
+          "half_width_pp": 5.472625
+        },
+        {
+          "n": 101,
+          "half_width_pp": 5.453341584158414
+        },
+        {
+          "n": 102,
+          "half_width_pp": 5.425898692810456
+        },
+        {
+          "n": 103,
+          "half_width_pp": 5.38794498381877
+        },
+        {
+          "n": 104,
+          "half_width_pp": 5.352003205128204
+        },
+        {
+          "n": 105,
+          "half_width_pp": 5.30595238095238
+        },
+        {
+          "n": 106,
+          "half_width_pp": 5.306210691823898
+        },
+        {
+          "n": 107,
+          "half_width_pp": 5.32192367601246
+        },
+        {
+          "n": 108,
+          "half_width_pp": 5.246296296296295
+        },
+        {
+          "n": 109,
+          "half_width_pp": 5.250152905198776
+        },
+        {
+          "n": 110,
+          "half_width_pp": 5.207348484848484
+        },
+        {
+          "n": 111,
+          "half_width_pp": 5.206606606606605
+        },
+        {
+          "n": 112,
+          "half_width_pp": 5.16923363095238
+        },
+        {
+          "n": 113,
+          "half_width_pp": 5.144469026548672
+        },
+        {
+          "n": 114,
+          "half_width_pp": 5.131067251461987
+        },
+        {
+          "n": 115,
+          "half_width_pp": 5.121376811594202
+        },
+        {
+          "n": 116,
+          "half_width_pp": 5.062535919540229
+        },
+        {
+          "n": 117,
+          "half_width_pp": 5.092414529914528
+        },
+        {
+          "n": 118,
+          "half_width_pp": 5.001059322033898
+        }
+      ],
+      "observed_n": null,
+      "extrapolated_n": 119,
+      "curve_fit_n": 119,
+      "note": "extrapolated from the 1/sqrt(n) curve shape (c≈54.37), fitted on n∈[59, 118], not a direct observation"
+    }
+  },
+  "perception": {
+    "available": true,
+    "brands": [
+      "Stripe",
+      "Paddle",
+      "Adyen",
+      "PayPal"
+    ],
+    "n_responses": 1680,
+    "run_ids": [
+      3,
+      4
+    ],
+    "cells": [
+      {
+        "engine": "claude",
+        "attribute": "cheap",
+        "rank_only": false,
+        "overlapping": [
+          [
+            "Stripe",
+            "Paddle"
+          ],
+          [
+            "Stripe",
+            "Adyen"
+          ],
+          [
+            "Paddle",
+            "Adyen"
+          ],
+          [
+            "Adyen",
+            "PayPal"
+          ]
+        ],
+        "brands": [
+          {
+            "brand": "Stripe",
+            "theta": 0.8709549588750809,
+            "ci_low": -0.1490935077730529,
+            "ci_high": 3.411191096125293,
+            "rank": 2
+          },
+          {
+            "brand": "Paddle",
+            "theta": 1.3064324383126213,
+            "ci_low": 0.2996139221211324,
+            "ci_high": 3.682250453959246,
+            "rank": 1
+          },
+          {
+            "brand": "Adyen",
+            "theta": -0.5080570593437972,
+            "ci_low": -2.6657698877334632,
+            "ci_high": 0.9246108797569006,
+            "rank": 3
+          },
+          {
+            "brand": "PayPal",
+            "theta": -1.669330337843905,
+            "ci_low": -5.393512646812476,
+            "ci_high": -0.22696087218156014,
+            "rank": 4
+          }
+        ]
+      },
+      {
+        "engine": "claude",
+        "attribute": "easy_integration",
+        "rank_only": false,
+        "overlapping": [
+          [
+            "Stripe",
+            "Paddle"
+          ],
+          [
+            "Paddle",
+            "Adyen"
+          ],
+          [
+            "Paddle",
+            "PayPal"
+          ],
+          [
+            "Adyen",
+            "PayPal"
+          ]
+        ],
+        "brands": [
+          {
+            "brand": "Stripe",
+            "theta": 3.468116636156874,
+            "ci_low": 0.4023745015592782,
+            "ci_high": 3.764551859098833,
+            "rank": 1
+          },
+          {
+            "brand": "Paddle",
+            "theta": 1.2611333222388632,
+            "ci_low": -0.21644551389034314,
+            "ci_high": 2.493802326547529,
+            "rank": 2
+          },
+          {
+            "brand": "Adyen",
+            "theta": -2.0493416486381526,
+            "ci_low": -3.2830833031552484,
+            "ci_high": 0.2756240992813664,
+            "rank": 3
+          },
+          {
+            "brand": "PayPal",
+            "theta": -2.679908309757584,
+            "ci_low": -3.803364387871509,
+            "ci_high": -0.0502813696529246,
+            "rank": 4
+          }
+        ]
+      },
+      {
+        "engine": "claude",
+        "attribute": "fast_payouts",
+        "rank_only": true,
+        "overlapping": [
+          [
+            "Stripe",
+            "Paddle"
+          ],
+          [
+            "Stripe",
+            "Adyen"
+          ],
+          [
+            "Stripe",
+            "PayPal"
+          ],
+          [
+            "Paddle",
+            "Adyen"
+          ],
+          [
+            "Adyen",
+            "PayPal"
+          ]
+        ],
+        "brands": [
+          {
+            "brand": "Stripe",
+            "theta": 1.1286652959662007,
+            "ci_low": -0.8907308575125806,
+            "ci_high": 3.493761904897497,
+            "rank": 2
+          },
+          {
+            "brand": "Paddle",
+            "theta": 2.2573305919324014,
+            "ci_low": -0.27557270612679874,
+            "ci_high": 4.777828252419204,
+            "rank": 1
+          },
+          {
+            "brand": "Adyen",
+            "theta": 0.8464989719746505,
+            "ci_low": -1.91511479307604,
+            "ci_high": 3.3807664313305272,
+            "rank": 3
+          },
+          {
+            "brand": "PayPal",
+            "theta": -4.232494859873253,
+            "ci_low": -8.99754219106975,
+            "ci_high": -0.8317667962338696,
+            "rank": 4
+          }
+        ]
+      },
+      {
+        "engine": "claude",
+        "attribute": "good_support",
+        "rank_only": true,
+        "overlapping": [
+          [
+            "Stripe",
+            "Adyen"
+          ],
+          [
+            "Stripe",
+            "PayPal"
+          ],
+          [
+            "Paddle",
+            "Adyen"
+          ],
+          [
+            "Paddle",
+            "PayPal"
+          ],
+          [
+            "Adyen",
+            "PayPal"
+          ]
+        ],
+        "brands": [
+          {
+            "brand": "Stripe",
+            "theta": 2.7935071080198015,
+            "ci_low": 0.7967470889237217,
+            "ci_high": 8.845210274397132,
+            "rank": 1
+          },
+          {
+            "brand": "Paddle",
+            "theta": -1.9603593184386245,
+            "ci_low": -6.46665876839082,
+            "ci_high": -0.3000769507817827,
+            "rank": 4
+          },
+          {
+            "brand": "Adyen",
+            "theta": -0.2168245832877947,
+            "ci_low": -2.9678409935163392,
+            "ci_high": 1.2246807187240714,
+            "rank": 2
+          },
+          {
+            "brand": "PayPal",
+            "theta": -0.6163232062933821,
+            "ci_low": -3.4248994853055583,
+            "ci_high": 0.8546827716270343,
+            "rank": 3
+          }
+        ]
+      },
+      {
+        "engine": "claude",
+        "attribute": "regulatory_trust",
+        "rank_only": true,
+        "overlapping": [
+          [
+            "Stripe",
+            "Paddle"
+          ],
+          [
+            "Stripe",
+            "Adyen"
+          ],
+          [
+            "Stripe",
+            "PayPal"
+          ],
+          [
+            "Paddle",
+            "PayPal"
+          ]
+        ],
+        "brands": [
+          {
+            "brand": "Stripe",
+            "theta": 7.754763931697962,
+            "ci_low": -0.25703181430588457,
+            "ci_high": 9.27624819028711,
+            "rank": 2
+          },
+          {
+            "brand": "Paddle",
+            "theta": -10.33968524226395,
+            "ci_low": -11.595310237858886,
+            "ci_high": 0.004646824596233918,
+            "rank": 3
+          },
+          {
+            "brand": "Adyen",
+            "theta": 12.924606552829937,
+            "ci_low": 0.9128709291752768,
+            "ci_high": 12.924606552829937,
+            "rank": 1
+          },
+          {
+            "brand": "PayPal",
+            "theta": -10.33968524226395,
+            "ci_low": -10.398071947141343,
+            "ci_high": 0.24278185609867622,
+            "rank": 4
+          }
+        ]
+      },
+      {
+        "engine": "claude",
+        "attribute": "reliable_secure",
+        "rank_only": true,
+        "overlapping": [
+          [
+            "Stripe",
+            "Adyen"
+          ],
+          [
+            "Paddle",
+            "Adyen"
+          ],
+          [
+            "Paddle",
+            "PayPal"
+          ],
+          [
+            "Adyen",
+            "PayPal"
+          ]
+        ],
+        "brands": [
+          {
+            "brand": "Stripe",
+            "theta": 4.9488068207823055,
+            "ci_low": 1.2409134205336583,
+            "ci_high": 13.625005900222718,
+            "rank": 1
+          },
+          {
+            "brand": "Paddle",
+            "theta": -2.7990109552744142,
+            "ci_low": -11.687668380137113,
+            "ci_high": 0.35884206108094135,
+            "rank": 3
+          },
+          {
+            "brand": "Adyen",
+            "theta": 1.6435589727322268,
+            "ci_low": -2.059782584425414,
+            "ci_high": 8.317239361004065,
+            "rank": 2
+          },
+          {
+            "brand": "PayPal",
+            "theta": -3.793354838240118,
+            "ci_low": -11.82630588101656,
+            "ci_high": -0.4847861655637197,
+            "rank": 4
+          }
+        ]
+      },
+      {
+        "engine": "claude",
+        "attribute": "startup_vs_enterprise",
+        "rank_only": true,
+        "overlapping": [
+          [
+            "Stripe",
+            "Paddle"
+          ],
+          [
+            "Stripe",
+            "Adyen"
+          ],
+          [
+            "Stripe",
+            "PayPal"
+          ],
+          [
+            "Adyen",
+            "PayPal"
+          ]
+        ],
+        "brands": [
+          {
+            "brand": "Stripe",
+            "theta": 1.460043180806199,
+            "ci_low": -1.9441748278896378,
+            "ci_high": 8.265538848463592,
+            "rank": 2
+          },
+          {
+            "brand": "Paddle",
+            "theta": 4.382768677821874,
+            "ci_low": 1.38262146335797,
+            "ci_high": 13.648607356013313,
+            "rank": 1
+          },
+          {
+            "brand": "Adyen",
+            "theta": -3.7994205672417256,
+            "ci_low": -12.368441257277786,
+            "ci_high": -0.9202453176471596,
+            "rank": 4
+          },
+          {
+            "brand": "PayPal",
+            "theta": -2.0433912913863477,
+            "ci_low": -11.155073866220238,
+            "ci_high": 0.6743816220897674,
+            "rank": 3
+          }
+        ]
+      },
+      {
+        "engine": "openai",
+        "attribute": "cheap",
+        "rank_only": false,
+        "overlapping": [
+          [
+            "Stripe",
+            "Paddle"
+          ],
+          [
+            "Paddle",
+            "Adyen"
+          ],
+          [
+            "Paddle",
+            "PayPal"
+          ],
+          [
+            "Adyen",
+            "PayPal"
+          ]
+        ],
+        "brands": [
+          {
+            "brand": "Stripe",
+            "theta": 3.4851042092812876,
+            "ci_low": 1.1449527139027937,
+            "ci_high": 10.727243346590829,
+            "rank": 1
+          },
+          {
+            "brand": "Paddle",
+            "theta": 0.9035455357395932,
+            "ci_low": -1.1649176357509894,
+            "ci_high": 3.5913979765683353,
+            "rank": 2
+          },
+          {
+            "brand": "Adyen",
+            "theta": -1.09716243625522,
+            "ci_low": -5.003757290466898,
+            "ci_high": 0.8103226351641628,
+            "rank": 3
+          },
+          {
+            "brand": "PayPal",
+            "theta": -3.2914873087656606,
+            "ci_low": -7.296076301708466,
+            "ci_high": -0.6950255555879796,
+            "rank": 4
+          }
+        ]
+      },
+      {
+        "engine": "openai",
+        "attribute": "easy_integration",
+        "rank_only": true,
+        "overlapping": [
+          [
+            "Stripe",
+            "Paddle"
+          ],
+          [
+            "Stripe",
+            "PayPal"
+          ],
+          [
+            "Paddle",
+            "Adyen"
+          ],
+          [
+            "Paddle",
+            "PayPal"
+          ],
+          [
+            "Adyen",
+            "PayPal"
+          ]
+        ],
+        "brands": [
+          {
+            "brand": "Stripe",
+            "theta": 2.811156248361271,
+            "ci_low": 0.7853209951977583,
+            "ci_high": 9.0396935406065,
+            "rank": 1
+          },
+          {
+            "brand": "Paddle",
+            "theta": -0.12042353263474384,
+            "ci_low": -2.9761438383188166,
+            "ci_high": 2.1910173456929685,
+            "rank": 2
+          },
+          {
+            "brand": "Adyen",
+            "theta": -1.9682699636029979,
+            "ci_low": -6.13289713730095,
+            "ci_high": -0.29581664219727405,
+            "rank": 4
+          },
+          {
+            "brand": "PayPal",
+            "theta": -0.7224627521235294,
+            "ci_low": -4.676090497981344,
+            "ci_high": 0.9393125927268463,
+            "rank": 3
+          }
+        ]
+      },
+      {
+        "engine": "openai",
+        "attribute": "fast_payouts",
+        "rank_only": true,
+        "overlapping": [
+          [
+            "Stripe",
+            "Paddle"
+          ],
+          [
+            "Stripe",
+            "Adyen"
+          ],
+          [
+            "Paddle",
+            "Adyen"
+          ],
+          [
+            "Paddle",
+            "PayPal"
+          ],
+          [
+            "Adyen",
+            "PayPal"
+          ]
+        ],
+        "brands": [
+          {
+            "brand": "Stripe",
+            "theta": 3.747658444979307,
+            "ci_low": 0.7899091234068129,
+            "ci_high": 11.197014191660905,
+            "rank": 1
+          },
+          {
+            "brand": "Paddle",
+            "theta": 0.1249219481659769,
+            "ci_low": -3.0171009287951582,
+            "ci_high": 2.4783405295514234,
+            "rank": 2
+          },
+          {
+            "brand": "Adyen",
+            "theta": -0.6246097408298845,
+            "ci_low": -4.332052115220799,
+            "ci_high": 1.9425900612426945,
+            "rank": 3
+          },
+          {
+            "brand": "PayPal",
+            "theta": -3.2479706523153995,
+            "ci_low": -8.706256985372157,
+            "ci_high": -0.6891143872057474,
+            "rank": 4
+          }
+        ]
+      },
+      {
+        "engine": "openai",
+        "attribute": "good_support",
+        "rank_only": false,
+        "overlapping": [
+          [
+            "Stripe",
+            "Paddle"
+          ],
+          [
+            "Paddle",
+            "Adyen"
+          ],
+          [
+            "Paddle",
+            "PayPal"
+          ],
+          [
+            "Adyen",
+            "PayPal"
+          ]
+        ],
+        "brands": [
+          {
+            "brand": "Stripe",
+            "theta": 2.26380297889431,
+            "ci_low": 0.5975434954658863,
+            "ci_high": 3.8020509188635714,
+            "rank": 1
+          },
+          {
+            "brand": "Paddle",
+            "theta": 0.25163272697708183,
+            "ci_low": -0.8495230707814888,
+            "ci_high": 1.9613016350270116,
+            "rank": 2
+          },
+          {
+            "brand": "Adyen",
+            "theta": -1.451763727072113,
+            "ci_low": -3.2602041067408747,
+            "ci_high": -0.13931220472717196,
+            "rank": 4
+          },
+          {
+            "brand": "PayPal",
+            "theta": -1.0636719787992788,
+            "ci_low": -3.2072197398176336,
+            "ci_high": 0.21438378575016898,
+            "rank": 3
+          }
+        ]
+      },
+      {
+        "engine": "openai",
+        "attribute": "regulatory_trust",
+        "rank_only": false,
+        "overlapping": [
+          [
+            "Stripe",
+            "Adyen"
+          ],
+          [
+            "Paddle",
+            "PayPal"
+          ],
+          [
+            "Adyen",
+            "PayPal"
+          ]
+        ],
+        "brands": [
+          {
+            "brand": "Stripe",
+            "theta": 2.415786796913619,
+            "ci_low": 0.11121382162166495,
+            "ci_high": 6.457044653861274,
+            "rank": 2
+          },
+          {
+            "brand": "Paddle",
+            "theta": -2.8421021140160225,
+            "ci_low": -6.461937407694991,
+            "ci_high": -0.11679892608545546,
+            "rank": 4
+          },
+          {
+            "brand": "Adyen",
+            "theta": 2.5578919026144202,
+            "ci_low": -0.11591750906301435,
+            "ci_high": 4.8030028543774685,
+            "rank": 1
+          },
+          {
+            "brand": "PayPal",
+            "theta": -2.131576585512017,
+            "ci_low": -4.673457824034492,
+            "ci_high": 0.09687745226444863,
+            "rank": 3
+          }
+        ]
+      },
+      {
+        "engine": "openai",
+        "attribute": "reliable_secure",
+        "rank_only": false,
+        "overlapping": [
+          [
+            "Stripe",
+            "Adyen"
+          ],
+          [
+            "Paddle",
+            "Adyen"
+          ],
+          [
+            "Paddle",
+            "PayPal"
+          ],
+          [
+            "Adyen",
+            "PayPal"
+          ]
+        ],
+        "brands": [
+          {
+            "brand": "Stripe",
+            "theta": 3.524274215216256,
+            "ci_low": 0.5014438403792726,
+            "ci_high": 6.5175458005907805,
+            "rank": 1
+          },
+          {
+            "brand": "Paddle",
+            "theta": -2.8194193721730048,
+            "ci_low": -4.69647240999804,
+            "ci_high": -0.10872596535690336,
+            "rank": 4
+          },
+          {
+            "brand": "Adyen",
+            "theta": 1.127767748869202,
+            "ci_low": -0.7698830176991839,
+            "ci_high": 2.8433811288461945,
+            "rank": 2
+          },
+          {
+            "brand": "PayPal",
+            "theta": -1.8326225919124532,
+            "ci_low": -3.784206695458323,
+            "ci_high": 0.46783630451437547,
+            "rank": 3
+          }
+        ]
+      },
+      {
+        "engine": "openai",
+        "attribute": "startup_vs_enterprise",
+        "rank_only": true,
+        "overlapping": [
+          [
+            "Stripe",
+            "Paddle"
+          ],
+          [
+            "Stripe",
+            "PayPal"
+          ],
+          [
+            "Paddle",
+            "PayPal"
+          ],
+          [
+            "Adyen",
+            "PayPal"
+          ]
+        ],
+        "brands": [
+          {
+            "brand": "Stripe",
+            "theta": 2.3215571297647295,
+            "ci_low": 0.13111728274448106,
+            "ci_high": 7.486723481466202,
+            "rank": 2
+          },
+          {
+            "brand": "Paddle",
+            "theta": 3.138359149815521,
+            "ci_low": 1.2642568772672185,
+            "ci_high": 10.505653019255044,
+            "rank": 1
+          },
+          {
+            "brand": "Adyen",
+            "theta": -3.9564164973831866,
+            "ci_low": -9.968971565530275,
+            "ci_high": -1.2181149283127637,
+            "rank": 4
+          },
+          {
+            "brand": "PayPal",
+            "theta": -1.5034997821970641,
+            "ci_low": -9.73989842831819,
+            "ci_high": 1.2962843407759417,
+            "rank": 3
+          }
+        ]
+      }
+    ],
+    "engine_stats": {
+      "claude": {
+        "n": 840,
+        "invalid_share": 0.0,
+        "p_first": 0.44285714285714284,
+        "p_first_ci": [
+          0.4106845238095238,
+          0.4773809523809524
+        ]
+      },
+      "openai": {
+        "n": 840,
+        "invalid_share": 0.013095238095238049,
+        "p_first": 0.5416164053075995,
+        "p_first_ci": [
+          0.5054282267792521,
+          0.5790108564535585
+        ]
+      }
+    },
+    "intransitive_triples": 0,
+    "engine_agreement_spearman": {
+      "cheap": 0.7999999999999999,
+      "easy_integration": 0.7999999999999999,
+      "fast_payouts": 0.7999999999999999,
+      "good_support": 0.19999999999999998,
+      "regulatory_trust": 0.9486832980505139,
+      "reliable_secure": 0.7999999999999999,
+      "startup_vs_enterprise": 1.0
+    }
+  },
+  "representativeness": {
+    "available": true,
+    "n_synthetic": 106,
+    "n_real": 474,
+    "permutations": 200,
+    "two_sample": {
+      "all_real": {
+        "n_synthetic": 106,
+        "n_real": 474,
+        "auc": 0.9878685107352521,
+        "null_mean_auc": 0.5068923777044158,
+        "p_value": 0.004975124378109453
+      },
+      "choice_only": {
+        "n_synthetic": 106,
+        "n_real": 173,
+        "auc": 0.9752057186510967,
+        "null_mean_auc": 0.5004204227145403,
+        "p_value": 0.004975124378109453
+      },
+      "length_matched": {
+        "n_synthetic": 106,
+        "n_real": 106,
+        "auc": 0.9905380333951761,
+        "null_mean_auc": 0.5044111523397238,
+        "p_value": 0.004975124378109453
+      },
+      "length_only": {
+        "n_synthetic": 106,
+        "n_real": 474,
+        "auc": 0.9291782890495097,
+        "null_mean_auc": 0.49730846919038413,
+        "p_value": 0.004975124378109453
+      }
+    },
+    "clusters": {
+      "k": 7,
+      "silhouette": 0.09705621004104614,
+      "items": [
+        {
+          "id": 0,
+          "p_synthetic": 0.5188679245283019,
+          "p_real": 0.02109704641350211,
+          "weight": 0.04065976217874952,
+          "uncovered": false,
+          "examples": [
+            "I run a subscription-based SaaS selling to like 40 countries, is Paddle actually worth it over just using Stripe + some tax tool?",
+            "Anyone using Paddle as a payment provider?"
+          ]
+        },
+        {
+          "id": 1,
+          "p_synthetic": 0.0,
+          "p_real": 0.20042194092827004,
+          "weight": 0.0,
+          "uncovered": true,
+          "examples": [
+            "alternative for paypal",
+            "Are there decent alternatives to PayPal?"
+          ]
+        },
+        {
+          "id": 2,
+          "p_synthetic": 0.3584905660377358,
+          "p_real": 0.10970464135021098,
+          "weight": 0.3060182100821675,
+          "uncovered": false,
+          "examples": [
+            "Alternatives to Stripe?",
+            "Stripe Alternatives"
+          ]
+        },
+        {
+          "id": 3,
+          "p_synthetic": 0.0660377358490566,
+          "p_real": 0.07805907172995781,
+          "weight": 1.1820373719107897,
+          "uncovered": false,
+          "examples": [
+            "Stripe vs. Braintree: Why BrainTree Lost",
+            "Has anyone ran into any limitations with Stripe or Braintree?"
+          ]
+        },
+        {
+          "id": 4,
+          "p_synthetic": 0.018867924528301886,
+          "p_real": 0.35654008438818563,
+          "weight": 5.0,
+          "uncovered": false,
+          "examples": [
+            "Payment Gateways?",
+            "What payment gateway do you use?"
+          ]
+        },
+        {
+          "id": 5,
+          "p_synthetic": 0.009433962264150943,
+          "p_real": 0.12447257383966245,
+          "weight": 5.0,
+          "uncovered": false,
+          "examples": [
+            "How to render the payment fields of Adyen in React?",
+            "How to decode Adyen onPaymentCompleted sessionData?"
+          ]
+        },
+        {
+          "id": 6,
+          "p_synthetic": 0.02830188679245283,
+          "p_real": 0.10970464135021098,
+          "weight": 3.876230661040788,
+          "uncovered": false,
+          "examples": [
+            "Best way to set up subscription billing",
+            "Subscription management/billing software?"
+          ]
+        }
+      ],
+      "uncovered_real_share": 0.20042194092827004
+    },
+    "mentions": [
+      {
+        "subject_brand": "Paddle",
+        "engine": "claude",
+        "entity": "Chargebee",
+        "unweighted": {
+          "rate": 0.11976047904191617,
+          "ci_low": 0.0658682634730539,
+          "ci_high": 0.16766467065868262
+        },
+        "weighted": {
+          "rate": 0.11976047904191615,
+          "ci_low": 0.0658682634730539,
+          "ci_high": 0.16766467065868265
+        },
+        "n_eff": 167.00000000000003,
+        "sensitivity": {
+          "min": 0.05954721644851412,
+          "max": 0.11976047904191615,
+          "verdict": "stable_sign"
+        }
+      },
+      {
+        "subject_brand": "Paddle",
+        "engine": "claude",
+        "entity": "FastSpring",
+        "unweighted": {
+          "rate": 0.16766467065868262,
+          "ci_low": 0.11377245508982035,
+          "ci_high": 0.22769461077844297
+        },
+        "weighted": {
+          "rate": 0.1676646706586826,
+          "ci_low": 0.11377245508982035,
+          "ci_high": 0.22769461077844297
+        },
+        "n_eff": 167.00000000000003,
+        "sensitivity": {
+          "min": 0.1676646706586826,
+          "max": 0.18392225155890113,
+          "verdict": "stable_sign"
+        }
+      },
+      {
+        "subject_brand": "Paddle",
+        "engine": "claude",
+        "entity": "Lemon Squeezy",
+        "unweighted": {
+          "rate": 0.32934131736526945,
+          "ci_low": 0.2634730538922156,
+          "ci_high": 0.40718562874251496
+        },
+        "weighted": {
+          "rate": 0.32934131736526945,
+          "ci_low": 0.2634730538922156,
+          "ci_high": 0.4071856287425149
+        },
+        "n_eff": 167.00000000000003,
+        "sensitivity": {
+          "min": 0.2643109937643952,
+          "max": 0.32934131736526945,
+          "verdict": "stable_sign"
+        }
+      },
+      {
+        "subject_brand": "Paddle",
+        "engine": "claude",
+        "entity": "Stripe",
+        "unweighted": {
+          "rate": 0.8143712574850299,
+          "ci_low": 0.7544910179640718,
+          "ci_high": 0.8682634730538922
+        },
+        "weighted": {
+          "rate": 0.8143712574850298,
+          "ci_low": 0.7544910179640719,
+          "ci_high": 0.8682634730538921
+        },
+        "n_eff": 167.00000000000003,
+        "sensitivity": {
+          "min": 0.8071456659738216,
+          "max": 0.8143712574850299,
+          "verdict": "no_change"
+        }
+      },
+      {
+        "subject_brand": "Paddle",
+        "engine": "claude",
+        "entity": "Zuora",
+        "unweighted": {
+          "rate": 0.011976047904191617,
+          "ci_low": 0.0,
+          "ci_high": 0.029940119760479042
+        },
+        "weighted": {
+          "rate": 0.011976047904191616,
+          "ci_low": 0.0,
+          "ci_high": 0.02994011976047904
+        },
+        "n_eff": 167.00000000000003,
+        "sensitivity": {
+          "min": 0.0059547216448514115,
+          "max": 0.011976047904191616,
+          "verdict": "no_change"
+        }
+      },
+      {
+        "subject_brand": "Paddle",
+        "engine": "openai",
+        "entity": "Chargebee",
+        "unweighted": {
+          "rate": 0.0847457627118644,
+          "ci_low": 0.0423728813559322,
+          "ci_high": 0.13559322033898305
+        },
+        "weighted": {
+          "rate": 0.08474576271186444,
+          "ci_low": 0.04237288135593222,
+          "ci_high": 0.13559322033898313
+        },
+        "n_eff": 117.99999999999989,
+        "sensitivity": {
+          "min": 0.042335649812285346,
+          "max": 0.08474576271186444,
+          "verdict": "stable_sign"
+        }
+      },
+      {
+        "subject_brand": "Paddle",
+        "engine": "openai",
+        "entity": "FastSpring",
+        "unweighted": {
+          "rate": 0.1016949152542373,
+          "ci_low": 0.05084745762711865,
+          "ci_high": 0.16101694915254236
+        },
+        "weighted": {
+          "rate": 0.10169491525423734,
+          "ci_low": 0.05084745762711866,
+          "ci_high": 0.16101694915254244
+        },
+        "n_eff": 117.99999999999989,
+        "sensitivity": {
+          "min": 0.05080277977474241,
+          "max": 0.10169491525423734,
+          "verdict": "stable_sign"
+        }
+      },
+      {
+        "subject_brand": "Paddle",
+        "engine": "openai",
+        "entity": "Lemon Squeezy",
+        "unweighted": {
+          "rate": 0.0847457627118644,
+          "ci_low": 0.04216101694915273,
+          "ci_high": 0.13559322033898305
+        },
+        "weighted": {
+          "rate": 0.08474576271186444,
+          "ci_low": 0.04216101694915275,
+          "ci_high": 0.1355932203389831
+        },
+        "n_eff": 117.99999999999989,
+        "sensitivity": {
+          "min": 0.042335649812285346,
+          "max": 0.08474576271186444,
+          "verdict": "stable_sign"
+        }
+      },
+      {
+        "subject_brand": "Paddle",
+        "engine": "openai",
+        "entity": "Stripe",
+        "unweighted": {
+          "rate": 0.2627118644067797,
+          "ci_low": 0.1864406779661017,
+          "ci_high": 0.3389830508474576
+        },
+        "weighted": {
+          "rate": 0.26271186440677974,
+          "ci_low": 0.18644067796610178,
+          "ci_high": 0.3389830508474578
+        },
+        "n_eff": 117.99999999999989,
+        "sensitivity": {
+          "min": 0.26271186440677946,
+          "max": 0.27422318076523694,
+          "verdict": "stable_sign"
+        }
+      },
+      {
+        "subject_brand": "Paddle",
+        "engine": "openai",
+        "entity": "Zuora",
+        "unweighted": {
+          "rate": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "weighted": {
+          "rate": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "n_eff": 117.99999999999989,
+        "sensitivity": {
+          "min": 0.0,
+          "max": 0.0,
+          "verdict": "no_change"
+        }
+      },
+      {
+        "subject_brand": "Stripe",
+        "engine": "claude",
+        "entity": "Adyen",
+        "unweighted": {
+          "rate": 0.23728813559322035,
+          "ci_low": 0.18064971751412442,
+          "ci_high": 0.2994350282485876
+        },
+        "weighted": {
+          "rate": 0.2580434176993084,
+          "ci_low": 0.1367404635647364,
+          "ci_high": 0.39038975222578925
+        },
+        "n_eff": 53.43131169490081,
+        "sensitivity": {
+          "min": 0.24871774150324763,
+          "max": 0.3801171432170298,
+          "verdict": "stable_sign"
+        }
+      },
+      {
+        "subject_brand": "Stripe",
+        "engine": "claude",
+        "entity": "Braintree",
+        "unweighted": {
+          "rate": 0.2033898305084746,
+          "ci_low": 0.14689265536723164,
+          "ci_high": 0.2655367231638418
+        },
+        "weighted": {
+          "rate": 0.34132739852913585,
+          "ci_low": 0.22651802331372278,
+          "ci_high": 0.4748345014104214
+        },
+        "n_eff": 53.43131169490081,
+        "sensitivity": {
+          "min": 0.25736868623252296,
+          "max": 0.42814632933583835,
+          "verdict": "stable_sign"
+        }
+      },
+      {
+        "subject_brand": "Stripe",
+        "engine": "claude",
+        "entity": "Checkout.com",
+        "unweighted": {
+          "rate": 0.005649717514124294,
+          "ci_low": 0.0,
+          "ci_high": 0.01694915254237288
+        },
+        "weighted": {
+          "rate": 0.0023051219404278075,
+          "ci_low": 0.0,
+          "ci_high": 0.008218132017105912
+        },
+        "n_eff": 53.43131169490081,
+        "sensitivity": {
+          "min": 0.001668975941554352,
+          "max": 0.004810484286065665,
+          "verdict": "no_change"
+        }
+      },
+      {
+        "subject_brand": "Stripe",
+        "engine": "claude",
+        "entity": "PayPal",
+        "unweighted": {
+          "rate": 0.288135593220339,
+          "ci_low": 0.22584745762711878,
+          "ci_high": 0.3559322033898305
+        },
+        "weighted": {
+          "rate": 0.24293705461178994,
+          "ci_low": 0.1633953529776178,
+          "ci_high": 0.34144414145926766
+        },
+        "n_eff": 53.43131169490081,
+        "sensitivity": {
+          "min": 0.19813747520021993,
+          "max": 0.3675867142025985,
+          "verdict": "mixed_sign"
+        }
+      },
+      {
+        "subject_brand": "Stripe",
+        "engine": "claude",
+        "entity": "Square",
+        "unweighted": {
+          "rate": 0.03954802259887006,
+          "ci_low": 0.01694915254237288,
+          "ci_high": 0.06779661016949153
+        },
+        "weighted": {
+          "rate": 0.01613585358299465,
+          "ci_low": 0.00573781133606903,
+          "ci_high": 0.030517246448155403
+        },
+        "n_eff": 53.43131169490081,
+        "sensitivity": {
+          "min": 0.011682831590880462,
+          "max": 0.03367339000245966,
+          "verdict": "stable_sign"
+        }
+      },
+      {
+        "subject_brand": "Stripe",
+        "engine": "openai",
+        "entity": "Adyen",
+        "unweighted": {
+          "rate": 0.17796610169491525,
+          "ci_low": 0.11016949152542373,
+          "ci_high": 0.2542372881355932
+        },
+        "weighted": {
+          "rate": 0.23276605691119892,
+          "ci_low": 0.07771211292528328,
+          "ci_high": 0.3941210562293138
+        },
+        "n_eff": 34.040413213820166,
+        "sensitivity": {
+          "min": 0.22743962749373167,
+          "max": 0.3638723408433157,
+          "verdict": "stable_sign"
+        }
+      },
+      {
+        "subject_brand": "Stripe",
+        "engine": "openai",
+        "entity": "Braintree",
+        "unweighted": {
+          "rate": 0.1694915254237288,
+          "ci_low": 0.1016949152542373,
+          "ci_high": 0.23749999999999982
+        },
+        "weighted": {
+          "rate": 0.3819953979736716,
+          "ci_low": 0.1967819517224449,
+          "ci_high": 0.5442200337820159
+        },
+        "n_eff": 34.040413213820166,
+        "sensitivity": {
+          "min": 0.28751565015203,
+          "max": 0.4324874899191809,
+          "verdict": "stable_sign"
+        }
+      },
+      {
+        "subject_brand": "Stripe",
+        "engine": "openai",
+        "entity": "Checkout.com",
+        "unweighted": {
+          "rate": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "weighted": {
+          "rate": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "n_eff": 34.040413213820166,
+        "sensitivity": {
+          "min": 0.0,
+          "max": 0.0,
+          "verdict": "no_change"
+        }
+      },
+      {
+        "subject_brand": "Stripe",
+        "engine": "openai",
+        "entity": "PayPal",
+        "unweighted": {
+          "rate": 0.2627118644067797,
+          "ci_low": 0.17796610169491525,
+          "ci_high": 0.3474576271186441
+        },
+        "weighted": {
+          "rate": 0.41025853347847363,
+          "ci_low": 0.2312934122009245,
+          "ci_high": 0.5700862218037164
+        },
+        "n_eff": 34.040413213820166,
+        "sensitivity": {
+          "min": 0.35140145739993156,
+          "max": 0.4411144515171172,
+          "verdict": "stable_sign"
+        }
+      },
+      {
+        "subject_brand": "Stripe",
+        "engine": "openai",
+        "entity": "Square",
+        "unweighted": {
+          "rate": 0.11864406779661017,
+          "ci_low": 0.06779661016949153,
+          "ci_high": 0.17796610169491525
+        },
+        "weighted": {
+          "rate": 0.2617291724832851,
+          "ci_low": 0.08982800966815686,
+          "ci_high": 0.4322007102510133
+        },
+        "n_eff": 34.040413213820166,
+        "sensitivity": {
+          "min": 0.21249996917180677,
+          "max": 0.318113339439811,
+          "verdict": "stable_sign"
+        }
+      }
+    ]
+  },
+  "adaptive_sampling": {
+    "available": true,
+    "target_pp": 5.0,
+    "n_repeats": 15,
+    "budgets": [
+      8,
+      12,
+      16,
+      20,
+      25,
+      30,
+      50,
+      75,
+      100,
+      130,
+      160,
+      200,
+      250,
+      300,
+      400,
+      600,
+      800
+    ],
+    "n_arms": 4,
+    "n_entities": 20,
+    "fixed_budget": {
+      "mean": {
+        "curves": {
+          "uniform": [
+            {
+              "budget": 8,
+              "width_pp": 13.333333333333334,
+              "repeat_low": 5.0,
+              "repeat_high": 24.000000000000004
+            },
+            {
+              "budget": 12,
+              "width_pp": 20.154166666666654,
+              "repeat_low": 11.611458333333328,
+              "repeat_high": 29.479166666666654
+            },
+            {
+              "budget": 16,
+              "width_pp": 19.879166666666666,
+              "repeat_low": 10.906250000000002,
+              "repeat_high": 28.057031249999994
+            },
+            {
+              "budget": 20,
+              "width_pp": 18.466666666666665,
+              "repeat_low": 10.925,
+              "repeat_high": 23.65
+            },
+            {
+              "budget": 25,
+              "width_pp": 17.15386904761904,
+              "repeat_low": 11.731994047619041,
+              "repeat_high": 20.91071428571429
+            },
+            {
+              "budget": 30,
+              "width_pp": 16.64650297619047,
+              "repeat_low": 11.700167410714277,
+              "repeat_high": 19.96316964285713
+            },
+            {
+              "budget": 50,
+              "width_pp": 14.166773504273499,
+              "repeat_low": 10.63806089743589,
+              "repeat_high": 16.483533653846145
+            },
+            {
+              "budget": 75,
+              "width_pp": 11.970370370370365,
+              "repeat_low": 9.49945175438596,
+              "repeat_high": 13.45553728070175
+            },
+            {
+              "budget": 100,
+              "width_pp": 10.61233333333333,
+              "repeat_low": 8.988375,
+              "repeat_high": 11.388374999999996
+            },
+            {
+              "budget": 130,
+              "width_pp": 9.476444128787875,
+              "repeat_low": 8.142243726325756,
+              "repeat_high": 10.388100733901513
+            },
+            {
+              "budget": 160,
+              "width_pp": 8.709999999999997,
+              "repeat_low": 7.779765624999996,
+              "repeat_high": 9.588125
+            },
+            {
+              "budget": 200,
+              "width_pp": 7.8195833333333296,
+              "repeat_low": 7.315374999999997,
+              "repeat_high": 8.505374999999995
+            },
+            {
+              "budget": 250,
+              "width_pp": 7.025330687830685,
+              "repeat_low": 6.514224110343059,
+              "repeat_high": 7.505781970046078
+            },
+            {
+              "budget": 300,
+              "width_pp": 6.514944444444441,
+              "repeat_low": 6.061375,
+              "repeat_high": 7.065083333333331
+            },
+            {
+              "budget": 400,
+              "width_pp": 5.729791666666665,
+              "repeat_low": 5.484812499999996,
+              "repeat_high": 5.955624999999999
+            },
+            {
+              "budget": 600,
+              "width_pp": 4.703749999999998,
+              "repeat_low": 4.524687499999998,
+              "repeat_high": 4.850020833333331
+            },
+            {
+              "budget": 800,
+              "width_pp": 4.059979166666665,
+              "repeat_low": 3.959359374999998,
+              "repeat_high": 4.189999999999998
+            }
+          ],
+          "variance (adaptive)": [
+            {
+              "budget": 8,
+              "width_pp": 11.333333333333334,
+              "repeat_low": 5.0,
+              "repeat_high": 19.125
+            },
+            {
+              "budget": 12,
+              "width_pp": 13.01805555555555,
+              "repeat_low": 4.695833333333335,
+              "repeat_high": 21.54270833333332
+            },
+            {
+              "budget": 16,
+              "width_pp": 11.716567460317457,
+              "repeat_low": 4.2781249999999975,
+              "repeat_high": 20.325
+            },
+            {
+              "budget": 20,
+              "width_pp": 10.652538780663777,
+              "repeat_low": 3.7996753246753205,
+              "repeat_high": 16.042261904761904
+            },
+            {
+              "budget": 25,
+              "width_pp": 9.699574234853836,
+              "repeat_low": 3.1809210526315805,
+              "repeat_high": 14.581101190476184
+            },
+            {
+              "budget": 30,
+              "width_pp": 9.235630249380247,
+              "repeat_low": 2.8827690972222215,
+              "repeat_high": 13.650329184704175
+            },
+            {
+              "budget": 50,
+              "width_pp": 7.663592461910684,
+              "repeat_low": 2.644862689393939,
+              "repeat_high": 11.130560661764703
+            },
+            {
+              "budget": 75,
+              "width_pp": 6.657107749539702,
+              "repeat_low": 2.5437028020667722,
+              "repeat_high": 9.273598663022288
+            },
+            {
+              "budget": 100,
+              "width_pp": 5.866812749150089,
+              "repeat_low": 2.290615352068144,
+              "repeat_high": 8.281064959944267
+            },
+            {
+              "budget": 130,
+              "width_pp": 5.127411385531231,
+              "repeat_low": 1.989988219790101,
+              "repeat_high": 7.211591235153734
+            },
+            {
+              "budget": 160,
+              "width_pp": 4.635495990615922,
+              "repeat_low": 1.7749806443556444,
+              "repeat_high": 6.664641556449798
+            },
+            {
+              "budget": 200,
+              "width_pp": 4.175540188976632,
+              "repeat_low": 1.576229266839993,
+              "repeat_high": 5.955625767281138
+            },
+            {
+              "budget": 250,
+              "width_pp": 3.6787683994031593,
+              "repeat_low": 1.3706388317971845,
+              "repeat_high": 5.139706055210799
+            },
+            {
+              "budget": 300,
+              "width_pp": 3.452392053101712,
+              "repeat_low": 1.2608655478720412,
+              "repeat_high": 4.829184078329798
+            },
+            {
+              "budget": 400,
+              "width_pp": 3.0138047467303593,
+              "repeat_low": 1.1891809934963415,
+              "repeat_high": 4.055906383012036
+            },
+            {
+              "budget": 600,
+              "width_pp": 2.4399367519243476,
+              "repeat_low": 0.9293489400567692,
+              "repeat_high": 3.347518485840426
+            },
+            {
+              "budget": 800,
+              "width_pp": 2.1270876946611694,
+              "repeat_low": 0.7964694343463774,
+              "repeat_high": 2.906768045495704
+            }
+          ]
+        },
+        "draws_to_target": {
+          "uniform": {
+            "draws": 542.2538071065985,
+            "extrapolated": false,
+            "at_smallest_budget": false
+          },
+          "variance (adaptive)": {
+            "draws": 137.7703231194767,
+            "extrapolated": false,
+            "at_smallest_budget": false
+          }
+        },
+        "savings_pct": {
+          "value": 74.59301874622095,
+          "ci_low": 64.45019224057997,
+          "ci_high": 83.0845008401449
+        }
+      },
+      "max": {
+        "curves": {
+          "uniform": [
+            {
+              "budget": 8,
+              "width_pp": 50.0,
+              "repeat_low": 50.0,
+              "repeat_high": 50.0
+            },
+            {
+              "budget": 12,
+              "width_pp": 50.0,
+              "repeat_low": 50.0,
+              "repeat_high": 50.0
+            },
+            {
+              "budget": 16,
+              "width_pp": 49.166666666666664,
+              "repeat_low": 41.875,
+              "repeat_high": 50.0
+            },
+            {
+              "budget": 20,
+              "width_pp": 40.666666666666664,
+              "repeat_low": 40.0,
+              "repeat_high": 46.5
+            },
+            {
+              "budget": 25,
+              "width_pp": 37.06547619047616,
+              "repeat_low": 33.333333333333336,
+              "repeat_high": 41.66666666666667
+            },
+            {
+              "budget": 30,
+              "width_pp": 36.63988095238094,
+              "repeat_low": 30.657366071428523,
+              "repeat_high": 41.66964285714284
+            },
+            {
+              "budget": 50,
+              "width_pp": 26.917200854700845,
+              "repeat_low": 25.0,
+              "repeat_high": 29.166666666666668
+            },
+            {
+              "budget": 75,
+              "width_pp": 22.264619883040933,
+              "repeat_low": 19.342105263157894,
+              "repeat_high": 25.394736842105264
+            },
+            {
+              "budget": 100,
+              "width_pp": 19.34666666666666,
+              "repeat_low": 17.38249999999999,
+              "repeat_high": 20.68249999999999
+            },
+            {
+              "budget": 130,
+              "width_pp": 16.069839015151505,
+              "repeat_low": 14.976858428030296,
+              "repeat_high": 17.366003787878768
+            },
+            {
+              "budget": 160,
+              "width_pp": 15.012499999999994,
+              "repeat_low": 14.40624999999998,
+              "repeat_high": 15.656249999999982
+            },
+            {
+              "budget": 200,
+              "width_pp": 13.178333333333326,
+              "repeat_low": 12.000000000000002,
+              "repeat_high": 14.000000000000002
+            },
+            {
+              "budget": 250,
+              "width_pp": 11.940646868066214,
+              "repeat_low": 11.256944444444443,
+              "repeat_high": 12.566468253968255
+            },
+            {
+              "budget": 300,
+              "width_pp": 10.811111111111105,
+              "repeat_low": 9.566666666666666,
+              "repeat_high": 11.68333333333332
+            },
+            {
+              "budget": 400,
+              "width_pp": 9.324166666666661,
+              "repeat_low": 8.691249999999991,
+              "repeat_high": 10.087499999999991
+            },
+            {
+              "budget": 600,
+              "width_pp": 7.649999999999997,
+              "repeat_low": 7.1749999999999945,
+              "repeat_high": 8.119583333333328
+            },
+            {
+              "budget": 800,
+              "width_pp": 6.578749999999998,
+              "repeat_low": 6.295937499999998,
+              "repeat_high": 6.9584375000000005
+            }
+          ],
+          "variance (adaptive)": [
+            {
+              "budget": 8,
+              "width_pp": 50.0,
+              "repeat_low": 50.0,
+              "repeat_high": 50.0
+            },
+            {
+              "budget": 12,
+              "width_pp": 48.361111111111086,
+              "repeat_low": 36.3958333333332,
+              "repeat_high": 50.0
+            },
+            {
+              "budget": 16,
+              "width_pp": 40.563492063492035,
+              "repeat_low": 30.0,
+              "repeat_high": 50.0
+            },
+            {
+              "budget": 20,
+              "width_pp": 34.337301587301575,
+              "repeat_low": 26.866071428571363,
+              "repeat_high": 41.083333333333336
+            },
+            {
+              "budget": 25,
+              "width_pp": 30.2843646363383,
+              "repeat_low": 22.218045112781958,
+              "repeat_high": 35.714285714285715
+            },
+            {
+              "budget": 30,
+              "width_pp": 27.666426166426152,
+              "repeat_low": 18.993055555555557,
+              "repeat_high": 33.333333333333336
+            },
+            {
+              "budget": 50,
+              "width_pp": 21.036004864439033,
+              "repeat_low": 14.498579545454525,
+              "repeat_high": 27.060606060606062
+            },
+            {
+              "budget": 75,
+              "width_pp": 17.597494219152075,
+              "repeat_low": 12.462356138107406,
+              "repeat_high": 21.200652356902324
+            },
+            {
+              "budget": 100,
+              "width_pp": 14.822030402483714,
+              "repeat_low": 10.350398936170203,
+              "repeat_high": 17.43892045454542
+            },
+            {
+              "budget": 130,
+              "width_pp": 12.909706880371305,
+              "repeat_low": 9.268425179211464,
+              "repeat_high": 15.751736111111105
+            },
+            {
+              "budget": 160,
+              "width_pp": 11.382538476182877,
+              "repeat_low": 7.888608305274973,
+              "repeat_high": 13.620098039215668
+            },
+            {
+              "budget": 200,
+              "width_pp": 10.241528771036753,
+              "repeat_low": 7.090597189179661,
+              "repeat_high": 12.057790549169859
+            },
+            {
+              "budget": 250,
+              "width_pp": 8.834324604694283,
+              "repeat_low": 6.130699282786885,
+              "repeat_high": 10.818317791714799
+            },
+            {
+              "budget": 300,
+              "width_pp": 8.540178576700113,
+              "repeat_low": 5.595761651768142,
+              "repeat_high": 10.421164772727272
+            },
+            {
+              "budget": 400,
+              "width_pp": 7.297115327546049,
+              "repeat_low": 5.072685044692118,
+              "repeat_high": 8.624479166666664
+            },
+            {
+              "budget": 600,
+              "width_pp": 5.858503719502183,
+              "repeat_low": 3.9960082793105154,
+              "repeat_high": 6.797312430011197
+            },
+            {
+              "budget": 800,
+              "width_pp": 5.0408802085002895,
+              "repeat_low": 3.382333281735925,
+              "repeat_high": 5.886183946353996
+            }
+          ]
+        },
+        "draws_to_target": {
+          "uniform": {
+            "draws": 1393.7808138785374,
+            "extrapolated": true,
+            "at_smallest_budget": false
+          },
+          "variance (adaptive)": {
+            "draws": 834.2325764499459,
+            "extrapolated": true,
+            "at_smallest_budget": false
+          }
+        },
+        "savings_pct": {
+          "value": 40.146071165344225,
+          "ci_low": 29.612884031563244,
+          "ci_high": 50.64957780810687
+        }
+      }
+    },
+    "full_convergence": {
+      "mean_draws": {
+        "uniform": 1232.4666666666667,
+        "variance (adaptive)": 1213.7333333333333
+      },
+      "std_draws": {
+        "uniform": 109.99264621883692,
+        "variance (adaptive)": 100.84804851304207
+      },
+      "adaptive_saving_pct": {
+        "value": 1.5199870179044748,
+        "ci_low": -5.157463400518605,
+        "ci_high": 7.468298201877996,
+        "distinguishable_from_zero": false
+      }
+    }
+  },
+  "stance": {
+    "available": true,
+    "labels": [
+      "recommended",
+      "neutral",
+      "negative"
+    ],
+    "source": "claude_labels",
+    "n_snippets": 982,
+    "items": [
+      {
+        "subject_brand": "Paddle",
+        "engine": "claude",
+        "brand": "Chargebee",
+        "n_snippets": 17,
+        "n_responses": 17,
+        "ci_available": true,
+        "shares": {
+          "recommended": {
+            "rate": 0.47058823529411764,
+            "ci_low": 0.23529411764705882,
+            "ci_high": 0.7058823529411765
+          },
+          "neutral": {
+            "rate": 0.23529411764705882,
+            "ci_low": 0.058823529411764705,
+            "ci_high": 0.47058823529411764
+          },
+          "negative": {
+            "rate": 0.29411764705882354,
+            "ci_low": 0.11617647058823538,
+            "ci_high": 0.5294117647058824
+          }
+        }
+      },
+      {
+        "subject_brand": "Paddle",
+        "engine": "claude",
+        "brand": "FastSpring",
+        "n_snippets": 24,
+        "n_responses": 24,
+        "ci_available": true,
+        "shares": {
+          "recommended": {
+            "rate": 0.3333333333333333,
+            "ci_low": 0.16562500000000005,
+            "ci_high": 0.5416666666666666
+          },
+          "neutral": {
+            "rate": 0.5833333333333334,
+            "ci_low": 0.375,
+            "ci_high": 0.7916666666666666
+          },
+          "negative": {
+            "rate": 0.08333333333333333,
+            "ci_low": 0.0,
+            "ci_high": 0.20833333333333334
+          }
+        }
+      },
+      {
+        "subject_brand": "Paddle",
+        "engine": "claude",
+        "brand": "Lemon Squeezy",
+        "n_snippets": 46,
+        "n_responses": 46,
+        "ci_available": true,
+        "shares": {
+          "recommended": {
+            "rate": 0.41304347826086957,
+            "ci_low": 0.2826086956521739,
+            "ci_high": 0.5652173913043478
+          },
+          "neutral": {
+            "rate": 0.45652173913043476,
+            "ci_low": 0.30434782608695654,
+            "ci_high": 0.6086956521739131
+          },
+          "negative": {
+            "rate": 0.13043478260869565,
+            "ci_low": 0.043478260869565216,
+            "ci_high": 0.2391304347826087
+          }
+        }
+      },
+      {
+        "subject_brand": "Paddle",
+        "engine": "claude",
+        "brand": "Paddle",
+        "n_snippets": 137,
+        "n_responses": 137,
+        "ci_available": true,
+        "shares": {
+          "recommended": {
+            "rate": 0.29927007299270075,
+            "ci_low": 0.21897810218978103,
+            "ci_high": 0.3722627737226277
+          },
+          "neutral": {
+            "rate": 0.44525547445255476,
+            "ci_low": 0.3722627737226277,
+            "ci_high": 0.5255474452554745
+          },
+          "negative": {
+            "rate": 0.25547445255474455,
+            "ci_low": 0.18248175182481752,
+            "ci_high": 0.3357664233576642
+          }
+        }
+      },
+      {
+        "subject_brand": "Paddle",
+        "engine": "claude",
+        "brand": "Stripe",
+        "n_snippets": 111,
+        "n_responses": 111,
+        "ci_available": true,
+        "shares": {
+          "recommended": {
+            "rate": 0.12612612612612611,
+            "ci_low": 0.07207207207207207,
+            "ci_high": 0.1891891891891892
+          },
+          "neutral": {
+            "rate": 0.8018018018018018,
+            "ci_low": 0.7297297297297297,
+            "ci_high": 0.86509009009009
+          },
+          "negative": {
+            "rate": 0.07207207207207207,
+            "ci_low": 0.02702702702702703,
+            "ci_high": 0.12612612612612611
+          }
+        }
+      },
+      {
+        "subject_brand": "Paddle",
+        "engine": "claude",
+        "brand": "Zuora",
+        "n_snippets": 2,
+        "n_responses": 2,
+        "ci_available": true,
+        "shares": {
+          "recommended": {
+            "rate": 0.5,
+            "ci_low": 0.0,
+            "ci_high": 1.0
+          },
+          "neutral": {
+            "rate": 0.5,
+            "ci_low": 0.0,
+            "ci_high": 1.0
+          },
+          "negative": {
+            "rate": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0
+          }
+        }
+      },
+      {
+        "subject_brand": "Paddle",
+        "engine": "openai",
+        "brand": "Chargebee",
+        "n_snippets": 10,
+        "n_responses": 10,
+        "ci_available": true,
+        "shares": {
+          "recommended": {
+            "rate": 0.3,
+            "ci_low": 0.1,
+            "ci_high": 0.6
+          },
+          "neutral": {
+            "rate": 0.5,
+            "ci_low": 0.2,
+            "ci_high": 0.8
+          },
+          "negative": {
+            "rate": 0.2,
+            "ci_low": 0.0,
+            "ci_high": 0.5
+          }
+        }
+      },
+      {
+        "subject_brand": "Paddle",
+        "engine": "openai",
+        "brand": "FastSpring",
+        "n_snippets": 12,
+        "n_responses": 12,
+        "ci_available": true,
+        "shares": {
+          "recommended": {
+            "rate": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0
+          },
+          "neutral": {
+            "rate": 1.0,
+            "ci_low": 1.0,
+            "ci_high": 1.0
+          },
+          "negative": {
+            "rate": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0
+          }
+        }
+      },
+      {
+        "subject_brand": "Paddle",
+        "engine": "openai",
+        "brand": "Lemon Squeezy",
+        "n_snippets": 10,
+        "n_responses": 10,
+        "ci_available": true,
+        "shares": {
+          "recommended": {
+            "rate": 0.2,
+            "ci_low": 0.0,
+            "ci_high": 0.5
+          },
+          "neutral": {
+            "rate": 0.8,
+            "ci_low": 0.5,
+            "ci_high": 1.0
+          },
+          "negative": {
+            "rate": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0
+          }
+        }
+      },
+      {
+        "subject_brand": "Paddle",
+        "engine": "openai",
+        "brand": "Paddle",
+        "n_snippets": 118,
+        "n_responses": 118,
+        "ci_available": true,
+        "shares": {
+          "recommended": {
+            "rate": 0.1271186440677966,
+            "ci_low": 0.07627118644067797,
+            "ci_high": 0.19491525423728814
+          },
+          "neutral": {
+            "rate": 0.711864406779661,
+            "ci_low": 0.6186440677966102,
+            "ci_high": 0.788135593220339
+          },
+          "negative": {
+            "rate": 0.16101694915254236,
+            "ci_low": 0.09322033898305085,
+            "ci_high": 0.2288135593220339
+          }
+        }
+      },
+      {
+        "subject_brand": "Paddle",
+        "engine": "openai",
+        "brand": "Stripe",
+        "n_snippets": 31,
+        "n_responses": 31,
+        "ci_available": true,
+        "shares": {
+          "recommended": {
+            "rate": 0.22580645161290322,
+            "ci_low": 0.0967741935483871,
+            "ci_high": 0.3870967741935484
+          },
+          "neutral": {
+            "rate": 0.7741935483870968,
+            "ci_low": 0.6129032258064516,
+            "ci_high": 0.9032258064516129
+          },
+          "negative": {
+            "rate": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0
+          }
+        }
+      },
+      {
+        "subject_brand": "Stripe",
+        "engine": "claude",
+        "brand": "Adyen",
+        "n_snippets": 34,
+        "n_responses": 34,
+        "ci_available": true,
+        "shares": {
+          "recommended": {
+            "rate": 0.5,
+            "ci_low": 0.3235294117647059,
+            "ci_high": 0.6764705882352942
+          },
+          "neutral": {
+            "rate": 0.5,
+            "ci_low": 0.3235294117647059,
+            "ci_high": 0.6764705882352942
+          },
+          "negative": {
+            "rate": 0.0,
+            "ci_low": 0.0,
+            "ci_high": 0.0
+          }
+        }
+      },
+      {
+        "subject_brand": "Stripe",
+        "engine": "claude",
+        "brand": "Braintree",
+        "n_snippets": 30,
+        "n_responses": 30,
+        "ci_available": true,
+        "shares": {
+          "recommended": {
+            "rate": 0.3,
+            "ci_low": 0.13333333333333333,
+            "ci_high": 0.4666666666666667
+          },
+          "neutral": {
+            "rate": 0.36666666666666664,
+            "ci_low": 0.2,
+            "ci_high": 0.5333333333333333
+          },
+          "negative": {
+            "rate": 0.3333333333333333,
+            "ci_low": 0.16666666666666666,
+            "ci_high": 0.5
+          }
+        }
+      },
+      {
+        "subject_brand": "Stripe",
+        "engine": "claude",
+        "brand": "Checkout.com",
+        "n_snippets": 1,
+        "n_responses": 1,
+        "ci_available": false,
+        "shares": {
+          "recommended": {
+            "rate": 1.0,
+            "ci_low": null,
+            "ci_high": null
+          },
+          "neutral": {
+            "rate": 0.0,
+            "ci_low": null,
+            "ci_high": null
+          },
+          "negative": {
+            "rate": 0.0,
+            "ci_low": null,
+            "ci_high": null
+          }
+        }
+      },
+      {
+        "subject_brand": "Stripe",
+        "engine": "claude",
+        "brand": "PayPal",
+        "n_snippets": 43,
+        "n_responses": 43,
+        "ci_available": true,
+        "shares": {
+          "recommended": {
+            "rate": 0.06976744186046512,
+            "ci_low": 0.0,
+            "ci_high": 0.13953488372093023
+          },
+          "neutral": {
+            "rate": 0.627906976744186,
+            "ci_low": 0.4883720930232558,
+            "ci_high": 0.7674418604651163
+          },
+          "negative": {
+            "rate": 0.3023255813953488,
+            "ci_low": 0.16279069767441862,
+            "ci_high": 0.4418604651162791
+          }
+        }
+      },
+      {
+        "subject_brand": "Stripe",
+        "engine": "claude",
+        "brand": "Square",
+        "n_snippets": 7,
+        "n_responses": 7,
+        "ci_available": true,
+        "shares": {
+          "recommended": {
+            "rate": 0.5714285714285714,
+            "ci_low": 0.14285714285714285,
+            "ci_high": 1.0
+          },
+          "neutral": {
+            "rate": 0.14285714285714285,
+            "ci_low": 0.0,
+            "ci_high": 0.42857142857142855
+          },
+          "negative": {
+            "rate": 0.2857142857142857,
+            "ci_low": 0.0,
+            "ci_high": 0.5714285714285714
+          }
+        }
+      },
+      {
+        "subject_brand": "Stripe",
+        "engine": "claude",
+        "brand": "Stripe",
+        "n_snippets": 145,
+        "n_responses": 145,
+        "ci_available": true,
+        "shares": {
+          "recommended": {
+            "rate": 0.32413793103448274,
+            "ci_low": 0.2482758620689655,
+            "ci_high": 0.4068965517241379
+          },
+          "neutral": {
+            "rate": 0.38620689655172413,
+            "ci_low": 0.30344827586206896,
+            "ci_high": 0.46206896551724136
+          },
+          "negative": {
+            "rate": 0.2896551724137931,
+            "ci_low": 0.21379310344827587,
+            "ci_high": 0.3586206896551724
+          }
+        }
+      },
+      {
+        "subject_brand": "Stripe",
+        "engine": "openai",
+        "brand": "Adyen",
+        "n_snippets": 21,
+        "n_responses": 21,
+        "ci_available": true,
+        "shares": {
+          "recommended": {
+            "rate": 0.42857142857142855,
+            "ci_low": 0.23809523809523808,
+            "ci_high": 0.6666666666666666
+          },
+          "neutral": {
+            "rate": 0.5238095238095238,
+            "ci_low": 0.2857142857142857,
+            "ci_high": 0.7619047619047619
+          },
+          "negative": {
+            "rate": 0.047619047619047616,
+            "ci_low": 0.0,
+            "ci_high": 0.14285714285714285
+          }
+        }
+      },
+      {
+        "subject_brand": "Stripe",
+        "engine": "openai",
+        "brand": "Braintree",
+        "n_snippets": 20,
+        "n_responses": 20,
+        "ci_available": true,
+        "shares": {
+          "recommended": {
+            "rate": 0.2,
+            "ci_low": 0.05,
+            "ci_high": 0.4
+          },
+          "neutral": {
+            "rate": 0.75,
+            "ci_low": 0.55,
+            "ci_high": 0.9
+          },
+          "negative": {
+            "rate": 0.05,
+            "ci_low": 0.0,
+            "ci_high": 0.15
+          }
+        }
+      },
+      {
+        "subject_brand": "Stripe",
+        "engine": "openai",
+        "brand": "PayPal",
+        "n_snippets": 31,
+        "n_responses": 31,
+        "ci_available": true,
+        "shares": {
+          "recommended": {
+            "rate": 0.12903225806451613,
+            "ci_low": 0.03225806451612903,
+            "ci_high": 0.25806451612903225
+          },
+          "neutral": {
+            "rate": 0.7741935483870968,
+            "ci_low": 0.6451612903225806,
+            "ci_high": 0.9032258064516129
+          },
+          "negative": {
+            "rate": 0.0967741935483871,
+            "ci_low": 0.0,
+            "ci_high": 0.22580645161290322
+          }
+        }
+      },
+      {
+        "subject_brand": "Stripe",
+        "engine": "openai",
+        "brand": "Square",
+        "n_snippets": 14,
+        "n_responses": 14,
+        "ci_available": true,
+        "shares": {
+          "recommended": {
+            "rate": 0.21428571428571427,
+            "ci_low": 0.0,
+            "ci_high": 0.42857142857142855
+          },
+          "neutral": {
+            "rate": 0.6428571428571429,
+            "ci_low": 0.4267857142857144,
+            "ci_high": 0.8571428571428571
+          },
+          "negative": {
+            "rate": 0.14285714285714285,
+            "ci_low": 0.0,
+            "ci_high": 0.35714285714285715
+          }
+        }
+      },
+      {
+        "subject_brand": "Stripe",
+        "engine": "openai",
+        "brand": "Stripe",
+        "n_snippets": 118,
+        "n_responses": 118,
+        "ci_available": true,
+        "shares": {
+          "recommended": {
+            "rate": 0.19491525423728814,
+            "ci_low": 0.1271186440677966,
+            "ci_high": 0.2711864406779661
+          },
+          "neutral": {
+            "rate": 0.5508474576271186,
+            "ci_low": 0.46588983050847455,
+            "ci_high": 0.6440677966101694
+          },
+          "negative": {
+            "rate": 0.2542372881355932,
+            "ci_low": 0.17796610169491525,
+            "ci_high": 0.3305084745762712
+          }
+        }
+      }
+    ],
+    "teacher_agreement": {
+      "available": true,
+      "n": 120,
+      "kappa": 0.7375820056232427,
+      "kappa_ci_low": 0.6245893547680611,
+      "kappa_ci_high": 0.8361107553193112
+    }
+  }
+}

@@ -1,7 +1,9 @@
-# MLflow tracking server + model API.
+# MLflow tracking server + model API + read-only dashboard (http://localhost:8080).
 # Train against the server from the host:
 #   MLFLOW_TRACKING_URI=http://localhost:5000 uv run python scripts/train_classifier.py --promote
 # then `docker compose restart api` to load the new production model.
+# Dashboard shows data/reports/dashboard.json: refresh it with scripts/export_dashboard_data.py
+# (the file is read on every request, no restart needed).
 services:
   mlflow:
     build: .
@@ -19,6 +21,13 @@ services:
       STANCE_MODEL_URI: models:/stance-classifier@production
     ports: ["8000:8000"]
     depends_on: [mlflow]
+
+  dashboard:
+    build: ./dashboard
+    environment:
+      DASHBOARD_DATA: /data/dashboard.json
+    ports: ["8080:8000"]
+    volumes: ["./data/reports:/data:ro"]
 
 volumes:
   mlflow-data:
