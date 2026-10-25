@@ -250,3 +250,81 @@ def final_entity_widths(
             _, lower, upper = bootstrap_ci(hist, n_resamples=n_resamples, seed=_next_seed(boot_rng))
             widths[key] = (upper - lower) / 2 * 100
     return widths
+
+
+POLICIES: dict[str, Policy] = {"uniform": uniform_policy, "variance (adaptive)": variance_policy}
+
+
+def full_convergence_draws(
+    arms: list[BanditArm], policies: dict[str, Policy], n_repeats: int, target_pp: float = 5.0, seed: int = 0
+) -> dict[str, np.ndarray]:
+    """Total draws until every competitor reaches `target_pp`: one value per repeat (seed + r)."""
+    return {
+        name: np.array([
+            simulate(
+                arms, policy, target_pp=target_pp, stability_window=5, max_draws=6000,
+                n_resamples=150, seed=seed + r,
+            ).total_draws
+            for r in range(n_repeats)
+        ])
+        for name, policy in policies.items()
+    }
+
+
+def fixed_budget_widths(
+    arms: list[BanditArm], policies: dict[str, Policy], budgets: list[int], n_repeats: int, seed: int = 0
+) -> dict[str, dict[str, np.ndarray]]:
+    """CI width (pp) reached with a fixed budget: policy -> "mean" / "max" over entities ->
+    array of shape (len(budgets), n_repeats). Repeat r uses seed + r for every policy."""
+    out = {
+        name: {kind: np.empty((len(budgets), n_repeats)) for kind in ("mean", "max")}
+        for name in policies
+    }
+    for b, budget in enumerate(budgets):
+        for name, policy in policies.items():
+            for r in range(n_repeats):
+                run_fixed_budget(arms, policy, budget=budget, n_resamples=150, seed=seed + r)
+                widths = np.array(list(final_entity_widths(arms, n_resamples=300, seed=seed + r).values()))
+                out[name]["mean"][b, r] = np.nanmean(widths)
+                out[name]["max"][b, r] = np.nanmax(widths)
+    return out
+
+
+def crossing_budget(budgets: list[int], widths: list[float], target_pp: float) -> float | None:
+    """Linear interpolation between the two bracketing sweep points where
+    the (decreasing) width curve crosses target_pp. If the smallest swept
+    budget is already at or below target, returns that budget as-is (an
+    upper bound — the true crossing point may be even smaller, outside the
+    swept range). None if the target is never reached within the range."""
+    if widths[0] <= target_pp:
+        return float(budgets[0])
+    for i in range(1, len(budgets)):
+        w0, w1 = widths[i - 1], widths[i]
+        if w0 >= target_pp >= w1:
+            b0, b1 = budgets[i - 1], budgets[i]
+            if w0 == w1:
+                return float(b0)
+            frac = (w0 - target_pp) / (w0 - w1)
+            return b0 + frac * (b1 - b0)
+    return None
+
+
+def extrapolate_crossing_budget(budgets: list[int], widths: list[float], target_pp: float) -> float:
+    """Same 1/sqrt(budget)-shape extrapolation as week4.md's
+    estimate_min_n(), fit on the upper half of the swept budgets — used
+    when the target isn't reached within the swept range."""
+    max_b = budgets[-1]
+    fit_points = [(b, w) for b, w in zip(budgets, widths) if b >= max(budgets[0], max_b // 2)]
+    ns = np.array([b for b, _ in fit_points], dtype=float)
+    ws = np.array([w for _, w in fit_points], dtype=float)
+    inv_sqrt_n = 1 / np.sqrt(ns)
+    c = float(np.sum(ws * inv_sqrt_n) / np.sum(inv_sqrt_n**2))
+    return max((c / target_pp) ** 2, max_b + 1)
+
+
+def budget_to_target(budgets: list[int], widths: list[float], target_pp: float) -> tuple[float, bool]:
+    """(draws needed to reach `target_pp`, True if that number is extrapolated, not observed)."""
+    crossing = crossing_budget(budgets, widths, target_pp)
+    if crossing is None:
+        return extrapolate_crossing_budget(budgets, widths, target_pp), True
+    return crossing, False

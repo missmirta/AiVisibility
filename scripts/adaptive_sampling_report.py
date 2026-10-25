@@ -33,17 +33,15 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 from aivisibility.analysis.adaptive_sampling import (
+    POLICIES,
+    budget_to_target,
     build_arms,
-    final_entity_widths,
-    run_fixed_budget,
+    fixed_budget_widths,
     simulate,
-    uniform_policy,
-    variance_policy,
 )
 from aivisibility.common.config import REPORTS_DIR
 
 TARGET_PP = 5.0
-POLICIES = {"uniform": uniform_policy, "variance (adaptive)": variance_policy}
 
 
 def experiment_full_convergence(arms, n_repeats: int = 15) -> None:
@@ -85,21 +83,13 @@ def experiment_fixed_budget(
           "zero width almost immediately (the same bootstrap-on-a-constant\n"
           "effect as n=1 in week4.md) and pull the mean down — max does not\n"
           "hide this.\n")
-    mean_width_by_policy: dict[str, list[float]] = {name: [] for name in POLICIES}
-    max_width_by_policy: dict[str, list[float]] = {name: [] for name in POLICIES}
+    widths = fixed_budget_widths(arms, POLICIES, budgets, n_repeats)
+    mean_width_by_policy = {name: w["mean"].mean(axis=1).tolist() for name, w in widths.items()}
+    max_width_by_policy = {name: w["max"].mean(axis=1).tolist() for name, w in widths.items()}
 
-    for budget in budgets:
-        for name, policy in POLICIES.items():
-            mean_widths, max_widths = [], []
-            for seed in range(n_repeats):
-                run_fixed_budget(arms, policy, budget=budget, n_resamples=150, seed=seed)
-                widths = np.array(list(final_entity_widths(arms, n_resamples=300, seed=seed).values()))
-                mean_widths.append(np.nanmean(widths))
-                max_widths.append(np.nanmax(widths))
-            mean_width_by_policy[name].append(float(np.mean(mean_widths)))
-            max_width_by_policy[name].append(float(np.mean(max_widths)))
+    for i, budget in enumerate(budgets):
         row = " | ".join(
-            f"{name}: mean={mean_width_by_policy[name][-1]:.2f} max={max_width_by_policy[name][-1]:.2f}"
+            f"{name}: mean={mean_width_by_policy[name][i]:.2f} max={max_width_by_policy[name][i]:.2f}"
             for name in POLICIES
         )
         print(f"  budget={budget:>4}: {row}")
@@ -107,47 +97,11 @@ def experiment_fixed_budget(
     return mean_width_by_policy, max_width_by_policy
 
 
-def crossing_budget(budgets: list[int], widths: list[float], target_pp: float) -> float | None:
-    """Linear interpolation between the two bracketing sweep points where
-    the (decreasing) width curve crosses target_pp. If the smallest swept
-    budget is already at or below target, returns that budget as-is (an
-    upper bound — the true crossing point may be even smaller, outside the
-    swept range). None if the target is never reached within the range."""
-    if widths[0] <= target_pp:
-        return float(budgets[0])
-    for i in range(1, len(budgets)):
-        w0, w1 = widths[i - 1], widths[i]
-        if w0 >= target_pp >= w1:
-            b0, b1 = budgets[i - 1], budgets[i]
-            if w0 == w1:
-                return float(b0)
-            frac = (w0 - target_pp) / (w0 - w1)
-            return b0 + frac * (b1 - b0)
-    return None
-
-
-def extrapolate_crossing_budget(budgets: list[int], widths: list[float], target_pp: float) -> float:
-    """Same 1/sqrt(budget)-shape extrapolation as week4.md's
-    estimate_min_n(), fit on the upper half of the swept budgets — used
-    when the target isn't reached within the swept range."""
-    max_b = budgets[-1]
-    fit_points = [(b, w) for b, w in zip(budgets, widths) if b >= max(budgets[0], max_b // 2)]
-    ns = np.array([b for b, _ in fit_points], dtype=float)
-    ws = np.array([w for _, w in fit_points], dtype=float)
-    inv_sqrt_n = 1 / np.sqrt(ns)
-    c = float(np.sum(ws * inv_sqrt_n) / np.sum(inv_sqrt_n**2))
-    return max((c / target_pp) ** 2, max_b + 1)
-
-
 def report_crossings(metric_name: str, budgets: list[int], width_by_policy: dict[str, list[float]]) -> None:
     print(f"\nTarget for budget comparison ({metric_name}): ≤ ±{TARGET_PP:.0f} pp\n")
     crossings = {}
     for name, widths in width_by_policy.items():
-        b = crossing_budget(budgets, widths, TARGET_PP)
-        extrapolated = False
-        if b is None:
-            b = extrapolate_crossing_budget(budgets, widths, TARGET_PP)
-            extrapolated = True
+        b, extrapolated = budget_to_target(budgets, widths, TARGET_PP)
         crossings[name] = b
         if extrapolated:
             label = f"~{b:.0f} draws (1/sqrt(budget) extrapolation, not a direct observation)"
