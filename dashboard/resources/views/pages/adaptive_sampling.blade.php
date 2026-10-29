@@ -40,6 +40,18 @@
             </tbody>
         </table>
         </div>
+        @php
+            $verdict = function ($s) {
+                if ($s['ci_low'] > 0) return 'економія надійна (інтервал вище 0)';
+                if ($s['ci_high'] < 0) return 'адаптивний гірший (інтервал нижче 0)';
+                return 'у межах шуму (інтервал містить 0)';
+            };
+            $sMean = $ad['fixed_budget']['mean']['savings_pct'];
+            $sMax = $ad['fixed_budget']['max']['savings_pct'];
+        @endphp
+        <p><b>Висновок:</b> за однакового бюджету економія запитів від адаптивного семплінгу —
+            {{ round($sMean['value']) }}% для середньої ширини CI ({{ $verdict($sMean) }}) і
+            {{ round($sMax['value']) }}% для найгіршого випадку ({{ $verdict($sMax) }}).</p>
 
         @foreach ($metrics as $key => $title)
             @php
@@ -72,6 +84,9 @@
         @endforeach
 
         <h2>Коли треба довести кожного конкурента окремо</h2>
+        <p class="muted"><b>σ</b> («сигма», стандартне відхилення) показує, наскільки кількість запитів
+            розкидана між повторами симуляції. Мале σ — у кожному повторі потрібно приблизно стільки ж запитів,
+            велике — результат сильно «гуляє» і середньому не можна довіряти так само.</p>
         <div class="scroll">
         <table>
             <thead><tr><th>Політика</th><th class="num">Середньо запитів</th><th class="num">σ</th></tr></thead>
@@ -86,7 +101,7 @@
             </tbody>
         </table>
         </div>
-        <p>Різниця: {{ round($saving['value'], 1) }}% [{{ round($saving['ci_low'], 1) }}…{{ round($saving['ci_high'], 1) }}%] —
+        <p><b>Висновок:</b> різниця в кількості запитів між політиками — {{ round($saving['value'], 1) }}% [{{ round($saving['ci_low'], 1) }}…{{ round($saving['ci_high'], 1) }}%] —
             @if ($saving['distinguishable_from_zero'])
                 відрізняється від нуля.
             @else

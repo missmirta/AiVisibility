@@ -36,6 +36,25 @@
                 </tbody>
             </table>
             </div>
+            @php
+                $comp = collect($rows)->filter(fn ($r) => $r['entity'] !== $r['subject_brand'])->sortByDesc('rate')->values();
+                $top = $comp->get(0);
+                $next = $comp->get(1);
+            @endphp
+            @if ($top)
+                <p><b>Висновок:</b> серед конкурентів найчастіше згадують {{ $top['entity'] }}
+                    ({{ round($top['rate'] * 100) }}%).
+                    @if ($next)
+                        @if ($top['ci_low'] > $next['ci_high'])
+                            Він надійно випереджає {{ $next['entity'] }} ({{ round($next['rate'] * 100) }}%): інтервали
+                            не перетинаються.
+                        @else
+                            Від {{ $next['entity'] }} ({{ round($next['rate'] * 100) }}%) він відрізняється
+                            недоведено: інтервали перетинаються.
+                        @endif
+                    @endif
+                </p>
+            @endif
         @endforeach
     @empty
         <div class="note">У файлі немає даних про видимість.</div>

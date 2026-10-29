@@ -11,3 +11,5 @@ Route::get('/perception', [DashboardController::class, 'perception'])->name('per
 Route::get('/representativeness', [DashboardController::class, 'representativeness'])->name('representativeness');
 Route::get('/adaptive-sampling', [DashboardController::class, 'adaptiveSampling'])->name('adaptive');
 Route::get('/stance', [DashboardController::class, 'stance'])->name('stance');
+Route::get('/custom-model',[DashboardController::class, 'model'])->name('model');
+Route::get('/conclusions', [DashboardController::class, 'conclusions'])->name('conclusions');

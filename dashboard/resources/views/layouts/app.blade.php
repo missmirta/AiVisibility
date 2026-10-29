@@ -26,6 +26,10 @@
         nav { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 12px 0 8px; border-bottom: 1px solid var(--line); }
         nav a { color: var(--muted); text-decoration: none; padding: 6px 0; border-bottom: 2px solid transparent; }
         nav a.active { color: var(--fg); border-color: var(--accent); }
+        nav a.highlight { margin-left: auto; align-self: center; margin-bottom: 4px; padding: 5px 14px; font-weight: 600;
+            color: var(--bg); background: var(--accent); border: 2px solid var(--accent); border-radius: 999px; }
+        nav a.highlight:hover { filter: brightness(1.1); }
+        nav a.highlight.active { box-shadow: 0 0 0 3px var(--accent-soft); }
         .lead, .muted { color: var(--muted); }
         .note { background: var(--warn-bg); color: var(--warn-fg); padding: 10px 12px; border-radius: 6px; margin: 12px 0; }
         .scroll { overflow-x: auto; }
@@ -57,6 +61,8 @@
         <a href="{{ route('representativeness') }}" @class(['active' => request()->routeIs('representativeness')])>Репрезентативність</a>
         <a href="{{ route('adaptive') }}" @class(['active' => request()->routeIs('adaptive')])>Адаптивний семплінг</a>
         <a href="{{ route('stance') }}" @class(['active' => request()->routeIs('stance')])>Тональність</a>
+        <a href="{{ route('model') }}" @class(['active' => request()->routeIs('model')])>Власна модель</a>
+        <a href="{{ route('conclusions') }}" @class(['highlight', 'active' => request()->routeIs('conclusions')])>Висновки →</a>
     </nav>
 </header>
 <main>

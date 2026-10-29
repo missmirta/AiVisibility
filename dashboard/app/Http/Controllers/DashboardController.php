@@ -55,6 +55,35 @@ class DashboardController extends Controller
         ]);
     }
 
+    public function model()
+    {
+        // Screenshots dropped into public/model/ show up on the page; the caption comes from the map below,
+        // or from the file name when the file is not listed.
+        $captions = [
+            'mlflow_training_runs' => 'MLflow: запуски навчання (експеримент stance-classifier, 5 запусків)',
+            'mlflow_evaluation_runs' => 'MLflow: запуски оцінки (експеримент stance-classifier-evaluation, 36 запусків)',
+            'mlflow_best_finetune_metrics' => 'Найкращий fine-tuned запуск (orderly-hog-300, зерно 2): метрики — gold macro-F1 0.617, κ 0.738',
+            'mlflow_best_finetune_gold_report' => 'Той самий запуск, gold_report.json: precision / recall / F1 по класах на 120 людських мітках',
+            'mlflow_model_registry' => 'MLflow: реєстр моделей (stance-classifier, остання версія 4, production → версія 2)',
+        ];
+        $shots = collect(glob(public_path('model/*.{png,jpg,jpeg,gif,webp}'), GLOB_BRACE) ?: [])
+            ->sort()
+            ->map(fn ($path) => [
+                'url' => asset('model/'.basename($path)),
+                'caption' => $captions[pathinfo($path, PATHINFO_FILENAME)]
+                    ?? str_replace(['_', '-'], ' ', pathinfo($path, PATHINFO_FILENAME)),
+            ])
+            ->values()
+            ->all();
+
+        return $this->page('pages.model', fn () => ['shots' => $shots]);
+    }
+
+    public function conclusions()
+    {
+        return $this->page('pages.conclusions');
+    }
+
     public function methodology()
     {
         return $this->page('pages.methodology');
