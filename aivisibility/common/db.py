@@ -1,7 +1,7 @@
 """SQLite storage: schema, connection helper, and query loading.
 
 Schema: queries -> runs -> responses -> mentions (query -> run -> response ->
-detected mentions, per docs/weeks/week2.md). `mentions` is created here but
+detected mentions, per docs/sections/section2.md). `mentions` is created here but
 stays empty until week 3 (detection logic is out of scope for week 2).
 """
 

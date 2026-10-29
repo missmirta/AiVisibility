@@ -2,7 +2,7 @@
 
 Goal: get precise competitor-mention numbers with fewer calls than
 round-robin. Runs offline on data from weeks 2-4 (no new API calls).
-Details: docs/weeks/week5.md.
+Details: docs/sections/section5.md.
 
 One arm = (subject_brand, engine). One call returns one response that is
 checked against all competitors at once, so a simulated draw reuses a
@@ -310,7 +310,7 @@ def crossing_budget(budgets: list[int], widths: list[float], target_pp: float) -
 
 
 def extrapolate_crossing_budget(budgets: list[int], widths: list[float], target_pp: float) -> float:
-    """Same 1/sqrt(budget)-shape extrapolation as week4.md's
+    """Same 1/sqrt(budget)-shape extrapolation as section4.md's
     estimate_min_n(), fit on the upper half of the swept budgets — used
     when the target isn't reached within the swept range."""
     max_b = budgets[-1]

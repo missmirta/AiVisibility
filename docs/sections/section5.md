@@ -179,7 +179,7 @@ Neyman-оптимальна алокація у стратифікованому
 **Max — не косметика, а захист від лазівки середнього:** кілька сутностей
 з точковою оцінкою рівно 0% (наприклад, Checkout.com — 0/36 реальних
 спостережень) дають вироджену нульову ширину CI майже одразу (той самий
-ефект bootstrap-у на константній вибірці, що й n=1 у week4.md), тягнучи
+ефект bootstrap-у на константній вибірці, що й n=1 у section4.md), тягнучи
 середнє вниз ще до того, як справді невизначені сутності (наприклад,
 Stripe/claude/PayPal чи Paddle/claude/Lemon Squeezy) хоч трохи
 збіглися. Тому звіт рахує crossing point (Тиждень 4) для ОБОХ метрик
@@ -194,13 +194,13 @@ crossing point (з екстраполяцією 1/sqrt(budget) за методо
 
     економія = (uniform_budget - adaptive_budget) / uniform_budget * 100%
 
-Зберігає `data/reports/week5_adaptive_sampling.png` — дві панелі поруч
+Зберігає `data/reports/section5_adaptive_sampling.png` — дві панелі поруч
 (середня і найгірша ширина CI vs бюджет, uniform і adaptive).
 
 ### 4. Примітка в README
 
 Короткий абзац з обома цифрами економії (середня і найгірша метрика) й
-посиланням на `docs/weeks/week5.md`, включно з чесним застереженням про
+посиланням на `docs/sections/section5.md`, включно з чесним застереженням про
 Експеримент 1.
 
 ### Критерії готовності Дня 2
@@ -223,7 +223,7 @@ crossing point (з екстраполяцією 1/sqrt(budget) за методо
 - `scripts/adaptive_sampling_sanity_check.py` — синтетична перевірка, що
   стратегія і вікно стабільності поводяться коректно
 - `scripts/adaptive_sampling_report.py` — обидва реальні експерименти на
-  4 армах + графік `data/reports/week5_adaptive_sampling.png`
+  4 армах + графік `data/reports/section5_adaptive_sampling.png`
 - Короткий розділ у `README.md` з головною цифрою економії (обидві
   метрики)
 - Реальний приклад виводу:

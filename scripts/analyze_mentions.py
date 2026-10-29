@@ -72,7 +72,7 @@ def main() -> None:
     change_count = 0
     for subject_brand, engine, entity in common_keys:
         if entity == subject_brand:
-            continue  # own-brand rate is trivially high — see week3.md; focus on competitors
+            continue  # own-brand rate is trivially high — see section3.md; focus on competitors
 
         row_a, row_b = rows_a[(subject_brand, engine, entity)], rows_b[(subject_brand, engine, entity)]
         noise = _overlaps(row_a, row_b)

@@ -3,7 +3,7 @@
 Run: uv run python scripts/perception_report.py [--run-id N [N ...]] [--seed 42] [--n-boot 1000]
 
 Reads the answers stored by scripts/run_pairwise.py. Makes no Claude/OpenAI calls.
-See docs/weeks/week7.md.
+See docs/sections/section7.md.
 """
 
 import argparse
@@ -28,7 +28,7 @@ from aivisibility.perception.aggregate import (
     perception_map,
 )
 
-OUT_FILE = config.REPORTS_DIR / "week7_perception_map.png"
+OUT_FILE = config.REPORTS_DIR / "section7_perception_map.png"
 
 
 def print_stats(stats):

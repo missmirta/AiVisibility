@@ -1,7 +1,7 @@
 """Brand mention detection: candidate dictionary + substring matching.
 
 Method: case-sensitive whole-word substring search, no separate LLM call —
-deliberately cheap and deterministic (see docs/weeks/week3.md). `Square` is
+deliberately cheap and deterministic (see docs/sections/section3.md). `Square` is
 an ordinary English word, so a case-insensitive search would false-positive
 on phrases like "a public square" or "square peg". Matching with the
 original case (`Square`, not `square`) and word boundaries (`\\b`) avoids

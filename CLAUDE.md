@@ -11,7 +11,7 @@ Docs, README and weekly specs are in Ukrainian; code, comments, docstrings and t
 
 ## Layout
 - `aivisibility/` package: `analysis/` (bootstrap, convergence, adaptive sampling, mentions), `common/` (config, db, schemas), `discovery/`, `prober/`, `query_generator/`, `representativeness/` (real-query collection, two-sample test, re-weighting)
-- `docs/weeks/weekN.md` weekly specs, `docs/ai_visibility_fintech_plan.md` the 8-week plan, `docs/sdlc.md` the workflow.
+- `docs/sections/sectionN.md` per-section specs, `docs/ai_visibility_fintech_plan.md` the 8-week plan, `docs/sdlc.md` the workflow.
 
 ## Rules
 - NEVER run `scripts/run_prober.py` (or anything that calls Claude/OpenAI) without the user's explicit confirmation - it costs money. Use `--dry-run` first; pass `--max-budget-usd` on real runs.

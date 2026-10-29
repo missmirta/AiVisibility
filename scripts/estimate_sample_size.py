@@ -1,6 +1,6 @@
 """Empirical minimum-n orientation per engine, from the convergence curves
 (crossing point if observed, otherwise an extrapolation of the curve's
-1/sqrt(n) shape — see docs/weeks/week4.md for the honesty caveats).
+1/sqrt(n) shape — see docs/sections/section4.md for the honesty caveats).
 Run: python scripts/estimate_sample_size.py
 """
 
@@ -41,7 +41,7 @@ def main() -> None:
         "Caveat: this is an empirical guideline for our setup (2 fintech brands, "
         "these specific engines and queries), not a universal minimum sample size "
         "formula — a rigorous parametric formula remains future work "
-        "(see docs/weeks/week4.md and the master plan)."
+        "(see docs/sections/section4.md and the master plan)."
     )
 
 

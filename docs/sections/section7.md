@@ -124,7 +124,7 @@ Seeded-тести: (а) відомі θ → згенеровані резуль�
 - позиційне упередження по движках;
 - частка `invalid`;
 - розбіжність Claude vs OpenAI (чи однаково вони бачать ринок);
-- графік `data/reports/week7_perception_map.png` (heatmap бренд × атрибут
+- графік `data/reports/section7_perception_map.png` (heatmap бренд × атрибут
   + інтервали).
 
 Знайдене під час реалізації: окремі `pairwise_runs`/`pairwise_responses`
@@ -139,7 +139,7 @@ Seeded-тести: (а) відомі θ → згенеровані резуль�
 - [x] карта з CI для кожного (бренд, атрибут, движок)
 - [x] у звіті прямо сказано, де CI брендів перекриваються (різниці немає)
 - [x] розділ у `README.md`, "Фінальний результат" у цьому файлі
-- [ ] тег `week7-done` (після merge)
+- [ ] тег `section7-done` (після merge)
 
 ## Ризики і відкриті питання
 
@@ -163,7 +163,7 @@ Seeded-тести: (а) відомі θ → згенеровані резуль�
 - `aivisibility/perception/` — `pairs.py`, `parse.py`, `bradley_terry.py`
   (MAP + cluster bootstrap + прапорець розділення), `position_bias.py`,
   `aggregate.py`; `scripts/run_pairwise.py`, `scripts/perception_report.py`
-  + `data/reports/week7_perception_map.png`; таблиці `pairwise_runs`/
+  + `data/reports/section7_perception_map.png`; таблиці `pairwise_runs`/
   `pairwise_responses`.
 - Прогін: пілот (runs #1-2, 20 викликів, не входить у звіт), повний —
   OpenAI run #3 (840 викликів, $0.007, 11 відмов — усі на `cheap`:

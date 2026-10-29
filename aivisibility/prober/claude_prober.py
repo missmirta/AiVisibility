@@ -1,7 +1,7 @@
 """Claude engine prober: plain user question, no tools, no web search.
 
 Simulates what an ordinary user sees asking Claude directly, so the query
-text is sent as-is with no extra framing. See docs/weeks/week2.md for the
+text is sent as-is with no extra framing. See docs/sections/section2.md for the
 Claude Agent SDK overhead caveat this prober carries.
 """
 

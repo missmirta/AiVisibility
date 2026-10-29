@@ -2,7 +2,7 @@
 
 Each synthetic query gets the weight of its cluster: p_real / p_synthetic (clipped).
 A cluster with no synthetic queries cannot be weighted; it is reported as "not covered".
-See docs/weeks/week6.md.
+See docs/sections/section6.md.
 """
 
 from dataclasses import dataclass

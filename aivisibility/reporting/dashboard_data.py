@@ -47,7 +47,7 @@ NOT_EXPORTED: list[str] = []
 REAL_QUERIES_FILE = config.QUERIES_DIR / "real_queries.json"
 GOLD_FILE = config.DATA_DIR / "labels" / "gold.csv"  # human labels
 GOLD_TEACHER_FILE = config.DATA_DIR / "labels" / "gold_claude_key.csv"  # Claude labels, same row_id
-# Same grid and repeat count as scripts/adaptive_sampling_report.py, so the numbers match week5.md.
+# Same grid and repeat count as scripts/adaptive_sampling_report.py, so the numbers match section5.md.
 ADAPTIVE_BUDGETS = [8, 12, 16, 20, 25, 30, 50, 75, 100, 130, 160, 200, 250, 300, 400, 600, 800]
 ADAPTIVE_REPEATS = 15
 # (k, kmeans seed) pairs for the weights sensitivity check, same as scripts/representativeness_report.py
@@ -181,7 +181,7 @@ def adaptive_sampling_section(
 ) -> dict:
     """Offline simulation on stored answers: does adaptive sampling reach ±5 pp with fewer calls?
 
-    Two experiments, as in week5.md. `fixed_budget` is where adaptive wins; `full_convergence` is the
+    Two experiments, as in section5.md. `fixed_budget` is where adaptive wins; `full_convergence` is the
     one where it should not (independent arms), exported so the dashboard does not oversell the win.
     The CI is over simulation repeats only: it does not cover the finite pool of stored answers."""
     budgets = budgets or ADAPTIVE_BUDGETS

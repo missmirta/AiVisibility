@@ -2,7 +2,7 @@
 built by subsampling the data already collected in weeks 2-3 (no new
 Prober calls) — and an empirical minimum-n estimate from the curve shape.
 
-See docs/weeks/week4.md for the full method and its honesty caveats.
+See docs/sections/section4.md for the full method and its honesty caveats.
 """
 
 from collections import defaultdict
@@ -40,7 +40,7 @@ def pooled_mention_vectors() -> dict[tuple[str, str, str], list[bool]]:
     this response" vector, pooled across EVERY run in the database (not
     scoped to one run_id like week 3's report.py) — convergence curves
     need more data points than any single run provides. Competitors only:
-    own-brand mention rate is trivially high (see week3.md) and not
+    own-brand mention rate is trivially high (see section3.md) and not
     interesting for a convergence curve either."""
     profiles = load_brand_profiles()
     candidates_by_brand = {
@@ -175,7 +175,7 @@ def estimate_min_n(engine: str, curve: list[ConvergencePoint], target_pp: float 
     shape of a proportion's confidence interval to the observed points and
     solving for n — an extrapolation of the observed curve's shape, NOT
     Sielinski's unpublished parametric formula in citation-distribution
-    parameters (see week4.md).
+    parameters (see section4.md).
 
     n=1 is excluded from the search: a single-value bootstrap resample
     always equals itself, so its CI collapses to width 0 — a known

@@ -1,6 +1,6 @@
 """Compare adaptive (expected-variance-reduction) sampling against uniform
 round-robin, via offline simulation on data already collected in weeks 2-4
-(see docs/weeks/week5.md).
+(see docs/sections/section5.md).
 
 Two experiments, because the naive one doesn't show what we expected:
 
@@ -81,7 +81,7 @@ def experiment_fixed_budget(
           "budget. Max closes the loophole in the mean: a few entities with a\n"
           "point estimate of exactly 0% (e.g. Checkout.com) get a degenerate\n"
           "zero width almost immediately (the same bootstrap-on-a-constant\n"
-          "effect as n=1 in week4.md) and pull the mean down — max does not\n"
+          "effect as n=1 in section4.md) and pull the mean down — max does not\n"
           "hide this.\n")
     widths = fixed_budget_widths(arms, POLICIES, budgets, n_repeats)
     mean_width_by_policy = {name: w["mean"].mean(axis=1).tolist() for name, w in widths.items()}
@@ -144,7 +144,7 @@ def main() -> None:
     fig.suptitle("Week 5: precision at a fixed budget — uniform vs adaptive")
     fig.tight_layout()
 
-    out_path = REPORTS_DIR / "week5_adaptive_sampling.png"
+    out_path = REPORTS_DIR / "section5_adaptive_sampling.png"
     fig.savefig(out_path, dpi=150)
     print(f"\nChart saved: {out_path}")
 

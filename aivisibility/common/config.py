@@ -17,7 +17,7 @@ QUERIES_FILE = QUERIES_DIR / "queries.json"
 DB_PATH = DATA_DIR / "db" / "aivisibility.sqlite3"
 REPORTS_DIR = DATA_DIR / "reports"
 
-# Pilot set for week 1 (docs/weeks/week1.md) — deliberately contrasting pair,
+# Pilot set for week 1 (docs/sections/section1.md) — deliberately contrasting pair,
 # enterprise vs SaaS/no-code. Expanding to the master plan's full list
 # (Adyen, Checkout.com, Mollie) is just adding entries here, no code changes.
 PILOT_BRANDS = [
@@ -42,7 +42,7 @@ MAX_BUDGET_USD_PER_CALL = 0.50
 
 # Pinned explicitly (not the CLI default) for week 2+: the Prober is a
 # measurement instrument from here on, so the model must stay reproducible
-# across runs. See docs/weeks/week2.md for the Claude Agent SDK caveat.
+# across runs. See docs/sections/section2.md for the Claude Agent SDK caveat.
 CLAUDE_MODEL = "claude-sonnet-5"
 
 OPENAI_MODEL = "gpt-4o-mini"

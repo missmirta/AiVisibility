@@ -2,7 +2,7 @@
 
 Run: uv run python scripts/export_dashboard_data.py [--seed 42] [--perception-run-id 3 4]
 
-Reads the DB and stored labels only; makes no Claude/OpenAI calls. See docs/weeks/week8.md.
+Reads the DB and stored labels only; makes no Claude/OpenAI calls. See docs/sections/section8.md.
 """
 
 import argparse

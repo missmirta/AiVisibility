@@ -114,7 +114,7 @@ max_attempts=3, base_delay=1.0)`, експоненційна затримка м
 Реальне планування (Windows Task Scheduler) — окремий крок, який робить
 користувач сам, коли вирішить; я не чіпаю системний планувальник
 автоматично. Приклад команди для реєстрації задачі (довідково, в
-`docs/weeks/week2.md`, не виконується агентом):
+`docs/sections/section2.md`, не виконується агентом):
 
     schtasks /create /tn "AiVisibility Prober" /tr "<шлях до python.exe> <шлях до run_prober.py>" /sc daily /st 09:00
 

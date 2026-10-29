@@ -52,7 +52,7 @@ def main() -> None:
     ax.legend()
     fig.tight_layout()
 
-    out_path = REPORTS_DIR / "week4_convergence.png"
+    out_path = REPORTS_DIR / "section4_convergence.png"
     fig.savefig(out_path, dpi=150)
     print(f"Chart saved: {out_path}")
 

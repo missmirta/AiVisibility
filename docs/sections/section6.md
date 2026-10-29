@@ -121,7 +121,7 @@ rate limit. Усі HTTP-виклики в тестах замокані, тес�
 
 Друкує AUC + p-value, таблицю кластерів (тема, `p_syn`, `p_real`, вага),
 таблицю "mention rate до/після перезважування" і зберігає
-`data/reports/week6_representativeness.png`.
+`data/reports/section6_representativeness.png`.
 
 ### Критерії готовності Дня 2
 
@@ -156,7 +156,7 @@ rate limit. Усі HTTP-виклики в тестах замокані, тес�
   `two_sample.py` (embeddings, AUC + permutation p-value, контролі стилю),
   `reweight.py` (кластери, ваги, зважений bootstrap, Kish n_eff)
 - `scripts/collect_real_queries.py`, `scripts/representativeness_report.py`
-  + графік `data/reports/week6_representativeness.png`
+  + графік `data/reports/section6_representativeness.png`
 - Реальний вивід (106 синтетичних vs 474 реальні, seed=42, 200 перестановок):
 
   ```

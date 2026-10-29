@@ -2,7 +2,7 @@
 
 AUC 0.5 means the two sets look the same; 1.0 means they are fully different.
 The p-value comes from a permutation test: shuffle the labels, rescore, and count
-how often chance alone reaches the observed AUC. See docs/weeks/week6.md.
+how often chance alone reaches the observed AUC. See docs/sections/section6.md.
 """
 
 import re

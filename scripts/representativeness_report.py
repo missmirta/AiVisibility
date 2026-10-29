@@ -4,7 +4,7 @@ Run: uv run python scripts/representativeness_report.py [--seed 42] [--permutati
 
 Needs data/queries/real_queries.json (scripts/collect_real_queries.py). No Claude/OpenAI
 calls: embeddings are local and the mention rates come from responses already in the DB.
-See docs/weeks/week6.md.
+See docs/sections/section6.md.
 """
 
 import argparse
@@ -163,7 +163,7 @@ def main(seed: int, permutations: int) -> None:
     cw = cluster_section(syn_texts, real_texts, syn_emb, real_emb, seed)
     mention_section(query_ids, cw, seed)
     sensitivity_section(query_ids, syn_emb, real_emb, seed)
-    plot(results, cw, config.REPORTS_DIR / "week6_representativeness.png")
+    plot(results, cw, config.REPORTS_DIR / "section6_representativeness.png")
 
 
 if __name__ == "__main__":
